@@ -77,6 +77,8 @@ That support belongs to **in-toto**. It does not mean that DARPA, AFRL, NSF, Pur
 
 Professionally, this makes DobeWorks and DEGS credible portfolio evidence for work in software-supply-chain security, policy-as-code systems, provenance and attestation, secure-systems research engineering, and governed AI-agent infrastructure. The honest job narrative is not “my project was endorsed by DARPA.” It is: **“I independently designed and implemented a governed execution and assurance system; a read-only review found its core concepts comparable to established provenance and policy-verification systems, while also documenting the concrete work needed to productize it.”** That is a technically specific claim an interviewer can inspect in the source, tests, review, and comparison tables.
 
+Among the additional organizations that fit this work, **MITRE** is the strongest ninth target. MITRE defines AI assurance as a repeatable process for discovering, assessing, and managing risk throughout an AI-enabled system's life cycle, operates an AI Assurance and Discovery Lab, and publicly offers student internships and co-ops. That combination aligns directly with the assurance, evidence, risk, and governed-agent concerns in DobeWorks and DEGS (MITRE, 2026a, 2026b).
+
 ### Conftest: what a mature policy gate looks like
 
 Conftest tests Kubernetes, Terraform, pipelines, serverless definitions, and other structured configurations with Open Policy Agent's Rego language. Its sample output distinguishes passes, warnings, failures, and exceptions, while its `verify` command supports unit testing the policies themselves ([Open Policy Agent, 2026a](https://github.com/open-policy-agent/conftest/blob/ca2dfd71a5c673d5f8c207c8788f18c69a6250c7/README.md); [Open Policy Agent, 2026b](https://github.com/open-policy-agent/conftest/blob/ca2dfd71a5c673d5f8c207c8788f18c69a6250c7/docs/index.md)). This is close to DEGS's basic product shape: structured input, policy evaluation, an explainable result, a CLI contract, and tests for the policy boundary.
@@ -119,6 +121,10 @@ Cedar Policy. (2026b). *Cedar testing* (commit `bf15eb3`) [Software documentatio
 in-toto. (2026a). *in-toto* (commit `e352b43`) [Source code]. GitHub. https://github.com/in-toto/in-toto/tree/e352b43ad7cb8915d84c36d791aa61346152a0a3
 
 in-toto. (2026b). *About in-toto*. https://in-toto.io/about/
+
+MITRE. (2026a). *AI assurance*. https://www.mitre.org/focus-areas/artificial-intelligence/ai-assurance
+
+MITRE. (2026b). *Student programs*. https://careers.mitre.org/us/en/student-programs
 
 Open Policy Agent. (2026a). *Conftest* (commit `ca2dfd7`) [Source code]. GitHub. https://github.com/open-policy-agent/conftest/tree/ca2dfd71a5c673d5f8c207c8788f18c69a6250c7
 

@@ -6,7 +6,7 @@ authors:
   - family-names: "McCoy"
     given-names: "Taylor"
 date-released: 2026-10-19
-version: 1.2.0
+version: 1.2.1
 license: MIT
 repository-code: "https://github.com/tmccoy678/github-clone-traffic-investigation"
 abstract: >-
@@ -16,4 +16,7 @@ abstract: >-
   October 6 event reconstruction, and read-only review and replacement-cost estimate for
   DobeWorks and DEGS. The evidence
   supports selective scheduled and push-triggered automated collection without
-  identifying a particular actor.
+  identifying a particular actor. The manuscript also serves as an openly stated
+  career and research signal: Taylor McCoy seeks an internship in public-interest,
+  national-security, aerospace, or AI-assurance engineering and a research-assistant
+  position with a principal investigator whose interests overlap the work.
