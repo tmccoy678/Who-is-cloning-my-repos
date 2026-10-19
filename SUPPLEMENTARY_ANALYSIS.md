@@ -1,4 +1,4 @@
-# Who Is Cloning All of My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories
+# Supplementary Analysis for “Who Is Cloning All of My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days”
 
 Date checked: 2026-10-17
 

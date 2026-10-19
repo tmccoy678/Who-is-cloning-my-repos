@@ -1,0 +1,12 @@
+# Figure provenance
+
+Figures 1 and 2 are byte-identical copies of the original owner captures. Figures 3–6 are unedited window captures of the cited primary webpages made with the isolated Codex browser. No figure contains residential address information, personal email, phone number, credential, or secret.
+
+| File | Type | Capture date | Source | SHA-256 |
+|---|---|---|---|---|
+| [`figure-1-degs-traffic-overview-2026-10-14.png`](figure-1-degs-traffic-overview-2026-10-14.png) | Original owner screenshot | 2026-10-14 | [GitHub Traffic page for tmccoy678/DEGS-v2.1](https://github.com/tmccoy678/DEGS-v2.1/graphs/traffic) | `8041a8e3ddb9f2aea90b2d1951f26d0f8091f37aaba3e2aa66b65ed6bec194d7` |
+| [`figure-2-degs-unique-cloners-2026-10-14.png`](figure-2-degs-unique-cloners-2026-10-14.png) | Original owner screenshot | 2026-10-14 | [GitHub unique-cloner chart for tmccoy678/DEGS-v2.1](https://github.com/tmccoy678/DEGS-v2.1/graphs/traffic) | `fbdb66024932d88b22f33fc00bcf918267a4a664ff7aba7bad4c8a032fbf2e37` |
+| [`figure-3-github-clone-api-documentation.png`](figure-3-github-clone-api-documentation.png) | Source-page screenshot | 2026-10-19 | [GitHub repository traffic API documentation](https://docs.github.com/en/rest/metrics/traffic#get-repository-clones) | `efe846f5391334a753f1c1e6b839474c4aae67764c826d7f6a113de2e7671b9c` |
+| [`figure-4-github-public-events-api.png`](figure-4-github-public-events-api.png) | Source-page screenshot | 2026-10-19 | [GitHub public-events API documentation](https://docs.github.com/en/rest/activity/events#list-public-events) | `91631a8f090b3aad4285738fb9f19054e4f61d3343a62732bccf436ac0855b2a` |
+| [`figure-5-ecosystems-sync-documentation.png`](figure-5-ecosystems-sync-documentation.png) | Source-page screenshot | 2026-10-19 | [ecosyste.ms synchronization documentation](https://github.com/ecosyste-ms/repos/blob/main/docs/syncing.md) | `f7c6f48a04814c26f971ee6b3a626455a0bd09b8ddfdbc1b6246ed8a323c5c96` |
+| [`figure-6-funasr-traffic-comparison.png`](figure-6-funasr-traffic-comparison.png) | Source-page screenshot | 2026-10-19 | [ModelScope FunASR traffic-funnel snapshot](https://github.com/modelscope/FunASR/blob/main/docs/community_growth_20k.md#traffic-funnel-snapshot) | `e425f5d6e46867e23bdd39d1415d7f94c150f9611ccedb7dd8e44cd7af20ed47` |

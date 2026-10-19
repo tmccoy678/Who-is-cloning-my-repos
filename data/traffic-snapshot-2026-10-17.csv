@@ -1,0 +1,8 @@
+repository,primary_subject,clone_events,unique_cloners,views,unique_visitors,mean_clones_per_day
+BackspaceTextRetention,Codex/model behavior and text retention,1991,1216,0,0,142.2142857143
+DEGS-v2.1,Evidence governance for agent systems,2009,1262,0,0,143.5
+DobeWorks-v2.1,Agent worker/observer architecture,2149,1262,0,0,153.5
+TrashTreasurePickup,Agent context-management tooling,2122,1253,1,1,151.5714285714
+grok-bridge-writeup,AI-agent bridge and security write-up,98,63,7,1,7
+WeatherTicker,Conventional weather utility,3,3,0,0,0.2142857143
+TOTAL,,8372,NOT_ADDITIVE,8,2,598

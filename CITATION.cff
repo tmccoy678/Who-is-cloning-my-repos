@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this manuscript using the metadata below."
+title: "Who Is Cloning All of My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days"
+type: report
+authors:
+  - family-names: "McCoy"
+    given-names: "Taylor"
+date-released: 2026-10-19
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/tmccoy678/github-clone-traffic-investigation"
+abstract: >-
+  A descriptive case study of 8,372 GitHub-counted clone events across six public
+  repositories in a 14-day window. The evidence supports selective scheduled and
+  push-triggered automated collection without identifying a particular actor.
