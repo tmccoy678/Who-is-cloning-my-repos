@@ -1,6 +1,6 @@
 # Who Is Cloning All of My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days
 
-**Taylor McCoy**
+**Taylor McCoy**<br>
 **October 19, 2026**
 
 Research and drafting assistance: OpenAI Codex, GPT-6
@@ -75,7 +75,7 @@ Per-repository unique-cloner totals were not summed into a cross-repository tota
 
 ### Scale and Repository Selectivity
 
-**Table 1**
+**Table 1**<br>
 *GitHub Traffic Across the Six Public Repositories*
 
 | Repository | Primary subject | Clone events | Unique cloners | Views | Unique visitors | Mean clones/day |
@@ -96,7 +96,7 @@ The distribution was strongly selective. The four high-traffic repositories acco
 
 The four high-traffic repositories shared a narrow ordinary daily level. `BackspaceTextRetention` had a daily median of 142 clone events and a range of 138–144. `DEGS-v2.1` had a median of 142 and a range of 139–155. `DobeWorks-v2.1` had a median of 143 and a range of 140–272. `TrashTreasurePickup` had a median of 142 and a range of 141–235. The large ranges for the last two repositories were created by isolated update-associated spikes; their non-spike values remained close to the shared floor.
 
-**Table 2**
+**Table 2**<br>
 *Temporal Alignment Between Public Pushes and Clone Spikes*
 
 | Repository | Ordinary daily level | Public repository activity | Observed traffic response | Internal Actions explanation |
@@ -126,7 +126,7 @@ A known owner-side Codex usability review cloned all five then-public repositori
 
 AI-, MCP-, model-tooling-, and security-related repositories can receive hundreds or thousands of unique cloners. The published Fun-ASR report recorded 1,029 clones from 766 unique cloners for `QwenAudio/Fun-ASR` and 1,132 from 660 for `QwenAudio/SenseVoice` in one 14-day window (ModelScope, 2026; Figure 6). These unique-cloner proportions—74% and 58%—overlap the approximately 59%–63% range of the four high-traffic repositories in this study.
 
-**Table 3**
+**Table 3**<br>
 *Owner-Published GitHub Traffic Comparisons*
 
 | Repository | Subject | Clone events | Unique cloners | Views | Unique visitors | Source |
@@ -224,42 +224,42 @@ Zhurong2020. (2026, September 2). *Pyobfus current plan* [Project document]. Git
 
 ## Figures
 
-**Figure 1**
+**Figure 1**<br>
 *GitHub Traffic Overview for DEGS-v2.1, October 14, 2026*
 
 ![GitHub Traffic page showing 2,011 clones, 1,254 unique cloners, zero views, and zero unique visitors for DEGS-v2.1.](figures/figure-1-degs-traffic-overview-2026-10-14.png)
 
 *Note.* Original owner screenshot of the GitHub Traffic page. The clone and unique-cloner graphs cover September 30–October 13, 2026.
 
-**Figure 2**
+**Figure 2**<br>
 *Unique Cloners for DEGS-v2.1 During the Same 14-Day Window*
 
 ![Close view of the DEGS-v2.1 unique-cloner chart showing 1,254 unique cloners and a daily series near 131–145.](figures/figure-2-degs-unique-cloners-2026-10-14.png)
 
 *Note.* Original owner screenshot. The tightly bounded daily series is consistent with a recurring collection process but does not identify its source.
 
-**Figure 3**
+**Figure 3**<br>
 *GitHub’s Authenticated Repository-Clone Endpoint*
 
 ![GitHub documentation page for the Get repository clones endpoint.](figures/figure-3-github-clone-api-documentation.png)
 
 *Note.* Primary-source documentation captured October 19, 2026. The page identifies the authenticated endpoint used to retrieve repository clone traffic (GitHub, 2026a).
 
-**Figure 4**
+**Figure 4**<br>
 *GitHub’s Public-Events Endpoint*
 
 ![GitHub documentation page for the List public events endpoint, including the statement that no fine-grained permissions are required.](figures/figure-4-github-public-events-api.png)
 
 *Note.* Primary-source documentation captured October 19, 2026. GitHub states that the endpoint requires no fine-grained repository permission and may lag by 30 seconds to 6 hours (GitHub, 2026c).
 
-**Figure 5**
+**Figure 5**<br>
 *ecosyste.ms Documentation of Public-Event Repository Discovery*
 
 ![Raw ecosyste.ms synchronization documentation describing GitHub public-event discovery and periodic polling.](figures/figure-5-ecosystems-sync-documentation.png)
 
 *Note.* Primary-source documentation captured October 19, 2026. The service states that its GitHub discovery route reflects the public-events firehose and that recently active repositories are polled periodically (ecosyste.ms, 2026a).
 
-**Figure 6**
+**Figure 6**<br>
 *Published GitHub Traffic Comparison for Fun-ASR and SenseVoice*
 
 ![ModelScope FunASR report table showing views, visitors, clones, and unique cloners for four related repositories.](figures/figure-6-funasr-traffic-comparison.png)
