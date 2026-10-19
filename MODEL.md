@@ -7,4 +7,4 @@
 - Follow-up analysis, same-date public comparison, and read-only source review: October 19, 2026
 - Manuscript prepared: October 19, 2026
 
-The manuscript distinguishes observed repository data from inference. The model had no access to GitHub's undisclosed raw clone-source logs and cannot identify the operators represented by aggregate traffic metrics.
+Analysis used GitHub's aggregate traffic metrics. The raw clone-source logs are private, leaving operator identity unknown.
