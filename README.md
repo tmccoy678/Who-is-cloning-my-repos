@@ -285,6 +285,17 @@ These are replacement-cost estimates, not a claim that the projects could curren
 
 “Current resale value is unknown” is an evidentiary limit, not a conclusion that the projects have little or no value. No arm's-length sale, recurring revenue, active customer base, or comparable licensing transaction was observed, so there is no defensible transaction price to report. Replacement cost answers a different and still meaningful question: what would an organization likely spend to rediscover and reconstruct the present control model, implementation, negative-path tests, benchmark corpora, documentation, provenance, and integration work?
 
+#### The Four Closest Comparators
+
+| System | Closest match | Shared structure |
+|---|---|---|
+| [in-toto](https://github.com/in-toto/in-toto) | **Closest conceptual peer** | Authorized steps, structured evidence, provenance, and verification separated from execution |
+| [Conftest](https://github.com/open-policy-agent/conftest) | **Closest to DEGS as a product** | Structured inputs enter a policy gate that returns explainable pass, warning, or failure results |
+| [SLSA verifier](https://github.com/slsa-framework/slsa-verifier) | **Closest repository-shape peer** | Provenance, attestations, expected-source checks, negative cases, and a large structured evidence surface |
+| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | **Closest agent-and-size neighbor** | Agent execution with explicit model and environment boundaries; nearly the same non-test source volume |
+
+These are architectural and engineering comparators, not endorsements, institutional affiliations, or dollar-value equivalents.
+
 The full reproducible comparison is in [`COMPARABLE_SYSTEMS_COST_CONTEXT.md`](COMPARABLE_SYSTEMS_COST_CONTEXT.md). At pinned October 19 snapshots, DobeWorks and DEGS together contained 5,467 physical lines of non-test Python, 4,146 test lines, 7,832 Markdown lines, and 34,474 lines of schema, policy, fixture, and corpus material. Their non-test Python count happens to be close to mini-SWE-agent's 5,123 lines, but that is only a raw source-volume comparison: the systems have different purposes and architectures, and mini-SWE-agent has a much deeper public product history. More meaningful conceptual comparators are in-toto, Conftest, and SLSA verifier, which likewise invest in explicit policy, provenance, authorization, structured evidence, failure semantics, and verification (in-toto, 2026; Open Policy Agent, 2026; SLSA, 2025; SWE-agent, 2026).
 
 Public procurement data also make the rate assumptions testable. In GSA CALC+ data retrieved October 19, 2026, 177 exact `Senior Software Engineer` labor-ceiling records had a median of $154.65 per hour and a mean of $163.48; nine `Principal Programmer` records had a median of $188.30 and included one $250.25 record (U.S. General Services Administration, 2026a, 2026b, 2026c). Applying those rates to a labor estimate is not a sale appraisal, but it shows that the manuscript's specialist-rate sensitivity is grounded in awarded public labor-rate data rather than an invented price.

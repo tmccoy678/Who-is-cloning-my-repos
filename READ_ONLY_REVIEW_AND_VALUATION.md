@@ -1,4 +1,8 @@
-# Read-Only Review and Replacement-Cost Estimate: DobeWorks v2.1 and DEGS v2.1
+# Are My Repositories Worth More Than $10?
+
+## Read-Only Review and Replacement-Cost Estimate: DobeWorks v2.1 and DEGS v2.1
+
+**Short answer:** As engineering artifacts, plainly yes. No observed sale establishes their present transaction price, and the reconstruction figures below are scenarios rather than recorded development hours.
 
 **Review date:** October 19, 2026<br>
 **Reviewer:** OpenAI Codex, GPT-6<br>
