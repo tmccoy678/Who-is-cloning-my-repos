@@ -5,6 +5,8 @@
 
 Research and drafting assistance: OpenAI Codex, GPT-6
 
+> **Supporting evaluations and evidence:** The repository includes a [read-only engineering review and replacement-cost analysis of DobeWorks and DEGS](READ_ONLY_REVIEW_AND_VALUATION.md), a [reproducible comparison with mini-SWE-agent, in-toto, Conftest, SLSA verifier, and Cedar using pinned source snapshots and public labor-rate evidence](COMPARABLE_SYSTEMS_COST_CONTEXT.md), and the [complete clone-traffic and attribution notes](SUPPLEMENTARY_ANALYSIS.md). The absence of an observed sale price does **not** mean the projects are worth $0, $10, or any other nominal amount; it means their transaction value has not been measured.
+
 ## Abstract
 
 This descriptive case study examined an anomalous pattern in GitHub Traffic data for six public repositories owned by one developer. During the original 14-day window ending October 16, 2026, the repositories received exactly 8,372 GitHub-counted clone events, an average of 598 per day. Four repositories associated with agentic AI, model behavior, context transfer, software assurance, or security contributed 8,271 events and each received approximately 1,200–1,260 top-level unique cloners, while a conventional weather utility received three clones. DobeWorks and DEGS had zero views and zero unique visitors at that snapshot, no referrers, no stars or forks, and no external public discussion. Follow-up through October 18 strengthened the regularity finding: during October 13–18, the four selected repositories jointly recorded 568, 568, 572, 571, 575, and 568 clones per day, a coefficient of variation of 0.50%, while WeatherTicker recorded two clones. Each selected repository's six-day range was only 1.40%–3.50% of its mean, and its largest one-day deviation from its own mean was only 0.70%–2.10%; seven owner-published AI-, MCP-, and security-related comparison repositories varied by 66.67%–396.69% by range over the same dates. A separate numeric-first GitHub Code Search sweep inspected 226 candidate files and extracted 136 non-cumulative daily clone series regardless of subject. No external series met the 1%–4% criterion under either definition; the closest valid series averaged 79.67 clones/day, varied by 27.62% by range, and deviated as much as 15.48% from its mean. DobeWorks alone stayed at 141–144 per day and DEGS at 141–143. The October 6 DobeWorks spike coincided with a public Nova–Grok bridge experiment and nine pushes, reaching 272 clones and 211 daily unique cloners. Data came from authenticated GitHub Traffic endpoints, public event and commit histories, repository configuration, owner screenshots, source review, and owner-published comparison records. The findings support a stable automated collection process plus event-triggered collection. A public index demonstrates the discovery mechanism but is unlikely to be the counted clone source. GitHub does not expose source identities, IP addresses, user agents, or clone referrers; the evidence therefore supports selective automated collection without actor attribution.
@@ -279,6 +281,16 @@ An efficient AI-assisted reconstruction using the current repositories as specif
 
 These are replacement-cost estimates, not a claim that the projects could currently be sold for those amounts. With no proven revenue, external users, support contracts, releases, stars, or forks, a market or enterprise valuation is unsupported. A strategic buyer could value the avoided engineering effort, but the current resale value is unknown.
 
+### Comparable-System and Market-Value Context
+
+“Current resale value is unknown” is an evidentiary limit, not a conclusion that the projects have little or no value. No arm's-length sale, recurring revenue, active customer base, or comparable licensing transaction was observed, so there is no defensible transaction price to report. Replacement cost answers a different and still meaningful question: what would an organization likely spend to rediscover and reconstruct the present control model, implementation, negative-path tests, benchmark corpora, documentation, provenance, and integration work?
+
+The full reproducible comparison is in [`COMPARABLE_SYSTEMS_COST_CONTEXT.md`](COMPARABLE_SYSTEMS_COST_CONTEXT.md). At pinned October 19 snapshots, DobeWorks and DEGS together contained 5,467 physical lines of non-test Python, 4,146 test lines, 7,832 Markdown lines, and 34,474 lines of schema, policy, fixture, and corpus material. Their non-test Python count happens to be close to mini-SWE-agent's 5,123 lines, but that is only a raw source-volume comparison: the systems have different purposes and architectures, and mini-SWE-agent has a much deeper public product history. More meaningful conceptual comparators are in-toto, Conftest, and SLSA verifier, which likewise invest in explicit policy, provenance, authorization, structured evidence, failure semantics, and verification (in-toto, 2026; Open Policy Agent, 2026; SLSA, 2025; SWE-agent, 2026).
+
+Public procurement data also make the rate assumptions testable. In GSA CALC+ data retrieved October 19, 2026, 177 exact `Senior Software Engineer` labor-ceiling records had a median of $154.65 per hour and a mean of $163.48; nine `Principal Programmer` records had a median of $188.30 and included one $250.25 record (U.S. General Services Administration, 2026a, 2026b, 2026c). Applying those rates to a labor estimate is not a sale appraisal, but it shows that the manuscript's specialist-rate sensitivity is grounded in awarded public labor-rate data rather than an invented price.
+
+The most supportable reading is therefore **$181,000–$508,000 for a conventional independent clean-room reconstruction**, approximately **$400,000–$575,000 as a balanced conventional-to-specialist center of gravity**, and **$875,000 as an intentionally aggressive upper stress case** in which both the longest schedule and the highest modeled specialist rate apply. If a capable team begins with the existing repositories as detailed specifications and uses modern AI assistance, the estimated reconstruction cost falls to **$43,000–$131,000**. None of those figures establishes what a buyer would pay today; all of them are materially different from saying the work is worth $10.
+
 ### Accounts Created Near Taylor's Account
 
 Taylor's GitHub account was created August 10, 2026. A bounded public-API comparison examined the first 50 Search results, sorted by join date, for users created August 9–11 with 3–20 repositories and 0–10 followers. Thirty-two accounts met the nonfork/size filter. Their median public profile had **0 followers, 6 public repositories, 0 stars, and 0 forks**; 28 of 32 had zero stars and 31 of 32 had zero forks in the inspected owner-repository set (GitHub, 2026e).
@@ -421,6 +433,8 @@ Home Assistant AI. (2026, October 6). *GitHub traffic: 14-day rolling window* [D
 
 IITian Vibes. (2026, October 19). *India Tech Internships traffic history* [Data set]. GitHub. https://github.com/iitian-vibes/India-Tech-Internships/blob/b349326a125fc68e0903f757498e3915d30ce6df/data/history/2026-10-19.json
 
+in-toto. (2026). *in-toto* (commit `e352b43`) [Source code]. GitHub. https://github.com/in-toto/in-toto/tree/e352b43ad7cb8915d84c36d791aa61346152a0a3
+
 JNHFlow21. (2026, August 10). *Agent Switch project activity* [Data set]. GitHub. https://github.com/JNHFlow21/agent-switch#project-activity
 
 Joshua D. Campbell. (2026, October 19). *GrantAgent clone traffic* [Data set]. GitHub. https://github.com/joshua-d-campbell/GrantAgent/blob/1b11d37b329edcff0c1e781892868e3ba8986c46/traffic/clones.csv
@@ -441,6 +455,8 @@ NSPG13. (2026, July 16). *Agent Bounties traffic snapshot* [GitHub issue]. GitHu
 
 NYBaywatch. (2026, October 19). *AgrusScanner traffic statistics* [Data set]. GitHub. https://github.com/NYBaywatch/AgrusScanner/blob/751c7deeda46a9b965573a1e468270f0cf849b2b/docs/traffic-stats.json
 
+Open Policy Agent. (2026). *Conftest* (commit `ca2dfd7`) [Source code]. GitHub. https://github.com/open-policy-agent/conftest/tree/ca2dfd71a5c673d5f8c207c8788f18c69a6250c7
+
 Romaxa55. (2026, October 19). *MegaV public clone traffic* [Data set]. GitHub. https://github.com/Romaxa55/MegaV_Public/blob/a05167487e3a9407a203950a9845e8f6ad65b9e2/data/traffic/clones-latest.json
 
 Sn4k3. (2026, September 19). *UVtools repository traffic discussion* [Online forum post]. GitHub. https://github.com/sn4k3/UVtools/discussions/1148
@@ -449,11 +465,21 @@ Software Heritage. (n.d.). *Archive API*. https://archive.softwareheritage.org/a
 
 Sollawen. (2026). *microNeo SEO progress* [Project report]. GitHub. https://github.com/sollawen/microNeo/blob/master/docs/MKT/seo-progress.md
 
+SLSA. (2025). *SLSA verifier* (version 2.7.1, commit `ea584f4`) [Computer software]. GitHub. https://github.com/slsa-framework/slsa-verifier/tree/ea584f4502babc6f60d9bc799dbbb13c1caa9ee6
+
+SWE-agent. (2026). *mini-SWE-agent* (commit `04d809c`) [Computer software]. GitHub. https://github.com/SWE-agent/mini-swe-agent/tree/04d809ceab9df28f9adaed044884180159172930
+
 Theguysudo. (2026, October 19). *ENZO traffic history* [Data set]. GitHub. https://github.com/theguysudo/ENZO/blob/2db84b660d09fabbc007d4074ae0c7b2655c6fc3/traffic/history.json
 
 U.S. Bureau of Labor Statistics. (2026a). *Software developers, quality assurance analysts, and testers*. Occupational Outlook Handbook. https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm
 
 U.S. Bureau of Labor Statistics. (2026b, September 9). *Employer Costs for Employee Compensation—June 2026*. https://www.bls.gov/news.release/ecec.nr0.htm
+
+U.S. General Services Administration. (2026a). *CALC+ Quick Rate API*. https://open.gsa.gov/api/dx-calc-api/
+
+U.S. General Services Administration. (2026b, October 19). *CALC+ labor ceiling rates: Senior Software Engineer exact search* [Data set]. https://api.gsa.gov/acquisition/calc/v3/api/ceilingrates/?search=labor_category:Senior%20Software%20Engineer&page=1&page_size=100&filter=price_range:15,500
+
+U.S. General Services Administration. (2026c, October 19). *CALC+ labor ceiling rates: Principal Programmer exact search* [Data set]. https://api.gsa.gov/acquisition/calc/v3/api/ceilingrates/?search=labor_category:Principal%20Programmer&page=1&page_size=100&filter=price_range:15,500
 
 Wubabalala. (2026, October 19). *Claude Skills traffic data* [Data set]. GitHub. https://github.com/Wubabalala/claude-skills/blob/0701164478422cf1abaff3375610c26ba6ebbb09/traffic/data.json
 
@@ -519,7 +545,7 @@ Zhurong2020. (2026, September 2). *Pyobfus current plan* [Project document]. Git
 
 ## Supplementary Material
 
-The original source-comparison and attribution notes are retained in [`SUPPLEMENTARY_ANALYSIS.md`](SUPPLEMENTARY_ANALYSIS.md). The source review and valuation are in [`READ_ONLY_REVIEW_AND_VALUATION.md`](READ_ONLY_REVIEW_AND_VALUATION.md). Machine-readable traffic data are available in [`data/traffic-snapshot-2026-10-17.csv`](data/traffic-snapshot-2026-10-17.csv) and [`data/traffic-snapshot-2026-10-19.csv`](data/traffic-snapshot-2026-10-19.csv). The account-age comparison is in [`data/same-age-account-comparison-2026-10-19.csv`](data/same-age-account-comparison-2026-10-19.csv), the same-date subject-matter comparison is in [`data/same-six-day-variation-comparison-2026-10-19.csv`](data/same-six-day-variation-comparison-2026-10-19.csv), the numeric-first nearest-series results are in [`data/numeric-regularity-search-2026-10-19.csv`](data/numeric-regularity-search-2026-10-19.csv), and the complete extracted numeric-search dataset is in [`data/public-daily-clone-series-search-2026-10-19.csv`](data/public-daily-clone-series-search-2026-10-19.csv). Figure provenance is documented in [`figures/README.md`](figures/README.md).
+The original source-comparison and attribution notes are retained in [`SUPPLEMENTARY_ANALYSIS.md`](SUPPLEMENTARY_ANALYSIS.md). The source review and valuation are in [`READ_ONLY_REVIEW_AND_VALUATION.md`](READ_ONLY_REVIEW_AND_VALUATION.md), and the pinned comparable-system inventory, public-rate evidence, calculations, and interpretation of the $875,000 upper stress case are in [`COMPARABLE_SYSTEMS_COST_CONTEXT.md`](COMPARABLE_SYSTEMS_COST_CONTEXT.md). Machine-readable traffic data are available in [`data/traffic-snapshot-2026-10-17.csv`](data/traffic-snapshot-2026-10-17.csv) and [`data/traffic-snapshot-2026-10-19.csv`](data/traffic-snapshot-2026-10-19.csv). The account-age comparison is in [`data/same-age-account-comparison-2026-10-19.csv`](data/same-age-account-comparison-2026-10-19.csv), the same-date subject-matter comparison is in [`data/same-six-day-variation-comparison-2026-10-19.csv`](data/same-six-day-variation-comparison-2026-10-19.csv), the numeric-first nearest-series results are in [`data/numeric-regularity-search-2026-10-19.csv`](data/numeric-regularity-search-2026-10-19.csv), and the complete extracted numeric-search dataset is in [`data/public-daily-clone-series-search-2026-10-19.csv`](data/public-daily-clone-series-search-2026-10-19.csv). Figure provenance is documented in [`figures/README.md`](figures/README.md).
 
 ## License
 
