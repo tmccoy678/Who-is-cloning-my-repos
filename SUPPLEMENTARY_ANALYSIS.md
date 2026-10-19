@@ -1,6 +1,49 @@
-# Supplementary Analysis for “Who Is Cloning All of My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days”
+# Supplementary Analysis for “Who Is Cloning My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days—With 0 Visitors, 0 Views, No Referrals, Stars, Forks, or External Public Discussion for DobeWorks and DEGS at the Original Snapshot”
 
-Date checked: 2026-10-17
+Original window checked: 2026-10-17
+
+Follow-up checked: 2026-10-19
+
+## October 19 follow-up
+
+The recurring floor continued through the completed October 18 UTC bucket. DobeWorks recorded 141–144 clones/day during October 13–18; DEGS recorded 141–143. Across DobeWorks, DEGS, BackspaceTextRetention, and TrashTreasurePickup, the daily totals were 568, 568, 572, 571, 575, and 568. Their mean was 570.33/day and sample coefficient of variation was 0.50%. WeatherTicker recorded two clones during the same six days.
+
+The moving 14-day totals were:
+
+| Repository | Clones | Top-level unique cloners | Views | Unique visitors |
+|---|---:|---:|---:|---:|
+| DobeWorks | 2,144 | 1,253 | 0 | 0 |
+| DEGS | 2,008 | 1,249 | 2 | 1 |
+| BackspaceTextRetention | 1,991 | 1,189 | 0 | 0 |
+| TrashTreasurePickup | 2,124 | 1,231 | 1 | 1 |
+| grok-bridge-writeup | 100 | 65 | 7 | 1 |
+| WeatherTicker | 4 | 4 | 0 | 0 |
+
+The two DEGS views from one visitor appeared on October 17, after the original zero-view screenshot and snapshot. GitHub does not identify the visitor. The manuscript title therefore states that the zero result applies to the original snapshot.
+
+The account-age comparison used 32 public accounts returned from a GitHub user search centered on Taylor's August 10, 2026 creation date. The sample median was 0 followers, 6 public repositories, 0 stars, and 0 forks. Clone traffic for those accounts is not public, so the comparison establishes only that Taylor's visible engagement is ordinary for a new account while her clone telemetry is unusual.
+
+The read-only engineering review and cost model are preserved in [`READ_ONLY_REVIEW_AND_VALUATION.md`](READ_ONLY_REVIEW_AND_VALUATION.md). Current tests produced 124 passes and 32 documented skips for the reviewed DobeWorks suites, and 72 passes for DEGS. The combined conventional replacement-cost estimate is $181,000–$508,000 after accounting for overlapping governance material; commercial sale value remains unknown.
+
+### Same-date variation comparison
+
+Seven owners published daily GitHub Traffic series for AI-agent, Claude-skill, MCP, and AI-security repositories covering the same six completed UTC dates, October 13–18. For each series, the requested total variation percentage was defined as `100 × (maximum − minimum) ÷ six-day mean`; the sample coefficient of variation was retained as a second scale-independent measure.
+
+Taylor's four individual high-traffic repositories had range percentages of 1.40%–3.50%, maximum absolute daily deviations from their means of 0.70%–2.10%, and sample CVs of 0.63%–1.47%. The seven external repositories had range percentages of 66.67%–396.69%, maximum deviations of 51.11%–313.59%, and sample CVs of 25.88%–154.45%. The least variable external case, `AgentHarbor`, was more than 19 times as variable by range percentage as Taylor's most variable selected repository. The four-repository Taylor aggregate had a 1.23% range percentage, 0.82% maximum deviation, and 0.50% sample CV, but individual-repository comparisons are fairer because aggregation can reduce noise.
+
+The complete date-matched values, calculations, source commits, and permalinks are preserved in [`data/same-six-day-variation-comparison-2026-10-19.csv`](data/same-six-day-variation-comparison-2026-10-19.csv). This purposive sample cannot estimate a GitHub-wide base rate. It does establish that neither the Traffic API nor related subject matter automatically produces Taylor's near-flat daily series.
+
+### Numeric-first search regardless of subject
+
+A separate GitHub Code Search sweep inspected 226 candidate public files and extracted 136 non-cumulative daily clone series covering October 13–18. None met the requested 1%–4% criterion when measured either as range divided by mean or maximum absolute daily deviation divided by mean. The mean for a qualifying external group is therefore undefined because no repository qualified.
+
+The nearest valid series was `dikeckaan/easy-vphone`: 92, 82, 80, 81, 70, and 73 daily clones, for a mean of 79.67/day, range percentage of 27.62%, maximum deviation from the mean of 15.48%, and sample CV of 9.68%. Its subject is a native macOS GUI for virtual-phone VM management and an integrated IPA library. The next four closest series ranged from 66.67% to 87.84% and covered an AI coding-agent application, internship listings, an OpenTelemetry example, and a VPN client.
+
+One 1.47% apparent match was rejected because the source file recorded a cumulative clone total rather than daily clone events. Including it would confuse a running counter's expected smoothness with stable daily traffic. The closest valid results, subjects, dates, means, calculations, and exact source links are in [`data/numeric-regularity-search-2026-10-19.csv`](data/numeric-regularity-search-2026-10-19.csv). The complete extracted set is preserved in [`data/public-daily-clone-series-search-2026-10-19.csv`](data/public-daily-clone-series-search-2026-10-19.csv): 138 series total, two excluded cumulative counters, 136 valid daily series, and zero 1%–4% matches under either the range/mean or maximum-deviation/mean definition.
+
+### Read-only Astra audit
+
+A source audit may be read-only while still using `git clone`; GitHub can count that download without a page view. An Astra code review completed October 19 was treated as a possible owner-authorized clone event if it used a fresh checkout; the supplied review does not record its acquisition method. The October 19 UTC bucket was incomplete and was excluded from all trend and same-date calculations. At the final October 19 read, GitHub had not yet emitted an October 19 daily clone bucket for any of the six repositories, and the rolling totals were unchanged from the earlier follow-up. No audit-associated increment was therefore observable yet. Because GitHub exposes only aggregate daily data, any later increase can be described as consistent with the audit but cannot be assigned to it with certainty.
 
 ## Finding
 
@@ -22,6 +65,10 @@ Unless otherwise marked, these are the top-level values for one GitHub rolling t
 | [`artokun/comfyui-mcp`](https://github.com/artokun/comfyui-mcp/blob/main/docs/blog/from-report-to-release.mdx#an-honest-footnote-about-our-download-numbers), MCP/model tooling | Two weeks, Aug. 2026 | 21,890 | 3,010 | 6,281 | 2,752 | The maintainer explicitly attributes part of the clone count to CI runners, mirrors, and package aggregators. |
 | [`NSPG13/agent-bounties`](https://github.com/NSPG13/agent-bounties/issues/286#issue-3337531547), autonomous-agent protocol/security | Available GitHub window, 2026-07-16 | 4,820 | 444 | 425 | 89 | Clone activity can greatly exceed visible page visitors in an agent/security project. |
 | [`zhurong2020/pyobfus`](https://github.com/zhurong2020/pyobfus/blob/main/docs/CURRENT_PLAN_ZH.md), AI/security tooling with MCP | 14 days, 2026-09-02 audit | 1,999 | 202 | 214 | 85 | Almost the same total clone-event count as Taylor's repos, but far fewer unique cloners and some page traffic; the owner observed release-day automation spikes. |
+| [`N3oRay/proton-autogen`](https://github.com/N3oRay/proton-autogen/blob/main/docs/activity.md), independent Linux utility | Published August 2026 baseline | 2,091 | 509 | 393 | 157 | The closest public total above 2,000; much lower unique-cloner share and measurable page traffic. |
+| [`mapbox/mapbox-agent-skills`](https://github.com/mapbox/mapbox-agent-skills/blob/main/metrics/metrics-latest.md), agent skills | 14 days | 1,579 | 577 | 829 | 215 | Related subject matter and substantial clone volume, but ordinary visible discovery. |
+| [`sollawen/microNeo`](https://github.com/sollawen/microNeo/blob/master/docs/MKT/seo-progress.md), software project | 14 days | 1,312 | 441 | 271 | 45 | The owner labels clone traffic as developer/CI/bot activity rather than installation. |
+| [`duhu2000/dsh-mcp-connector`](https://github.com/duhu2000/dsh-mcp-connector/blob/main/docs/GROWTH-BASELINE.md), MCP connector | 14 days, Oct. 1–14 | 1,314 | 329 | 2,283 | 1,194 | Similar ecosystem but a conventional view-heavy funnel. |
 | [`JNHFlow21/agent-switch`](https://github.com/JNHFlow21/agent-switch#project-activity), local AI-agent/MCP control plane | 14 days, 2026-08-10 | 12 | 11 | 0 | 0 | The exact zero-view/nonzero-clone shape exists in a very close subject match, but at a tiny scale. |
 | [`eaglejyjh/UniverseCrystal`](https://github.com/orgs/community/discussions/203384), research documents/PDFs rather than software | GitHub traffic snapshot, 2026-07-29 | 591 | 208 | 669 | 11 | A prose/research repository can attract far more cloners than GitHub page visitors; this is relevant to `BackspaceTextRetention`. |
 | [`artginzburg/PiPOSS`](https://github.com/artginzburg/PiPOSS/blob/main/docs/metrics.md#4-github-traffic-14-day-rolling--a-distant-third), non-AI macOS utility control | 2026-07-12–07-25 | 7 | 5 | 0 | 0 | Zero views with nonzero clones is not AI-specific. At low volume, the owner treats it as automation noise. |

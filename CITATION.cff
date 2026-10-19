@@ -1,15 +1,19 @@
 cff-version: 1.2.0
 message: "Please cite this manuscript using the metadata below."
-title: "Who Is Cloning All of My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days"
+title: "Who Is Cloning My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days—With 0 Visitors, 0 Views, No Referrals, Stars, Forks, or External Public Discussion for DobeWorks and DEGS at the Original Snapshot"
 type: report
 authors:
   - family-names: "McCoy"
     given-names: "Taylor"
 date-released: 2026-10-19
-version: 1.0.0
+version: 1.2.0
 license: MIT
 repository-code: "https://github.com/tmccoy678/github-clone-traffic-investigation"
 abstract: >-
   A descriptive case study of 8,372 GitHub-counted clone events across six public
-  repositories in a 14-day window. The evidence supports selective scheduled and
-  push-triggered automated collection without identifying a particular actor.
+  repositories in a 14-day window, with a follow-up regularity analysis,
+  same-age-account, subject-matched, and numeric-first variation comparisons,
+  October 6 event reconstruction, and read-only review and replacement-cost estimate for
+  DobeWorks and DEGS. The evidence
+  supports selective scheduled and push-triggered automated collection without
+  identifying a particular actor.

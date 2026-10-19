@@ -1,6 +1,6 @@
 # Figure provenance
 
-Figures 1 and 2 are byte-identical copies of the original owner captures. Figures 3–6 are unedited window captures of the cited primary webpages made with the isolated Codex browser. No figure contains residential address information, personal email, phone number, credential, or secret.
+Figures 1 and 2 are byte-identical copies of the original owner captures. Figures 3–6 are unedited window captures of the cited primary webpages made with the isolated Codex browser. Figures 7 and 8 are author-generated charts from preserved authenticated and owner-published traffic data. No figure contains residential address information, personal email, phone number, credential, or secret.
 
 | File | Type | Capture date | Source | SHA-256 |
 |---|---|---|---|---|
@@ -10,3 +10,5 @@ Figures 1 and 2 are byte-identical copies of the original owner captures. Figure
 | [`figure-4-github-public-events-api.png`](figure-4-github-public-events-api.png) | Source-page screenshot | 2026-10-19 | [GitHub public-events API documentation](https://docs.github.com/en/rest/activity/events#list-public-events) | `91631a8f090b3aad4285738fb9f19054e4f61d3343a62732bccf436ac0855b2a` |
 | [`figure-5-ecosystems-sync-documentation.png`](figure-5-ecosystems-sync-documentation.png) | Source-page screenshot | 2026-10-19 | [ecosyste.ms synchronization documentation](https://github.com/ecosyste-ms/repos/blob/main/docs/syncing.md) | `f7c6f48a04814c26f971ee6b3a626455a0bd09b8ddfdbc1b6246ed8a323c5c96` |
 | [`figure-6-funasr-traffic-comparison.png`](figure-6-funasr-traffic-comparison.png) | Source-page screenshot | 2026-10-19 | [ModelScope FunASR traffic-funnel snapshot](https://github.com/modelscope/FunASR/blob/main/docs/community_growth_20k.md#traffic-funnel-snapshot) | `e425f5d6e46867e23bdd39d1415d7f94c150f9611ccedb7dd8e44cd7af20ed47` |
+| [`figure-7-daily-clone-regularity-2026-10-19.png`](figure-7-daily-clone-regularity-2026-10-19.png) | Author-generated chart | 2026-10-19 | [`traffic-snapshot-2026-10-19.csv`](../data/traffic-snapshot-2026-10-19.csv) from authenticated GitHub Traffic API | `3e692651798bcaeaeaa92bd5e93ccb8a147097d5d0dcf121973a2816ebc13d25` |
+| [`figure-8-six-day-variation-comparison-2026-10-19.png`](figure-8-six-day-variation-comparison-2026-10-19.png) | Author-generated comparison chart | 2026-10-19 | [`same-six-day-variation-comparison-2026-10-19.csv`](../data/same-six-day-variation-comparison-2026-10-19.csv) from authenticated and owner-published GitHub Traffic data | `b7519e2da4d99386ec6f1267e19574ff38b4453e58434504259ee300c1730923` |
