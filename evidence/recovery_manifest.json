@@ -1,0 +1,242 @@
+{
+  "recovered_at_utc": "2026-10-20T14:24:03.885312+00:00",
+  "scope": "Selected original research artifacts and tool stdout only; no conversations or private filesystem paths.",
+  "artifacts": [
+    {
+      "path": "evidence/recovery/2026-10-17/public-repository-summary.jsonl",
+      "kind": "session-extracted transformed API stdout; private-repository rows omitted",
+      "sha256": "5df4f7067196d9a3e753dea0280f5f4ca4f66007ab00f9382035cc7c253c02c8",
+      "bytes": 1194,
+      "original_call_at_utc": "2026-10-17T18:10:57.398Z",
+      "original_call_completed_at_utc": "2026-10-17T18:11:15.347Z"
+    },
+    {
+      "path": "evidence/recovery/2026-10-17/four-repository-daily-counts.tsv",
+      "kind": "session-extracted jq-transformed API stdout; no header in original",
+      "sha256": "7baed76460b505971e27cfec1d41db99b8cbf45aff3ac57c8c8f3035cdfe0b52",
+      "bytes": 2016,
+      "original_call_at_utc": "2026-10-17T18:11:23.666Z",
+      "original_call_completed_at_utc": "2026-10-17T18:11:24.938Z"
+    },
+    {
+      "path": "evidence/recovery/2026-10-17/five-repository-clone-summary.txt",
+      "kind": "session-extracted Python-transformed API stdout",
+      "sha256": "58af6a7cafa363d4e3d54489af40c2d80f1691f63da4c7afddf85c08073f2340",
+      "bytes": 1890,
+      "original_call_at_utc": "2026-10-17T21:25:41.370Z",
+      "original_call_completed_at_utc": "2026-10-17T21:25:43.389Z"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/DobeWorks-v2.1-clones.json",
+      "kind": "session-extracted gh api stdout",
+      "sha256": "d3095d1d63a1105d62aecce2b9fbdd6040b0ca2ca533e4dc06cfa7b73ff39f4e",
+      "bytes": 922,
+      "original_call_at_utc": "2026-10-19T17:06:59.232Z",
+      "original_call_completed_at_utc": "2026-10-19T17:06:59.953Z",
+      "endpoint": "repos/tmccoy678/DobeWorks-v2.1/traffic/clones"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/DEGS-v2.1-clones.json",
+      "kind": "session-extracted gh api stdout",
+      "sha256": "62b1998ecbf6ab9889fcc9c5573130e9e2ad007042f02f9dbdddf0b4e11b2bed",
+      "bytes": 922,
+      "original_call_at_utc": "2026-10-19T17:06:59.232Z",
+      "original_call_completed_at_utc": "2026-10-19T17:06:59.953Z",
+      "endpoint": "repos/tmccoy678/DEGS-v2.1/traffic/clones"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/DobeWorks-v2.1-views.json",
+      "kind": "session-extracted gh api stdout",
+      "sha256": "f813df1a647c9db00e623d39a315e4a9c1f481f070560ae1da69c0b416a0db27",
+      "bytes": 859,
+      "original_call_at_utc": "2026-10-19T17:06:59.232Z",
+      "original_call_completed_at_utc": "2026-10-19T17:06:59.953Z",
+      "endpoint": "repos/tmccoy678/DobeWorks-v2.1/traffic/views"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/DEGS-v2.1-views.json",
+      "kind": "session-extracted gh api stdout",
+      "sha256": "8922e8085710e2c7738fdfeaf7ae1cf253472a7aa0d7e3a7db4c534a7fa6b830",
+      "bytes": 859,
+      "original_call_at_utc": "2026-10-19T17:06:59.232Z",
+      "original_call_completed_at_utc": "2026-10-19T17:06:59.953Z",
+      "endpoint": "repos/tmccoy678/DEGS-v2.1/traffic/views"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/BackspaceTextRetention-clones.json",
+      "kind": "session-extracted gh api stdout",
+      "sha256": "d95ec7f71796da471277b7cf2dd58e27180eeed84ba031f453a3aaec7c405522",
+      "bytes": 922,
+      "original_call_at_utc": "2026-10-19T17:13:03.464Z",
+      "original_call_completed_at_utc": "2026-10-19T17:13:04.050Z",
+      "endpoint": "repos/tmccoy678/BackspaceTextRetention/traffic/clones"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/TrashTreasurePickup-clones.json",
+      "kind": "session-extracted gh api stdout",
+      "sha256": "8ff2bb6d10321551947cd2100fabbcaf1dccffde592f44a237c56b4955c22f58",
+      "bytes": 922,
+      "original_call_at_utc": "2026-10-19T17:13:03.464Z",
+      "original_call_completed_at_utc": "2026-10-19T17:13:04.050Z",
+      "endpoint": "repos/tmccoy678/TrashTreasurePickup/traffic/clones"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/grok-bridge-writeup-clones.json",
+      "kind": "session-extracted gh api stdout",
+      "sha256": "4d3bc36b8bd0975c38568124fc69f10b85a7af866110f5080931d55403366262",
+      "bytes": 867,
+      "original_call_at_utc": "2026-10-19T17:13:03.464Z",
+      "original_call_completed_at_utc": "2026-10-19T17:13:04.050Z",
+      "endpoint": "repos/tmccoy678/grok-bridge-writeup/traffic/clones"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/WeatherTicker-clones.json",
+      "kind": "session-extracted gh api stdout",
+      "sha256": "d59e67c8b07fd91d978ac3190f9e36cf76c4c305268bb9d8b5a919d64c541b2f",
+      "bytes": 860,
+      "original_call_at_utc": "2026-10-19T17:13:03.464Z",
+      "original_call_completed_at_utc": "2026-10-19T17:13:04.050Z",
+      "endpoint": "repos/tmccoy678/WeatherTicker/traffic/clones"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/find_daily_clone_series.py.txt",
+      "kind": "original temporary parser bytes; inert text; not executed during recovery",
+      "sha256": "b11d7d6b7b64efda16abebe78c435eda326f5eff2801379ee15bbbd5e436350c",
+      "bytes": 4920,
+      "original_call_at_utc": "2026-10-19T17:26:55.348Z",
+      "original_call_completed_at_utc": "2026-10-19T17:27:08.202Z"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/all-public-daily-clone-series.jsonl",
+      "kind": "original temporary extraction output bytes",
+      "sha256": "782d1bf9b71ae66f412a480cc254d7f3b2ab6c81f06d7bb608bfb4fc6d50195a",
+      "bytes": 49289,
+      "original_call_at_utc": "2026-10-19T17:26:55.348Z",
+      "original_call_completed_at_utc": "2026-10-19T17:27:08.202Z"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/search-protocol.json",
+      "kind": "reconstructed protocol from recovered parser and contemporaneous count output",
+      "sha256": "49c247cf64bc0b5fc65ace6d11c85fb8240ee218e4042e00a8369c793faa987f",
+      "bytes": 1339,
+      "original_call_at_utc": "2026-10-19T17:26:55.348Z",
+      "original_call_completed_at_utc": "2026-10-19T17:27:08.202Z"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/comparisons/GrantAgent.csv",
+      "kind": "original temporary public-source download bytes",
+      "sha256": "c421f9f0b480ab7b793bfca3aeb977e5224a9c868e53e301f0554d97aea3e395",
+      "bytes": 1962,
+      "original_call_at_utc": "2026-10-19T17:19:34.615Z",
+      "original_call_completed_at_utc": "2026-10-19T17:19:39.686Z",
+      "source_repository": "joshua-d-campbell/GrantAgent",
+      "source_path": "traffic/clones.csv",
+      "original_endpoint": "repos/joshua-d-campbell/GrantAgent/contents/traffic/clones.csv",
+      "original_request_ref": "default branch at collection time"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/comparisons/claude-skills.json",
+      "kind": "original temporary public-source download bytes",
+      "sha256": "a801604c9a23caa210d3fe2b878da1594b2b6bac02d8725e8c931091c95894df",
+      "bytes": 26249,
+      "original_call_at_utc": "2026-10-19T17:19:34.615Z",
+      "original_call_completed_at_utc": "2026-10-19T17:19:39.686Z",
+      "source_repository": "Wubabalala/claude-skills",
+      "source_path": "traffic/data.json",
+      "original_endpoint": "repos/Wubabalala/claude-skills/contents/traffic/data.json",
+      "original_request_ref": "default branch at collection time"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/comparisons/pcap-analyzer-mcp.json",
+      "kind": "original temporary public-source download bytes",
+      "sha256": "e9722e0e257ccf21aa8dffc380491c58dddef5d2e022b898512d3efd233da0a9",
+      "bytes": 876,
+      "original_call_at_utc": "2026-10-19T17:19:34.615Z",
+      "original_call_completed_at_utc": "2026-10-19T17:19:39.686Z",
+      "source_repository": "aws-samples/sample-pcap-analyzer-mcp",
+      "source_path": "traffic-data/clones_latest.json",
+      "original_endpoint": "repos/aws-samples/sample-pcap-analyzer-mcp/contents/traffic-data/clones_latest.json",
+      "original_request_ref": "default branch at collection time"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/comparisons/ENZO.json",
+      "kind": "original temporary public-source download bytes",
+      "sha256": "d754ae28d6845d7c882b0715a97381f24165bee1780262c853cc7a82a6d7ef5a",
+      "bytes": 4219,
+      "original_call_at_utc": "2026-10-19T17:19:34.615Z",
+      "original_call_completed_at_utc": "2026-10-19T17:19:39.686Z",
+      "source_repository": "theguysudo/ENZO",
+      "source_path": "traffic/history.json",
+      "original_endpoint": "repos/theguysudo/ENZO/contents/traffic/history.json",
+      "original_request_ref": "default branch at collection time"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/comparisons/AgentHarbor.json",
+      "kind": "original temporary public-source download bytes",
+      "sha256": "a51fd1dbc2f02aa8905c406986661d25691d3f8c59f6cfe1cfad5fb98bc725fd",
+      "bytes": 131037,
+      "original_call_at_utc": "2026-10-19T17:19:34.615Z",
+      "original_call_completed_at_utc": "2026-10-19T17:19:39.686Z",
+      "source_repository": "abhiunix/AgentHarbor",
+      "source_path": "traffic/data.json",
+      "original_endpoint": "repos/abhiunix/AgentHarbor/contents/traffic/data.json",
+      "original_request_ref": "default branch at collection time"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/comparisons/ARIA.json",
+      "kind": "original temporary public-source download bytes",
+      "sha256": "d1bcf05c2af9490303cc9face7fa25dbfbbf4b59ecff8e168281cc8ac15b65a6",
+      "bytes": 68567,
+      "original_call_at_utc": "2026-10-19T17:19:34.615Z",
+      "original_call_completed_at_utc": "2026-10-19T17:19:39.686Z",
+      "source_repository": "youxch/ARIA",
+      "source_path": "traffic/stats.json",
+      "original_endpoint": "repos/youxch/ARIA/contents/traffic/stats.json",
+      "original_request_ref": "default branch at collection time"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/comparisons/AgrusScanner.json",
+      "kind": "original temporary public-source download bytes",
+      "sha256": "0291b347924f7aedc00a1a277fe12cf966b5297ac887dcbc6aeca1bb33cb0d44",
+      "bytes": 224594,
+      "original_call_at_utc": "2026-10-19T17:19:34.615Z",
+      "original_call_completed_at_utc": "2026-10-19T17:19:39.686Z",
+      "source_repository": "NYBaywatch/AgrusScanner",
+      "source_path": "docs/traffic-stats.json",
+      "original_endpoint": "repos/NYBaywatch/AgrusScanner/contents/docs/traffic-stats.json",
+      "original_request_ref": "default branch at collection time"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/comparisons/CorvusCapture.json",
+      "kind": "original temporary public-source download bytes",
+      "sha256": "fde165d5d466af5b7dc0e80002f41d08d7983f4dae795e597cf6892f160d00b9",
+      "bytes": 33293,
+      "original_call_at_utc": "2026-10-19T17:19:34.615Z",
+      "original_call_completed_at_utc": "2026-10-19T17:19:39.686Z",
+      "source_repository": "NYBaywatch/CorvusCapture",
+      "source_path": "docs/traffic-stats.json",
+      "original_endpoint": "repos/NYBaywatch/CorvusCapture/contents/docs/traffic-stats.json",
+      "original_request_ref": "default branch at collection time"
+    },
+    {
+      "path": "evidence/recovery/2026-10-19/comparisons/CoWork-OS.json",
+      "kind": "original temporary public-source download bytes",
+      "sha256": "811ca84e2b2829355b52f57e9ffdefd0dfdad98191a5f5f295bc8f343b3d61c9",
+      "bytes": 150966,
+      "original_call_at_utc": "2026-10-19T17:19:34.615Z",
+      "original_call_completed_at_utc": "2026-10-19T17:19:39.686Z",
+      "source_repository": "CoWork-OS/CoWork-OS",
+      "source_path": "data/adoption/public-stats-latest.json",
+      "original_endpoint": "repos/CoWork-OS/CoWork-OS/contents/data/adoption/public-stats-latest.json",
+      "original_request_ref": "default branch at collection time"
+    }
+  ],
+  "limitations": [
+    "No original HTTP headers were recovered.",
+    "Session-extracted client stdout is not an original HTTP-response capture.",
+    "The exact requests that wrote the October 19 CSV did not preserve their response bodies; earlier same-day stdout is corroborating evidence.",
+    "No full October 17 clone/view response bodies were found in the scoped session and temporary artifacts; transformed stdout survives.",
+    "The 226-candidate inventory, seven individual search responses, and fetch/parse rejection ledger were not saved by the recovered parser and were not recovered.",
+    "Original historical hashes were not recorded for the recovered temporary files; hashes here identify their bytes at recovery."
+  ]
+}

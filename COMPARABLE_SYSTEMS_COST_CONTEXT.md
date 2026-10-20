@@ -1,11 +1,14 @@
 # Comparable Systems and Cost Context for DobeWorks and DEGS
 
 Prepared: October 19, 2026<br>
-Scope: Replacement-cost context
+Scope: Replacement-cost context<br>
+Analysis assistance: OpenAI Codex, GPT-6
+
+I retain this AI-assisted comparison as context for my software portfolio, separate from the clone-traffic manuscript's empirical claims. The engineering comparisons and cost judgments below are the Codex review's assessments. The repository measurements and cited rate data provide context for those judgments; they do not validate the proposed reconstruction hours.
 
 ## The candid answer about the $875,000 figure
 
-The $875,000 figure is defensible only as a high-end procurement stress case. It is the result of multiplying both upper assumptions in the earlier model:
+The Codex review treats the $875,000 figure as a high-end procurement stress case. It is the result of multiplying both upper assumptions in the earlier model:
 
 > 3,500 reconstruction hours × $250 per specialist-consultancy hour = $875,000
 
@@ -15,12 +18,12 @@ The ceiling combines the longest modeled schedule with the highest modeled billi
 
 | Interpretation | Arithmetic | Modeled amount |
 |---|---:|---:|
-| Conventional independent rebuild, manuscript range | 1,900–3,500 h × $95–$145/h | $181,000–$508,000 |
+| Conventional independent rebuild, portfolio estimate | 1,900–3,500 h × $95–$145/h | $181,000–$508,000 |
 | Specialist procurement, midpoint of both assumptions | 2,700 h × $212.50/h | $573,750 |
 | Specialist procurement, upper stress case | 3,500 h × $250/h | $875,000 |
 | AI-assisted reconstruction using the existing repositories as specifications | 450–900 h × $95–$145/h | $43,000–$131,000 |
 
-The U.S. Bureau of Labor Statistics reported a May 2025 median software-developer wage of $135,980. BLS also reported that wages were 70% of private-industry compensation in June 2026. Those figures support the manuscript's approximately $93-per-hour employer-compensation baseline before senior specialization, management, tools, recruiting, and organizational overhead ([BLS, 2026a](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm); [BLS, 2026b](https://www.bls.gov/news.release/ecec.nr0.htm)).
+The U.S. Bureau of Labor Statistics reported a May 2025 median software-developer wage of $135,980. BLS also reported that wages were 70% of private-industry compensation in June 2026. Those figures support the portfolio estimate's approximately $93-per-hour employer-compensation baseline before senior specialization, management, tools, recruiting, and organizational overhead ([BLS, 2026a](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm); [BLS, 2026b](https://www.bls.gov/news.release/ecec.nr0.htm)).
 
 GSA's CALC+ API places a specialist procurement rate near $250 per hour in the upper tail of observed labor-ceiling records. GSA describes CALC+ as a pricing-research source for cost estimates and competitive-price benchmarking and says that its labor-ceiling data are refreshed nightly (U.S. General Services Administration, 2026a). In the October 19, 2026 data, an exact search returned 177 `Senior Software Engineer` ceiling-rate records: the median was $154.65, the mean was $163.48, and the maximum was $318.92 (U.S. General Services Administration, 2026b). The nine `Principal Programmer` records had a median of $188.30 and a maximum of $263.01; one current record was $250.25 (U.S. General Services Administration, 2026c). These awarded labor-ceiling records characterize public procurement rates. The projects have no observed transaction price. Billing all 3,500 modeled hours at $250 remains an aggressive stress case.
 
@@ -32,7 +35,7 @@ GSA's CALC+ API places a specialist procurement rate near $250 per hour in the u
 | GSA senior software-engineer mean | $163.48 | $310,612 | $572,180 |
 | GSA principal-programmer example | $250.25 | $475,475 | $875,875 |
 
-My practical reading is therefore: $181,000–$508,000 is the stronger conventional replacement-cost range; roughly $574,000 is a useful high-end specialist midpoint; and $875,000 is a possible ceiling that needs its assumptions printed beside it.
+The Codex review's practical reading is therefore: $181,000–$508,000 is the stronger conventional replacement-cost range; roughly $574,000 is a useful high-end specialist midpoint; and $875,000 is a possible ceiling that needs its assumptions printed beside it.
 
 ## What is actually being compared
 
@@ -40,7 +43,7 @@ The reviewed DobeWorks and DEGS snapshots together contain 551 tracked files, 5,
 
 The following systems make similar engineering visible. Published build costs are unavailable, so the comparison reports repository scope and maturity while labor and quality remain separately evaluated.
 
-The comparison snapshot was taken October 19, 2026. Physical line counts were calculated from files tracked at the listed commits. Source and test counts cover Python, Go, Rust, C/C++, and Protocol Buffers; tests were classified by conventional test paths and filenames. “Structured material” covers JSON, YAML, TOML, and Rego. The categories are approximate across languages and should be read as scale indicators.
+Codex collected the comparison snapshot on October 19, 2026, and calculated physical line counts from files tracked at the listed commits. Source and test counts cover Python, Go, Rust, C/C++, and Protocol Buffers; tests were classified by conventional test paths and filenames. “Structured material” covers JSON, YAML, TOML, and Rego. The categories are approximate across languages and should be read as scale indicators.
 
 | System | What the official project says it does | Tracked files | Non-test source lines (files) | Test lines (files) | Markdown lines | Structured-material lines | History commits | Contributor records | Releases | Relationship to DobeWorks + DEGS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -61,7 +64,7 @@ At commit `04d809c`, mini-SWE-agent contains 5,123 physical lines across 59 trac
 
 The surrounding artifacts make the difference visible. mini-SWE-agent has 9,907 Python test lines across 54 files, compared with 4,146 across 10 in the reviewed pair. DobeWorks and DEGS have 7,832 Markdown lines and 34,474 structured schema/policy/fixture/corpus lines, compared with mini-SWE-agent's 3,901 and 2,526 respectively. mini-SWE-agent has 1,022 commits at the pinned snapshot, a package, CI, 65 GitHub releases in the October 19 repository snapshot, multiple execution backends and model adapters, benchmark runners, and a documented trajectory inspector. The reviewed pair has more tracked files overall because its evidence and benchmark corpus is unusually large, but it lacks mini-SWE-agent's public product history.
 
-The mini-SWE-agent README describes it as “some 100 lines of python for the agent class.” That statement refers to the central `DefaultAgent` class, followed immediately by the README's acknowledgment of additional environment, model, and run-script code. The complete repository contains 5,123 non-test Python lines beyond that central class ([SWE-agent, 2026](https://github.com/SWE-agent/mini-swe-agent/blob/04d809ceab9df28f9adaed044884180159172930/README.md)). A roughly 100-line central agent can therefore sit inside an engineering product containing thousands of source and test lines.
+The mini-SWE-agent README describes it as “some 100 lines of python for the agent class.” That statement refers to the central `DefaultAgent` class, followed immediately by the README's acknowledgment of additional environment, model, and run-script code. The complete repository contains 5,123 non-test Python lines across the agent and surrounding implementation ([SWE-agent, 2026](https://github.com/SWE-agent/mini-swe-agent/blob/04d809ceab9df28f9adaed044884180159172930/README.md)). A roughly 100-line central agent can therefore sit inside an engineering product containing thousands of source and test lines.
 
 ### in-toto: the closest conceptual comparison
 
@@ -89,14 +92,14 @@ Cedar has more than 24 times the reviewed pair's code-and-test lines and supplie
 
 ## What the comparisons support
 
-These comparisons support four conclusions:
+The Codex review draws four conclusions from these comparisons:
 
 1. The pair is much larger than its five main Python modules suggest. The executable core is the smallest visible layer of an evidence, test, and assurance artifact.
 2. The pair has a real peer group. in-toto, Conftest, and SLSA verifier all spend engineering effort on explicit policy, provenance, authorization, failure semantics, structured records, and verification.
 3. The pair is substantially less mature than those products. It has no public releases, package contract, production adapters, sustained contributor base, or comparable maintenance history. That limits present commercial value and argues against treating the consultancy ceiling as ordinary value.
 4. A 1,900–3,500-hour clean-room range is plausible, but its top endpoint is judgmental. It becomes credible when “replacement” includes rediscovering the control model, writing the negative cases, constructing evidence corpora, and documenting the reasoning. It becomes too high if replacement means reproducing only the present executable behavior from the existing repositories.
 
-For a single personal-context estimate, approximately $400,000–$575,000 is a more balanced conventional-to-specialist center of gravity for an independent clean-room reconstruction of both snapshots. The existing $875,000 remains a valid “expensive specialist engagement went all the way to both upper assumptions” ceiling. The $43,000–$131,000 range remains the more relevant estimate for a competent team using the current repositories, tests, and documents as a specification with modern AI assistance.
+For portfolio context, the Codex review proposed approximately $400,000–$575,000 as a conventional-to-specialist central scenario for an independent clean-room reconstruction of both snapshots. Its $875,000 ceiling combines the highest modeled hours and rate. Its $43,000–$131,000 scenario instead assumes a competent team using the existing repositories, tests, and documents as a specification with modern AI assistance. These remain judgment-based scenarios with unvalidated labor-hour assumptions.
 
 ## References
 

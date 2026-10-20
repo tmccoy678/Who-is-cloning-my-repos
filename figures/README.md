@@ -1,6 +1,28 @@
-# Figure provenance
+# Figure Provenance
 
-Figures 1 and 2 are byte-identical copies of the original captures. Figures 3–6 are unedited window captures of the cited primary webpages made with the isolated Codex browser. Figures 7 and 8 are charts generated for this study from preserved authenticated and owner-published traffic data. No figure contains residential address information, personal email, phone number, credential, or secret.
+The original eight images remain preserved under their existing filenames. Original files 1 and 2 are byte-identical copies of the supplied captures. Original files 3–6 are unedited window captures of the cited primary webpages made with the isolated Codex browser. Original files 7 and 8 are charts from the earlier analysis.
+
+The revised manuscript numbers its selected figures separately: Figure 1 uses the original overview screenshot; Figures 2 and 3 use the new window-sensitivity and rate-comparison plots below. This numbering leaves the historical filenames stable.
+
+## Revised Analytical Figures
+
+| Manuscript figure | Files | Data and purpose |
+|---|---|---|
+| 2 | [PNG](reanalysis-window-sensitivity.png), [vector PDF](reanalysis-window-sensitivity.pdf) | Preserved October 5–18 daily counts and recalculated window metrics; distinguishes the full window, selected six-day interval, and two new dates |
+| 3 | [PNG](reanalysis-rate-comparison.png), [vector PDF](reanalysis-rate-comparison.pdf) | Recalculated six-day rates and relative variation; shows the 134 screened external series and the two-series 100–200/day stratum |
+
+[The provenance manifest](reanalysis-provenance.json) records the input, output, and plotting-script hashes and library versions. Both figures use black-and-white marks and were reopened for visual inspection. The analysis uses Python's standard library; plotting additionally requires Matplotlib and NumPy. The recorded environment used Python 3.14.7, Matplotlib 3.11.2, and NumPy 2.5.4.
+
+From the repository root, in an environment with those plotting dependencies:
+
+```sh
+python3 scripts/analyze.py
+python3 scripts/plot_reanalysis.py
+```
+
+The plotting script writes only the new `figures/reanalysis-*` files. Fonts and rendering-library versions can affect output bytes; the manifest identifies the produced files.
+
+## Preserved Original Figures
 
 | File | Type | Capture date | Source | SHA-256 |
 |---|---|---|---|---|

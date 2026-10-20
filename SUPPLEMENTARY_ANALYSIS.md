@@ -1,142 +1,84 @@
-# Supplementary Analysis for “Who Is Cloning My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days—With 0 Visitors, 0 Views, No Referrals, Stars, Forks, or External Public Discussion for DobeWorks and DEGS at the Original Snapshot”
+# Supplementary Analysis and Reproduction
 
-Original window checked: 2026-10-17
+For *Who Is Cloning My Repositories? A Case Study of Unusually Regular GitHub Traffic*.<br>
+Revised October 20, 2026.
 
-Follow-up checked: 2026-10-19
+## Reproduce the descriptive analysis
 
-## October 19 follow-up
+From the repository root, using Python 3.9 or later:
 
-The recurring floor continued through the completed October 18 UTC bucket. DobeWorks recorded 141–144 clones/day during October 13–18; DEGS recorded 141–143. Across DobeWorks, DEGS, BackspaceTextRetention, and TrashTreasurePickup, the daily totals were 568, 568, 572, 571, 575, and 568. Their mean was 570.33/day and sample coefficient of variation was 0.50%. WeatherTicker recorded two clones during the same six days.
+```sh
+python3 scripts/analyze.py --check
+python3 scripts/analyze.py
+python3 -B -m unittest discover -s scripts -p 'test_analysis.py' -v
+```
 
-The moving 14-day totals were:
+The first command validates the preserved CSV inputs without writing. The second generates `data/reanalysis-*` outputs. The tests check arithmetic, input integrity, explicit exclusions, and deterministic regeneration. The analysis uses the Python standard library. Plotting has separate dependencies and instructions in the plotting script.
 
-| Repository | Clones | Top-level unique cloners | Views | Unique visitors |
-|---|---:|---:|---:|---:|
-| DobeWorks | 2,144 | 1,253 | 0 | 0 |
-| DEGS | 2,008 | 1,249 | 2 | 1 |
-| BackspaceTextRetention | 1,991 | 1,189 | 0 | 0 |
-| TrashTreasurePickup | 2,124 | 1,231 | 1 | 1 |
-| grok-bridge-writeup | 100 | 65 | 7 | 1 |
-| WeatherTicker | 4 | 4 | 0 | 0 |
+The generated `data/reanalysis-summary.json` contains source hashes, original totals, window overlap, comparison exclusions, count-rate summaries, and account statistics. `data/reanalysis-window-metrics.csv` reports every focal series over October 5–18, October 13–18, and October 17–18, and the four high-traffic repositories over the recovered original October 3–16 window. `data/reanalysis-comparison-series.csv` preserves the link from each original row to its inclusion decision and recalculated values. Undefined relative statistics are represented explicitly.
 
-The two DEGS views from one visitor appeared on October 17, after the original zero-view screenshot and snapshot. The visitor's identity remains private. The manuscript title therefore states that the zero result applies to the original snapshot.
+## What was preserved and recovered
 
-The account-age comparison used 32 public accounts returned from a GitHub user search centered on my account's August 10, 2026 creation date. The sample median was 0 followers, 6 public repositories, 0 stars, and 0 forks. My visible engagement is ordinary for a new account while the clone telemetry is unusual; clone traffic for the comparison accounts remains private.
+The six original CSV inputs remain unchanged. They are derived research records, not raw HTTP responses. The revision adds recovered collection evidence and new, independently executable calculations. `evidence/recovery_manifest.json` records the identity, byte length, provenance kind, and original call times of the recovered artifacts.
 
-The read-only engineering review and cost model are preserved in [`READ_ONLY_REVIEW_AND_VALUATION.md`](READ_ONLY_REVIEW_AND_VALUATION.md). Current tests produced 124 passes and 32 documented skips for the reviewed DobeWorks suites, and 72 passes for DEGS. The combined conventional replacement-cost estimate is $181,000–$508,000 after accounting for overlapping governance material; commercial sale value remains unknown.
+The recovered evidence includes:
 
-### Same-date variation comparison
+- October 17 transformed client output for six public-repository summaries and a four-repository daily table;
+- October 19 client-output JSON for all six focal clone series and DobeWorks/DEGS views;
+- the original comparison-search parser, preserved as inert text;
+- its 138-record JSONL extraction output and seven-query search protocol; and
+- original downloads for several public comparisons.
 
-Seven owners published daily GitHub Traffic series for AI-agent, Claude-skill, MCP, and AI-security repositories covering the same six completed UTC dates, October 13–18. For each series, the requested total variation percentage was defined as `100 × (maximum − minimum) ÷ six-day mean`; the sample coefficient of variation was retained as a second scale-independent measure.
+The recovered October 19 responses were collected earlier that day than the CSV-writing calls. They corroborate the retained values but are not the exact response bodies that produced those CSVs. Session recovery copies selected research output; private conversations and unrelated account records are excluded. Later retrieval of a public file at its recorded Git commit is separately identified as a revision-time retrieval.
 
-The four individual high-traffic repositories had range percentages of 1.40%–3.50%, maximum absolute daily deviations from their means of 0.70%–2.10%, and sample CVs of 0.63%–1.47%. The seven external repositories had range percentages of 66.67%–396.69%, maximum deviations of 51.11%–313.59%, and sample CVs of 25.88%–154.45%. The least variable external case, `AgentHarbor`, was more than 19 times as variable by range percentage as the most variable focal repository. The four-repository focal aggregate had a 1.23% range percentage, 0.82% maximum deviation, and 0.50% sample CV, but individual-repository comparisons are fairer because aggregation can reduce noise.
+Full October 17 response bodies and the complete original 226-candidate/rejection ledger were not recovered. The original parser and output establish the search procedure and retained results. They cannot recover every missing candidate or explain every absent series. Historical data cannot be restored by substituting a response from the current rolling endpoint.
 
-The complete date-matched values, calculations, source commits, and permalinks are preserved in [`data/same-six-day-variation-comparison-2026-10-19.csv`](data/same-six-day-variation-comparison-2026-10-19.csv). This purposive sample leaves the GitHub-wide base rate unknown. The much larger variation among same-date subject peers isolates the focal near-flat series from the Traffic API itself and from subject matter alone.
+All 138 retained public-source files were retrieved at their original immutable commits during revision. Replay reproduced all 138 historical vectors. The recovered original four-repository daily table reproduces the October 17 totals, and all 48 overlapping repository-days agree with the follow-up data. The [evidence guide](evidence/README.md) records file types, acquisition times, hashes, and the offline replay command:
 
-### Numeric-first search regardless of subject
+```sh
+python3 scripts/recover_public_sources.py
+```
 
-A separate GitHub Code Search sweep inspected 226 candidate public files and extracted 136 non-cumulative daily clone series covering October 13–18. None met the requested 1%–4% criterion when measured either as range divided by mean or maximum absolute daily deviation divided by mean. The mean for a qualifying external group is therefore undefined because no repository qualified.
+Offline replay reads the cached source files and rewrites the manifest and replay report, including the report's generation time. Original retrieval timestamps and cached bytes remain unchanged.
 
-The nearest valid series was `dikeckaan/easy-vphone`: 92, 82, 80, 81, 70, and 73 daily clones, for a mean of 79.67/day, range percentage of 27.62%, maximum deviation from the mean of 15.48%, and sample CV of 9.68%. Its subject is a native macOS GUI for virtual-phone VM management and an integrated IPA library. The next four closest series ranged from 66.67% to 87.84% and covered an AI coding-agent application, internship listings, an OpenTelemetry example, and a VPN client.
+## Search protocol and screening
 
-One 1.47% apparent match was rejected because the source file recorded a cumulative clone total and contained no daily clone-event series. Including it would confuse a running counter's expected smoothness with stable daily traffic. The closest valid results, subjects, dates, means, calculations, and exact source links are in [`data/numeric-regularity-search-2026-10-19.csv`](data/numeric-regularity-search-2026-10-19.csv). The complete extracted set is preserved in [`data/public-daily-clone-series-search-2026-10-19.csv`](data/public-daily-clone-series-search-2026-10-19.csv): 138 series total, two excluded cumulative counters, 136 valid daily series, and zero 1%–4% matches under either the range/mean or maximum-deviation/mean definition.
+The original search made seven Code Search requests with `per_page=100`, without pagination. A set keyed by repository and file path produced the recorded count of 226 candidates. The parser attempted JSON and CSV, kept positive-mean series containing all six target dates, retained the last encountered record for repeated dates, and collapsed identical value vectors within a file. It did not implement a separate JSONL-input parser. The recovered query text and source script are retained in `evidence/recovery/2026-10-19/`.
 
-### Read-only Astra audit
+Of the 138 extracted series, two cumulative counters were excluded in the original analysis. I also excluded the `elboletaire/github-stats-action` fixture-path series because the observational provenance is uncertain. Its fixture builder identifies the measured repository as `elboletaire/manga-downloader`; archive host and measurement target are different fields. The builder's synthetic-data comment concerns stargazers, leaving the clone counts' origin unresolved.
 
-A source audit may be read-only while still using `git clone`; GitHub can count that download without a page view. An Astra code review completed October 19 was treated as a possible audit-associated clone event if it used a fresh checkout; its acquisition method is unknown. The October 19 UTC bucket was incomplete and was excluded from all trend and same-date calculations. At the final October 19 read, GitHub had not yet emitted an October 19 daily clone bucket for any of the six repositories, and the rolling totals were unchanged from the earlier follow-up. No audit-associated increment was therefore observable yet. GitHub's aggregate daily data leave any later increase ambiguous and prevent assignment to a particular audit event.
+A second new exclusion concerns `SasanLabs/VulnerableApp`'s `metrics/traffic.csv`, which contains four repositories per date. The date-only parser retained the last `SasanLabs/SAFE` record while labeling the source host `SasanLabs/VulnerableApp`. I excluded that ambiguous extraction and preserved the original row and source for inspection. The [classification record](evidence/public/provenance/multi-repository-classification.json) documents the collision.
 
-## Finding
+The screened set contains 134 series in 34 source-host repositories. Two tracker hosts supply 99 series (73.88%). A host may archive multiple measurement targets; this clustering prevents treating the rows as an independent sample of GitHub. The `source_host_repository`, source path, and subpath identify each extracted record. Target identities require source-level verification.
 
-Yes: repositories about AI agents, MCP, model tooling, and adjacent security work can receive hundreds or thousands of GitHub-counted unique cloners in a 14-day window. Two model repositories are especially close to the focal repositories' unique-cloner share: `QwenAudio/Fun-ASR` reported 1,029 clone events from 766 unique cloners (74%), and `QwenAudio/SenseVoice` reported 1,132 from 660 (58%). The four high-traffic focal repositories are around 59–63%.
+## Rate and window sensitivity
 
-The search found no other repository combining all three features at the focal scale: roughly 1,200–1,260 unique cloners, zero or one page view, and nearly synchronized daily traffic across four repositories. Similar subject matter makes deliberate automated selection plausible. GitHub leaves the unit behind `uniques` undefined.
+The original 1%–4% criterion and the revised at-most-4% criterion each find zero matches in the screened data, for both range-to-mean and maximum-deviation measures. The nearest range remains `dikeckaan/easy-vphone`, with mean 79.67/day, range-to-mean 27.62%, maximum deviation 15.48%, and sample CV 9.68%.
 
-## Owner-published comparisons
+There are 118 series below 25 clones/day, including 76 below one/day. The screened corpus's median mean is 0.67/day. For a nonconstant integer series, range is at least one, so a mean below 25 entails a range-to-mean percentage above 4%. This constraint explains why the numerical threshold is a poor comparison for much of the corpus.
 
-Unless otherwise marked, these are the top-level values for one GitHub rolling traffic window. Each day's unique count was excluded from the totals.
+An exploratory 100–200/day stratum contains two series: `Romaxa55/MegaV_Public` (194.67/day; range 87.84%; CV 35.29%) and `databricks-solutions/consort` (127.83/day; range 191.66%; CV 72.02%). The band was selected during revision around the focal rate. Its size is insufficient to estimate a population anomaly rate.
 
-| Repository and subject | Window | Clone events | Unique cloners | Views | Unique visitors | Observed relevance |
-|---|---:|---:|---:|---:|---:|---|
-| Focal: `DEGS-v2.1` | 14 days, Oct. 2026 | 2,009 | 1,262 | 0 | 0 | About 63% as many unique cloners as clone events, with no page traffic. Authenticated snapshot supplied for this comparison. |
-| Focal: `BackspaceTextRetention` | 14 days, Oct. 2026 | 1,991 | 1,216 | 0 | 0 | The non-tool research/write-up repository received almost the same pattern as the focal software repositories. |
-| [`QwenAudio/Fun-ASR`](https://github.com/modelscope/FunASR/blob/main/docs/community_growth_20k.md#traffic-funnel-snapshot), speech/model tooling | 2026-06-30–07-13 | 1,029 | 766 | 6,332 | 2,106 | A model repository can have a similarly high unique-cloner share, although it also had substantial page discovery. |
-| [`QwenAudio/SenseVoice`](https://github.com/modelscope/FunASR/blob/main/docs/community_growth_20k.md#traffic-funnel-snapshot), speech/model tooling | 2026-06-30–07-13 | 1,132 | 660 | 8,425 | 3,436 | Another same-owner model repo in the focal clone-volume range and close to the focal repositories' unique-cloner share. |
-| [`homeassistant-ai/ha-mcp`](https://github.com/homeassistant-ai/stats/blob/master/2026-10-06.md#github-traffic-14-day-rolling-window), MCP/AI agent tooling | 14 days ending 2026-10-06 | 43,876 | 10,193 | 27,178 | 12,130 | Thousands of unique cloners are plainly possible in the MCP ecosystem, though this is a visibly popular project. |
-| [`artokun/comfyui-mcp`](https://github.com/artokun/comfyui-mcp/blob/main/docs/blog/from-report-to-release.mdx#an-honest-footnote-about-our-download-numbers), MCP/model tooling | Two weeks, Aug. 2026 | 21,890 | 3,010 | 6,281 | 2,752 | The maintainer explicitly attributes part of the clone count to CI runners, mirrors, and package aggregators. |
-| [`NSPG13/agent-bounties`](https://github.com/NSPG13/agent-bounties/issues/286#issue-3337531547), autonomous-agent protocol/security | Available GitHub window, 2026-07-16 | 4,820 | 444 | 425 | 89 | Clone activity can greatly exceed visible page visitors in an agent/security project. |
-| [`zhurong2020/pyobfus`](https://github.com/zhurong2020/pyobfus/blob/main/docs/CURRENT_PLAN_ZH.md), AI/security tooling with MCP | 14 days, 2026-09-02 audit | 1,999 | 202 | 214 | 85 | Almost the same total clone-event count as the focal repositories, but far fewer unique cloners and some page traffic; the owner observed release-day automation spikes. |
-| [`N3oRay/proton-autogen`](https://github.com/N3oRay/proton-autogen/blob/main/docs/activity.md), independent Linux utility | Published August 2026 baseline | 2,091 | 509 | 393 | 157 | The closest public total above 2,000; much lower unique-cloner share and measurable page traffic. |
-| [`mapbox/mapbox-agent-skills`](https://github.com/mapbox/mapbox-agent-skills/blob/main/metrics/metrics-latest.md), agent skills | 14 days | 1,579 | 577 | 829 | 215 | Related subject matter and substantial clone volume, but ordinary visible discovery. |
-| [`sollawen/microNeo`](https://github.com/sollawen/microNeo/blob/master/docs/MKT/seo-progress.md), software project | 14 days | 1,312 | 441 | 271 | 45 | The owner attributes clone traffic to developer, CI, and bot activity and excludes it from the installation count. |
-| [`duhu2000/dsh-mcp-connector`](https://github.com/duhu2000/dsh-mcp-connector/blob/main/docs/GROWTH-BASELINE.md), MCP connector | 14 days, Oct. 1–14 | 1,314 | 329 | 2,283 | 1,194 | Similar ecosystem but a conventional view-heavy funnel. |
-| [`JNHFlow21/agent-switch`](https://github.com/JNHFlow21/agent-switch#project-activity), local AI-agent/MCP control plane | 14 days, 2026-08-10 | 12 | 11 | 0 | 0 | The exact zero-view/nonzero-clone shape exists in a very close subject match, but at a tiny scale. |
-| [`eaglejyjh/UniverseCrystal`](https://github.com/orgs/community/discussions/203384), research documents/PDFs | GitHub traffic snapshot, 2026-07-29 | 591 | 208 | 669 | 11 | A prose/research repository can attract far more cloners than GitHub page visitors; this is relevant to `BackspaceTextRetention`. |
-| [`artginzburg/PiPOSS`](https://github.com/artginzburg/PiPOSS/blob/main/docs/metrics.md#4-github-traffic-14-day-rolling--a-distant-third), non-AI macOS utility control | 2026-07-12–07-25 | 7 | 5 | 0 | 0 | The same zero-view phenomenon occurs outside AI at low volume; the owner treats it as automation noise. |
-| [`sn4k3/UVtools`](https://github.com/sn4k3/UVtools/discussions/1148), mature non-AI utility control | 14 days ending 2026-09-19 | 1,367 | 348 | 4,455 | 1,732 | Page visitors substantially outnumber unique cloners in this well-used conventional tool. |
+The October 3–16 and October 5–18 windows overlap by 12 days. The highlighted October 13–18 interval was selected after observed spikes. Its four-repository aggregate has sample CV 0.50%, compared with 7.40% for the original October 3–16 interval, 7.43% for the full October 5–18 interval, and 0.87% for the two new dates, October 17–18. The individual-repository metrics are reported alongside the aggregate in the generated window table. Each rolling total remains attached to its own window.
 
-## Interpretation
+The two revised figures use the generated analysis tables. [Figure provenance](figures/README.md) identifies their source and output hashes. `scripts/plot_reanalysis.py` documents the plotting dependencies and regeneration command. The original eight images remain preserved; the main manuscript uses the original overview screenshot and the two revised analytical figures.
 
-The focal subject area sits within a real high-clone ecosystem. Public owner snapshots record clone populations in the hundreds or thousands for model and MCP repositories, and `Fun-ASR` and `SenseVoice` also have high unique-cloner shares.
+## Corrections to historical tables
 
-The non-AI controls and other AI repositories vary widely, which weakens a generic GitHub-wide counter-defect explanation. The focal zero-view result is also far more extreme than the large AI/MCP examples, all of which had measurable page traffic. A selected, mostly automated collection process best explains the topic pattern and synchronized traffic across the four focal repositories. The human share remains unknown.
+The original October 17 CSV’s `TOTAL` row retains a unique-visitors value of `2`, the arithmetic sum of two repository-level values. Account-wide visitor overlap is unknown. The revised manuscript marks this cell “Not additive,” and the generated summary uses `null` for both account-wide unique measures. The source row remains available for tracing the correction.
 
-`BackspaceTextRetention` fits that interpretation. `UniverseCrystal` documents heavy cloning of a research repository, and text about model behavior, Codex, or retained context can be valuable to dataset builders, indexers, security researchers, and archival systems. The actual cloners remain unidentified.
+The account-age comparison has 32 rows, all created August 9, 2026. Its nominal search covered August 9–11, but taking the first 50 results in ascending creation order truncated the available cohort. The observed median public-repository count is 5; 27 accounts have zero stars, 28 have zero followers, and 31 have zero forks in the inspected sets. Earlier prose reported 6 and 28 for the first two figures. The generated account summary corrects those values. This sample supplies contextual public-engagement data; its clone traffic is unavailable, so it does not enter the main comparison.
 
-## Metric limits
+The original subject-related table and closest-series table remain preserved with their source commits. The two recorded AgentHarbor source commits return identical JSON bytes, so their different identifiers do not change the calculations.
 
-GitHub's official API says the clone and view endpoints return totals and daily or weekly breakdowns for the last 14 days. GitHub separately states that clone traffic counts full clones, not fetches. The response has top-level `count` and `uniques` fields, while the unit behind `uniques` remains unpublished and may represent people, accounts, machines, IP addresses, or another deduplication unit. See [GitHub's repository traffic API documentation](https://docs.github.com/en/rest/metrics/traffic#get-repository-clones) and [traffic-graph documentation](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository).
+## Known owner activity and event interpretation
 
-Top-level 14-day uniques are deduplicated-window figures. Long-running trackers that add daily unique values measure repeated daily appearances, so one source appearing on five days can enter their historical sum five times. The [`repo-metrics` data notes](https://github.com/AcTePuKc/repo-metrics#data-notes) state this explicitly. The comparison table above excludes those daily-summed figures.
+The original investigation identified an owner-authorized October 2 usability review that cloned the then-public repositories. That date falls before the October 3–16 analysis window. The October 19 architecture review also acquired fresh copies; the analyzed follow-up ends October 18. Neither observation establishes a complete inventory of owner-side automation.
 
-This source-limited comparison uses GitHub repositories whose owners chose to publish their private traffic numbers. The examples define possible patterns; the prevalence of the focal pattern across similar repositories remains unknown.
+Push dates and recorded clone spikes can be aligned by UTC day. The data do not establish the within-day order or identify the actor responsible for an increment. Repository-local Actions histories likewise describe one acquisition route. External services and other owner-authorized tools remain possible contributors.
 
-## Attribution investigation
+## Materials outside the manuscript’s empirical claims
 
-### Result
+The engineering review and replacement-cost scenarios remain in `READ_ONLY_REVIEW_AND_VALUATION.md` and `COMPARABLE_SYSTEMS_COST_CONTEXT.md` as separate portfolio material. Their labor-hour estimates are judgment-based scenarios. Career and academic material remains under `academic-context/`. These materials are not variables or supporting observations in the clone-traffic analysis.
 
-The October 17 public search left the actor unidentified. A two-part automated collection pattern best explains the traffic: a scheduled process repeatedly clones a selected set of the focal public repositories, while one or more event-driven processes add clones after pushes.
-
-The authenticated GitHub Traffic API read for Oct. 3–16 separates those parts unusually well:
-
-| Repository | Ordinary daily clone range | Push-linked observation | GitHub Actions runs |
-|---|---:|---|---:|
-| `DEGS-v2.1` | Usually 139–144 | A late Oct. 5 push was followed by 152 clones on Oct. 5 and 155 on Oct. 6, versus the roughly 142-clone floor. | 0 lifetime |
-| `DobeWorks-v2.1` | Usually 140–146 | Nine Oct. 6 pushes coincided with 272 clones and 211 daily uniques, versus roughly 142 clones and 137 daily uniques on ordinary days. | 0 lifetime |
-| `TrashTreasurePickup` | Usually 141–146 | Four Oct. 11 merge/push commits coincided with 235 clones and 174 daily uniques; Oct. 12 remained elevated at 169 and 155. | 49 lifetime, many on Oct. 11 |
-| `BackspaceTextRetention` | 138–144 | No push after Sept. 25; it retained the same daily floor while the other repositories spiked. | 0 lifetime |
-
-The Oct. 14 screenshot documents an established `DEGS-v2.1` floor by Sept. 30. Across the current window, `DEGS-v2.1` and `BackspaceTextRetention` had zero views, `DobeWorks-v2.1` had zero, and `TrashTreasurePickup` had one. GitHub says repository clone traffic counts full clones, excludes fetches, and is reported in UTC. These are clone events in GitHub's accounting, with source identity withheld. The local evidence is preserved in the original screenshots and the responses from `gh api repos/tmccoy678/REPOSITORY/traffic/{clones,views}` read on 2026-10-17.
-
-Repository publication and pushes are credible triggers. GitHub's [public Events API](https://docs.github.com/en/rest/activity/events) exposes public `PushEvent` records with a repository name and says public events can be delayed from 30 seconds to six hours. Its [`PublicEvent` definition](https://docs.github.com/en/rest/using-the-rest-api/github-event-types#publicevent) covers a private repository being made public. The four repositories emitted such events when they became public, from Sept. 10 through Sept. 25. A collector can therefore discover a public repository and later pushes without visiting its GitHub page. The API documents the route; its use by the observed collector remains unknown.
-
-### Public traces found
-
-All four repositories appear in the public [ecosyste.ms owner index](https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/tmccoy678/repositories), which lists the account's six public repositories together. Its record for [`DEGS-v2.1`](https://repos.ecosyste.ms/hosts/GitHub/repositories/tmccoy678%2FDEGS-v2.1) and the corresponding records for `DobeWorks-v2.1`, `TrashTreasurePickup`, and `BackspaceTextRetention` expose GitHub archive download URLs and detected repository files. `DEGS-v2.1`, `DobeWorks-v2.1`, `BackspaceTextRetention`, and low-traffic control `WeatherTicker` were synchronized within milliseconds of one another on Oct. 2. The service recorded dependency parsing for each, with manifests found in `DEGS-v2.1` and `TrashTreasurePickup`.
-
-The service's own [synchronization documentation](https://github.com/ecosyste-ms/repos/blob/main/docs/syncing.md) says it discovers GitHub repositories from the public event firehose and GHArchive, resynchronizes recently active repositories every 15 minutes, parses dependencies, and fetches archive file lists. The documented inspection path uses a [`codeload.github.com` tarball URL](https://github.com/ecosyste-ms/repos/blob/main/app/models/hosts/github.rb#L65-L73). ecosyste.ms directly demonstrates event-driven discovery and content inspection. Its archive-based route makes it an unlikely source of GitHub-counted clones.
-
-The `DEGS-v2.1` screenshot shows the clone floor by Sept. 30, before ecosyste.ms recorded its Oct. 2 synchronization, and `WeatherTicker` was processed in the same batch yet had only three clone events in the Oct. 3–16 owner traffic window. A broad-index explanation fails the observed selectivity: four repositories receive about 140 clone events every day while the same-batch WeatherTicker control remains near zero.
-
-One exact public backlink was found: a [Moltbook post linking `TrashTreasurePickup`](https://moltbook.com/post/62e124f5-6087-4c5f-87ad-e8f95fdae6a6), created Oct. 14 at 20:11 UTC. The steady clone floor began by Sept. 30, and `TrashTreasurePickup` showed no clear increase after the post. The cross-repository pattern therefore predates the link. It could have contributed an unknown number of later clones.
-
-The four repositories had no configured GitHub webhooks. GitHub Actions plausibly account for part of the Oct. 11 `TrashTreasurePickup` increase. The shared floor also spans three repositories with zero Actions runs. No comparable internal automation was visible in their repository settings.
-
-One known local Codex usability review cloned all five public repositories once on Oct. 2, including the low-traffic `WeatherTicker` control. The five local `.git` directories have the same Oct. 2 creation time. That activity contributes one owner-initiated clone per repository outside the current Oct. 3–16 API window. The continuing daily floor has another source.
-
-Recent owner reports document unexplained bursts elsewhere; the focal source remains unknown. On Aug. 15, 2026, a repository owner reported [7,543 unique cloners in one day](https://github.com/orgs/community/discussions/205346) after ordinarily seeing a few hundred clone events; the actor remained unresolved. GitHub traffic reporting also had a [multi-repository aggregation delay beginning Sept. 23, 2026](https://github.com/orgs/community/discussions/208852). That incident introduces uncertainty about exact dates and late backfill. The focal repositories' stable floor and repository-specific push-day spikes remain a separate pattern.
-
-### Ranked hypotheses
-
-1. Scheduled collection plus push-triggered collection — strongest. The four repositories share a narrow daily floor despite different contents and commit schedules, while only the repositories receiving pushes show added traffic on those dates. Zero or near-zero page views are consistent with direct Git or archive access. The data leave three architectures open: one fleet, several independent services, or GitHub infrastructure reporting several processes similarly.
-2. Broad repository indexes, dataset builders, archival systems, dependency scanners, or security scanners — plausible class, unidentified actor. The ecosyste.ms records demonstrate discovery of the focal repositories, including the text-heavy `BackspaceTextRetention`, through public events. Its tarball-based implementation and the low-traffic `WeatherTicker` control make it an unlikely source of the clone counts. The roughly 140-per-day operator remains unknown.
-3. Repository-local CI — partial explanation only. Actions may add some `TrashTreasurePickup` clones around Oct. 11. Its reach is confined to `TrashTreasurePickup`; three repositories have zero Actions runs and `BackspaceTextRetention` remains unchanged.
-4. GitHub traffic-accounting behavior — possible contributor. A recent traffic aggregation incident exists, and GitHub keeps the raw clone log and deduplication rule private. Repository selectivity and push-linked spikes require an additional mechanism and rule out a single meaningless counter artifact as a complete explanation.
-5. Large independent human readership — weak fit. The counters leave the human fraction unknown. The synchronized cadence, lack of page views, and lack of public attention signals favor automated collection over 1,200 independent readers.
-
-### Attribution Search Results
-
-- Apart from the Oct. 14 Moltbook post, exact repository names, full GitHub URLs, descriptions, and distinctive README phrases produced no external web references or backlinks. None predates or explains the start of the measured traffic window.
-- GitHub code search found the four full `tmccoy678/REPOSITORY` identifiers only in the focal repositories. GitHub issue and discussion search likewise returned activity from the same account exclusively.
-- Exact-origin checks for all four repositories returned “not found” from the [Software Heritage archive API](https://archive.softwareheritage.org/api/), and direct Sourcegraph repository pages returned 404. Both services lacked a public mirror at the time checked.
-- Beyond the generic ecosyste.ms owner index, searches of public code indexes, repository registries, mirrors, crawler discussions, and 2026 GitHub Community reports found no manifest or curated list containing all four repositories and no named 2026 campaign matching the approximately 140-event daily cadence.
-- GitHub's traffic endpoints expose aggregate counts, not clone-source IP addresses, user agents, account identities, or clone referrers. A definitive actor attribution is therefore unavailable from the repository traffic data alone.
+The pre-revision manuscript, original comparison tables, and earlier interpretations remain recoverable in Git history at `25c4a40b8f5932acf7e054b66a5a586268f9da3a`. `REVISION_NOTES.md` records the response to the methodological review.

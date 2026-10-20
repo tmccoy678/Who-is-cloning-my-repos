@@ -1,0 +1,1656 @@
+{
+  "clones": [
+    {
+      "timestamp": "2026-09-05T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-06T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-07T00:00:00Z",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "timestamp": "2026-09-08T00:00:00Z",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "timestamp": "2026-09-09T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-10T00:00:00Z",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "timestamp": "2026-09-11T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-12T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-13T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-14T00:00:00Z",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "timestamp": "2026-09-15T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-16T00:00:00Z",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-19T00:00:00Z",
+      "count": 7,
+      "uniques": 5
+    },
+    {
+      "timestamp": "2026-09-20T00:00:00Z",
+      "count": 4,
+      "uniques": 2
+    },
+    {
+      "timestamp": "2026-09-21T00:00:00Z",
+      "count": 5,
+      "uniques": 3
+    },
+    {
+      "timestamp": "2026-09-22T00:00:00Z",
+      "count": 5,
+      "uniques": 3
+    },
+    {
+      "timestamp": "2026-09-23T00:00:00Z",
+      "count": 3,
+      "uniques": 3
+    },
+    {
+      "timestamp": "2026-09-24T00:00:00Z",
+      "count": 12,
+      "uniques": 10
+    },
+    {
+      "timestamp": "2026-09-25T00:00:00Z",
+      "count": 21,
+      "uniques": 16
+    },
+    {
+      "timestamp": "2026-09-26T00:00:00Z",
+      "count": 24,
+      "uniques": 16
+    },
+    {
+      "timestamp": "2026-09-27T00:00:00Z",
+      "count": 12,
+      "uniques": 7
+    },
+    {
+      "timestamp": "2026-09-28T00:00:00Z",
+      "count": 17,
+      "uniques": 12
+    },
+    {
+      "timestamp": "2026-09-29T00:00:00Z",
+      "count": 18,
+      "uniques": 12
+    },
+    {
+      "timestamp": "2026-09-30T00:00:00Z",
+      "count": 4,
+      "uniques": 2
+    },
+    {
+      "timestamp": "2026-10-01T00:00:00Z",
+      "count": 14,
+      "uniques": 8
+    },
+    {
+      "timestamp": "2026-10-02T00:00:00Z",
+      "count": 6,
+      "uniques": 4
+    },
+    {
+      "timestamp": "2026-10-03T00:00:00Z",
+      "count": 17,
+      "uniques": 9
+    },
+    {
+      "timestamp": "2026-10-04T00:00:00Z",
+      "count": 6,
+      "uniques": 4
+    },
+    {
+      "timestamp": "2026-10-05T00:00:00Z",
+      "count": 21,
+      "uniques": 14
+    },
+    {
+      "timestamp": "2026-10-06T00:00:00Z",
+      "count": 13,
+      "uniques": 7
+    },
+    {
+      "timestamp": "2026-10-07T00:00:00Z",
+      "count": 15,
+      "uniques": 8
+    },
+    {
+      "timestamp": "2026-10-08T00:00:00Z",
+      "count": 4,
+      "uniques": 2
+    },
+    {
+      "timestamp": "2026-10-09T00:00:00Z",
+      "count": 5,
+      "uniques": 3
+    },
+    {
+      "timestamp": "2026-10-10T00:00:00Z",
+      "count": 17,
+      "uniques": 11
+    },
+    {
+      "timestamp": "2026-10-11T00:00:00Z",
+      "count": 32,
+      "uniques": 18
+    },
+    {
+      "timestamp": "2026-10-12T00:00:00Z",
+      "count": 17,
+      "uniques": 12
+    },
+    {
+      "timestamp": "2026-10-13T00:00:00Z",
+      "count": 13,
+      "uniques": 8
+    },
+    {
+      "timestamp": "2026-10-14T00:00:00Z",
+      "count": 4,
+      "uniques": 2
+    },
+    {
+      "timestamp": "2026-10-15T00:00:00Z",
+      "count": 16,
+      "uniques": 10
+    },
+    {
+      "timestamp": "2026-10-16T00:00:00Z",
+      "count": 18,
+      "uniques": 11
+    },
+    {
+      "timestamp": "2026-10-17T00:00:00Z",
+      "count": 17,
+      "uniques": 10
+    },
+    {
+      "timestamp": "2026-10-18T00:00:00Z",
+      "count": 20,
+      "uniques": 13
+    }
+  ],
+  "views": [
+    {
+      "timestamp": "2026-09-05T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-06T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-07T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-08T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-09T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-10T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-11T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-12T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-13T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-14T00:00:00Z",
+      "count": 2,
+      "uniques": 1
+    },
+    {
+      "timestamp": "2026-09-15T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-16T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00Z",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "timestamp": "2026-09-19T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-20T00:00:00Z",
+      "count": 2,
+      "uniques": 2
+    },
+    {
+      "timestamp": "2026-09-21T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-22T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-23T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-24T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-25T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-26T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-27T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-28T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-29T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-30T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-01T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-02T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-03T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-04T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-05T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-06T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-07T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-08T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-09T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-10T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-11T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-12T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-13T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-14T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-15T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-16T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-17T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-10-18T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    }
+  ],
+  "referrers": [
+    {
+      "date": "2026-09-19",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "sources": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "sources": []
+    },
+    {
+      "date": "2026-10-06",
+      "sources": []
+    },
+    {
+      "date": "2026-10-07",
+      "sources": []
+    },
+    {
+      "date": "2026-10-08",
+      "sources": []
+    },
+    {
+      "date": "2026-10-09",
+      "sources": []
+    },
+    {
+      "date": "2026-10-10",
+      "sources": []
+    },
+    {
+      "date": "2026-10-11",
+      "sources": []
+    },
+    {
+      "date": "2026-10-12",
+      "sources": []
+    },
+    {
+      "date": "2026-10-13",
+      "sources": []
+    },
+    {
+      "date": "2026-10-14",
+      "sources": []
+    },
+    {
+      "date": "2026-10-15",
+      "sources": []
+    },
+    {
+      "date": "2026-10-16",
+      "sources": []
+    },
+    {
+      "date": "2026-10-17",
+      "sources": []
+    },
+    {
+      "date": "2026-10-18",
+      "sources": []
+    },
+    {
+      "date": "2026-10-19",
+      "sources": []
+    }
+  ],
+  "paths": [
+    {
+      "date": "2026-09-19",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 1
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 1
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/NYBaywatch/CorvusCapture/releases",
+          "title": "/releases",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 3,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 3,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 3,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "pages": [
+        {
+          "path": "/NYBaywatch/CorvusCapture",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "pages": []
+    },
+    {
+      "date": "2026-10-06",
+      "pages": []
+    },
+    {
+      "date": "2026-10-07",
+      "pages": []
+    },
+    {
+      "date": "2026-10-08",
+      "pages": []
+    },
+    {
+      "date": "2026-10-09",
+      "pages": []
+    },
+    {
+      "date": "2026-10-10",
+      "pages": []
+    },
+    {
+      "date": "2026-10-11",
+      "pages": []
+    },
+    {
+      "date": "2026-10-12",
+      "pages": []
+    },
+    {
+      "date": "2026-10-13",
+      "pages": []
+    },
+    {
+      "date": "2026-10-14",
+      "pages": []
+    },
+    {
+      "date": "2026-10-15",
+      "pages": []
+    },
+    {
+      "date": "2026-10-16",
+      "pages": []
+    },
+    {
+      "date": "2026-10-17",
+      "pages": []
+    },
+    {
+      "date": "2026-10-18",
+      "pages": []
+    },
+    {
+      "date": "2026-10-19",
+      "pages": []
+    }
+  ],
+  "downloads": [
+    {
+      "date": "2026-09-19",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-20",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-21",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-22",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-23",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-24",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-25",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-26",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-27",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-28",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-29",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-09-30",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-01",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-02",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-03",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-04",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-05",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-06",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-07",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-08",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-09",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-10",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-11",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-12",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-13",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-14",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-15",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-16",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-17",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-18",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    },
+    {
+      "date": "2026-10-19",
+      "releases": [
+        {
+          "tag_name": "v0.1.0",
+          "published_at": "2026-09-03T16:34:13Z",
+          "assets": [
+            {
+              "name": "CorvusCapture.exe",
+              "download_count": 8,
+              "size": 1196696
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "download_count": 0,
+              "size": 84
+            }
+          ]
+        }
+      ],
+      "total_downloads": 8
+    }
+  ]
+}

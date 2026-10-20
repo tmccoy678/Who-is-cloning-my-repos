@@ -1,0 +1,210 @@
+{
+  "account_creation_dates": {
+    "2026-08-09": 32
+  },
+  "account_summary": [
+    {
+      "field": "followers",
+      "max": 2,
+      "median": 0.0,
+      "min": 0,
+      "n": 32,
+      "zero_count": 28
+    },
+    {
+      "field": "public_repositories",
+      "max": 17,
+      "median": 5.0,
+      "min": 3,
+      "n": 32,
+      "zero_count": 0
+    },
+    {
+      "field": "original_repositories_in_first_20",
+      "max": 17,
+      "median": 5.0,
+      "min": 3,
+      "n": 32,
+      "zero_count": 0
+    },
+    {
+      "field": "stars_on_original_repositories_in_first_20",
+      "max": 2,
+      "median": 0.0,
+      "min": 0,
+      "n": 32,
+      "zero_count": 27
+    },
+    {
+      "field": "forks_on_original_repositories_in_first_20",
+      "max": 1,
+      "median": 0.0,
+      "min": 0,
+      "n": 32,
+      "zero_count": 31
+    }
+  ],
+  "analysis_schema_version": 1,
+  "comparison_exclusions": {
+    "cumulative_or_accumulated_counter": 2,
+    "fixture_path_observational_provenance_unverified": 1,
+    "multiple_repository_rows_collapsed_by_date_in_original_extraction": 1
+  },
+  "comparison_summaries": [
+    {
+      "group": "original_non_cumulative_extraction",
+      "largest_two_source_hosts_n_series": 99,
+      "max_range_percent": 600.0,
+      "median_daily_mean": 0.75,
+      "min_range_percent": 27.615062761506273,
+      "n_max_deviation_1_to_4_percent": 0,
+      "n_max_deviation_at_most_4_percent": 0,
+      "n_mean_below_1": 76,
+      "n_mean_below_25": 120,
+      "n_range_1_to_4_percent": 0,
+      "n_range_at_most_4_percent": 0,
+      "n_series": 136,
+      "n_source_host_repositories": 36
+    },
+    {
+      "group": "reanalysis_screened",
+      "largest_two_source_hosts_n_series": 99,
+      "max_range_percent": 600.0,
+      "median_daily_mean": 0.6666666666666666,
+      "min_range_percent": 27.615062761506273,
+      "n_max_deviation_1_to_4_percent": 0,
+      "n_max_deviation_at_most_4_percent": 0,
+      "n_mean_below_1": 76,
+      "n_mean_below_25": 118,
+      "n_range_1_to_4_percent": 0,
+      "n_range_at_most_4_percent": 0,
+      "n_series": 134,
+      "n_source_host_repositories": 34
+    },
+    {
+      "group": "reanalysis_mean_100_to_200_inclusive",
+      "largest_two_source_hosts_n_series": 2,
+      "max_range_percent": 191.65580182529337,
+      "median_daily_mean": 161.25,
+      "min_range_percent": 87.84246575342466,
+      "n_max_deviation_1_to_4_percent": 0,
+      "n_max_deviation_at_most_4_percent": 0,
+      "n_mean_below_1": 0,
+      "n_mean_below_25": 0,
+      "n_range_1_to_4_percent": 0,
+      "n_range_at_most_4_percent": 0,
+      "n_series": 2,
+      "n_source_host_repositories": 2
+    }
+  ],
+  "followup_window": {
+    "days_overlapping_original": 12,
+    "end": "2026-10-18",
+    "n_days": 14,
+    "new_dates": [
+      "2026-10-17",
+      "2026-10-18"
+    ],
+    "start": "2026-10-05",
+    "total_clones": 8371
+  },
+  "limitations": [
+    "This script recalculates preserved CSVs and, when present, recovered original daily TSV data.",
+    "Recovery and replay provenance are documented separately in evidence/README.md and evidence/recovery_manifest.json.",
+    "The complete 226-candidate/rejection ledger and complete October 17 API response bodies remain unavailable.",
+    "Source-host counts are not counts of independent measured repositories or owners.",
+    "The fixture-path exclusion is precautionary; it does not assert fabrication.",
+    "A multi-repository source is excluded because the original extraction overwrote same-date rows without preserving target identity.",
+    "Integer nonconstant counts with mean below 25 cannot have range/mean at most 4 percent.",
+    "All comparisons and window choices are descriptive and post hoc; no significance or causal tests are performed.",
+    "The six-day interval follows observed spikes; only October 17 and 18 extend the original window.",
+    "Aggregate unique cloners and unique visitors cannot be deduplicated across repositories."
+  ],
+  "original_window": {
+    "cross_repository_unique_cloners": null,
+    "cross_repository_unique_visitors": null,
+    "end": "2026-10-16",
+    "high_traffic_percent": 98.79359770664118,
+    "high_traffic_total": 8271,
+    "mean_clones_per_day": 598.0,
+    "n_days": 14,
+    "n_repositories": 6,
+    "start": "2026-10-03",
+    "total_clones": 8372
+  },
+  "rate_stratum": {
+    "definition": "100 <= mean daily clones <= 200",
+    "selection_status": "Post hoc descriptive sensitivity analysis; not a matched design.",
+    "series": [
+      {
+        "max": 298,
+        "max_abs_deviation_from_mean_percent": 53.08219178082192,
+        "mean": 194.66666666666666,
+        "median": 186.0,
+        "min": 127,
+        "n_days": 6,
+        "path": "data/traffic/clones-latest.json",
+        "range_percent_of_mean": 87.84246575342466,
+        "sample_cv_percent": 35.2902609021677,
+        "sample_sd": 68.69837455621979,
+        "source_host_repository": "Romaxa55/MegaV_Public",
+        "total": 1168
+      },
+      {
+        "max": 313,
+        "max_abs_deviation_from_mean_percent": 144.85006518904825,
+        "mean": 127.83333333333333,
+        "median": 96.0,
+        "min": 68,
+        "n_days": 6,
+        "path": "traffic/clones.csv",
+        "range_percent_of_mean": 191.65580182529337,
+        "sample_cv_percent": 72.01531850504534,
+        "sample_sd": 92.0595821556163,
+        "source_host_repository": "databricks-solutions/consort",
+        "total": 767
+      }
+    ]
+  },
+  "recovered_original_daily_data": {
+    "file": "evidence/recovery/2026-10-17/four-repository-daily-counts.tsv",
+    "n_rows": 56,
+    "overlap_count_differences": [],
+    "overlapping_repository_days_checked": 48,
+    "sha256": "7baed76460b505971e27cfec1d41db99b8cbf45aff3ac57c8c8f3035cdfe0b52",
+    "type": "Recovered transformed jq stdout, not complete raw API responses"
+  },
+  "scope": "Recalculation of preserved CSVs; not reconstruction or verification of acquisition.",
+  "sources": [
+    {
+      "file": "traffic-snapshot-2026-10-17.csv",
+      "n_rows": 7,
+      "sha256": "f07fd851c338a523930c3ab806f351e657801b73d86d396f51cddac6b65b4d50"
+    },
+    {
+      "file": "traffic-snapshot-2026-10-19.csv",
+      "n_rows": 84,
+      "sha256": "c1c963bbda41d8dbc6a2cf111cf7aeefdfd1763c4e6649ac8d868b422e81d33f"
+    },
+    {
+      "file": "same-six-day-variation-comparison-2026-10-19.csv",
+      "n_rows": 12,
+      "sha256": "bc003c10a51f91782d39db134d673dc90a06ba86e9d28c6beb1379ff29369631"
+    },
+    {
+      "file": "public-daily-clone-series-search-2026-10-19.csv",
+      "n_rows": 138,
+      "sha256": "d80440b0a7ed18dc05800d5c107936582c74bc56ee7c31a03ffb8fea46a7cb66"
+    },
+    {
+      "file": "numeric-regularity-search-2026-10-19.csv",
+      "n_rows": 5,
+      "sha256": "e97eea52287a2522c1ef73bc40aebc50e8d8423e82b60daae81c1a61b0d0822b"
+    },
+    {
+      "file": "same-age-account-comparison-2026-10-19.csv",
+      "n_rows": 32,
+      "sha256": "cef492a34e42832b4d70c2685ad107e80c8515ef6e7747ed0f406c2ff0456a04"
+    }
+  ]
+}

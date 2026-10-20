@@ -1,6 +1,6 @@
 # Academic and Research Context
 
-This material is separate from the clone-traffic manuscript.
+I keep this account of my academic work and position separate from the clone-traffic manuscript's empirical claims.
 
 I am seeking a new academic home at the University of Wisconsin–Madison. I maintain that I met the relevant goals and that Dr. Andrukonis and UW–Madison's Department of Animal and Dairy Sciences were wrong to dismiss me from the Animal Sciences M.S. welfare-and-behavior path.
 

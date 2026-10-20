@@ -1,0 +1,4362 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-20T14:35:14.712443+00:00",
+  "method": "Offline replay of historical limited parser behavior against pinned retained-source bytes; no new search.",
+  "original_extraction_sha256": "782d1bf9b71ae66f412a480cc254d7f3b2ab6c81f06d7bb608bfb4fc6d50195a",
+  "matched": 138,
+  "mismatched": 0,
+  "unavailable": 0,
+  "outcomes": [
+    {
+      "source_id": "S001",
+      "source_url": "https://github.com/PennLINC/sypres-docs/blob/1d2358a38c4eecff287aea3080ffb500b6213892/_data/clone-tracking/cumulative/metapsy-project_data-ptsd-mdmactr_cum_clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        203.0,
+        203.0,
+        203.0,
+        203.0,
+        203.0,
+        203.0
+      ],
+      "result": "matched",
+      "count_field": "clone_count",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            203.0,
+            203.0,
+            203.0,
+            203.0,
+            203.0,
+            203.0
+          ],
+          "count_field": "clone_count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S002",
+      "source_url": "https://github.com/PennLINC/sypres-docs/blob/1d2358a38c4eecff287aea3080ffb500b6213892/_data/clone-tracking/cumulative/metapsy-project_data-depression-psiloctr_cum_clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        336.0,
+        338.0,
+        339.0,
+        341.0,
+        341.0,
+        341.0
+      ],
+      "result": "matched",
+      "count_field": "clone_count",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            336.0,
+            338.0,
+            339.0,
+            341.0,
+            341.0,
+            341.0
+          ],
+          "count_field": "clone_count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S003",
+      "source_url": "https://github.com/dikeckaan/easy-vphone/blob/894306bbb70360db4398cafae9d288f1f9553bdf/metrics/data.json",
+      "retained_subpath": "clones/daily",
+      "original_values": [
+        92.0,
+        82.0,
+        80.0,
+        81.0,
+        70.0,
+        73.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones/daily",
+          "values": [
+            92.0,
+            82.0,
+            80.0,
+            81.0,
+            70.0,
+            73.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S004",
+      "source_url": "https://github.com/abhiunix/AgentHarbor/blob/41c250c6d2324cf5ccca4d29bbba2767b2dd80a0/traffic/data.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        34.0,
+        20.0,
+        19.0,
+        23.0,
+        20.0,
+        19.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            34.0,
+            20.0,
+            19.0,
+            23.0,
+            20.0,
+            19.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S005",
+      "source_url": "https://github.com/iitian-vibes/India-Tech-Internships/blob/b349326a125fc68e0903f757498e3915d30ce6df/data/history/2026-10-19.json",
+      "retained_subpath": "clones/clones",
+      "original_values": [
+        34.0,
+        25.0,
+        49.0,
+        32.0,
+        31.0,
+        38.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones/clones",
+          "values": [
+            34.0,
+            25.0,
+            49.0,
+            32.0,
+            31.0,
+            38.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S006",
+      "source_url": "https://github.com/devopscorner/golang-adot/blob/eeff7b9d76bce3c5ccd2cb92112531c4fa3c6dc9/clone.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        21.0,
+        21.0,
+        27.0,
+        31.0,
+        23.0,
+        14.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            21.0,
+            21.0,
+            27.0,
+            31.0,
+            23.0,
+            14.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S007",
+      "source_url": "https://github.com/Romaxa55/MegaV_Public/blob/a05167487e3a9407a203950a9845e8f6ad65b9e2/data/traffic/clones-latest.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        298.0,
+        139.0,
+        143.0,
+        127.0,
+        229.0,
+        232.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            298.0,
+            139.0,
+            143.0,
+            127.0,
+            229.0,
+            232.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S008",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/github-repo-traffic-viewer/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        48.0,
+        40.0,
+        58.0,
+        101.0,
+        62.0,
+        93.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            48.0,
+            40.0,
+            58.0,
+            101.0,
+            62.0,
+            93.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S009",
+      "source_url": "https://github.com/NYBaywatch/CorvusCapture/blob/047853db642475e9e74dcf8a653e86142279fc78/docs/traffic-stats.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        13.0,
+        4.0,
+        16.0,
+        18.0,
+        17.0,
+        20.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            13.0,
+            4.0,
+            16.0,
+            18.0,
+            17.0,
+            20.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S010",
+      "source_url": "https://github.com/daiemon12/catia-v5-mcp-server/blob/feb9c38c34d293dba4b3018c0c81bbfdaf66b9e6/traffic/clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        103.0,
+        54.0,
+        77.0,
+        65.0,
+        45.0,
+        34.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            103.0,
+            54.0,
+            77.0,
+            65.0,
+            45.0,
+            34.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S011",
+      "source_url": "https://github.com/AMit-KP/Tunetastic/blob/79bc3cbc7377335b7b0f22b5e498e215c13d886c/Assets/data/github_traffic.json",
+      "retained_subpath": "",
+      "original_values": [
+        61.0,
+        23.0,
+        29.0,
+        31.0,
+        25.0,
+        38.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "",
+          "values": [
+            61.0,
+            23.0,
+            29.0,
+            31.0,
+            25.0,
+            38.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S012",
+      "source_url": "https://github.com/NYBaywatch/AgrusScanner/blob/e0f7fda1e11c520439e950266265bf92892d2ed7/docs/traffic-stats.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        13.0,
+        6.0,
+        9.0,
+        21.0,
+        13.0,
+        17.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            13.0,
+            6.0,
+            9.0,
+            21.0,
+            13.0,
+            17.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S013",
+      "source_url": "https://github.com/HafidIdrissi/github-traffic-archive/blob/29888b962ac29b06e95d63ba64780f4f51ffcdfe/traffic/HafidIdrissi__github-traffic-archive/clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        57.0,
+        25.0,
+        43.0,
+        21.0,
+        19.0,
+        27.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            57.0,
+            25.0,
+            43.0,
+            21.0,
+            19.0,
+            27.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S014",
+      "source_url": "https://github.com/joshua-d-campbell/GrantAgent/blob/1b11d37b329edcff0c1e781892868e3ba8986c46/traffic/clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        8.0,
+        14.0,
+        18.0,
+        12.0,
+        28.0,
+        16.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            8.0,
+            14.0,
+            18.0,
+            12.0,
+            28.0,
+            16.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S015",
+      "source_url": "https://github.com/cloudcell/om-core/blob/0339ad4b21fe1b90c8c551578e7bb9c3165d1c84/stats/daily.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        9.0,
+        50.0,
+        44.0,
+        43.0,
+        28.0,
+        19.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            9.0,
+            50.0,
+            44.0,
+            43.0,
+            28.0,
+            19.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S016",
+      "source_url": "https://github.com/Wubabalala/claude-skills/blob/0701164478422cf1abaff3375610c26ba6ebbb09/traffic/data.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        3.0,
+        7.0,
+        5.0,
+        1.0,
+        7.0,
+        5.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            3.0,
+            7.0,
+            5.0,
+            1.0,
+            7.0,
+            5.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S017",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/FoundryL10n/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        2.0,
+        2.0,
+        4.0,
+        1.0,
+        4.0,
+        5.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            2.0,
+            2.0,
+            4.0,
+            1.0,
+            4.0,
+            5.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S018",
+      "source_url": "https://github.com/michaeltouati/ESVM/blob/84579e0223c9937a50688bbfd2e5896a757193bd/.github/clone.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        10.0,
+        19.0,
+        34.0,
+        11.0,
+        12.0,
+        20.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            10.0,
+            19.0,
+            34.0,
+            11.0,
+            12.0,
+            20.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S019",
+      "source_url": "https://github.com/elboletaire/github-stats-action/blob/df725146461861bb243fa18d89751a049ea0838a/fixtures/traffic/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        35.0,
+        13.0,
+        12.0,
+        29.0,
+        7.0,
+        39.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            35.0,
+            13.0,
+            12.0,
+            29.0,
+            7.0,
+            39.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S020",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/repo-metrics/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        14.0,
+        5.0,
+        5.0,
+        5.0,
+        22.0,
+        20.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            14.0,
+            5.0,
+            5.0,
+            5.0,
+            22.0,
+            20.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S021",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Chatterbox-TTS-UI/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        8.0,
+        4.0,
+        5.0,
+        1.0,
+        3.0,
+        7.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            8.0,
+            4.0,
+            5.0,
+            1.0,
+            3.0,
+            7.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S022",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/word-splitter/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S023",
+      "source_url": "https://github.com/andresleecom/andresleecom/blob/a5dd9e13dedd8f4d89b58f7e7f13b31f696be3e0/traffic/map.json",
+      "retained_subpath": "history/clones",
+      "original_values": [
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "history/clones",
+          "values": [
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S024",
+      "source_url": "https://github.com/LengxiQwQ/live-photo-box/blob/f7662bab227c6f28dea7fa3b0a2ce137c708f8e0/insights/raw/20261019T074606Z.json",
+      "retained_subpath": "data/clones/clones",
+      "original_values": [
+        23.0,
+        35.0,
+        3.0,
+        20.0,
+        37.0,
+        53.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "data/clones/clones",
+          "values": [
+            23.0,
+            35.0,
+            3.0,
+            20.0,
+            37.0,
+            53.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S025",
+      "source_url": "https://github.com/aws-samples/sample-pcap-analyzer-mcp/blob/e2357251457083dbbf4764f1a73014a8d9cc4434/traffic-data/clones_latest.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        23.0,
+        6.0,
+        15.0,
+        12.0,
+        6.0,
+        3.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            23.0,
+            6.0,
+            15.0,
+            12.0,
+            6.0,
+            3.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S026",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/bg-text/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        5.0,
+        3.0,
+        0.0,
+        2.0,
+        2.0,
+        4.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            5.0,
+            3.0,
+            0.0,
+            2.0,
+            2.0,
+            4.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S027",
+      "source_url": "https://github.com/databricks-solutions/consort/blob/73e107ae64eaa3c3ad3227df2571e1d4f323b3b5/traffic/clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        80.0,
+        95.0,
+        114.0,
+        313.0,
+        97.0,
+        68.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            80.0,
+            95.0,
+            114.0,
+            313.0,
+            97.0,
+            68.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S028",
+      "source_url": "https://github.com/BTajini/data-engineering-pipelines-2-project/blob/bbff4bdcbeed0e4295b9b9b2edc9fab9fc60e547/clone.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        18.0,
+        36.0,
+        17.0,
+        16.0,
+        5.0,
+        5.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            18.0,
+            36.0,
+            17.0,
+            16.0,
+            5.0,
+            5.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S029",
+      "source_url": "https://github.com/aws-samples/sample-Gen-AI-best-practices-for-network-operations/blob/001038536494d1f6fea986012f254d9a35cb9602/traffic-data/clones_latest.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        2.0,
+        20.0,
+        10.0,
+        5.0,
+        13.0,
+        5.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            2.0,
+            20.0,
+            10.0,
+            5.0,
+            13.0,
+            5.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S030",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Kokoro-Local-Gui/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        6.0,
+        5.0,
+        2.0,
+        0.0,
+        2.0,
+        3.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            6.0,
+            5.0,
+            2.0,
+            0.0,
+            2.0,
+            3.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S031",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/SAD_bulgarian_localization/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S032",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/bmfont_studio/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S033",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/dysmantle-bulgarian-translations/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S034",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/stardew-cyrillic-fonts/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S035",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/urlc-feasibility-research/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S036",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/void-architect/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S037",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/abjad-magic-square-checker/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S038",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/abjad/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        2.0,
+        0.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            2.0,
+            0.0,
+            2.0,
+            1.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S039",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/chess/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        1.0,
+        0.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            1.0,
+            0.0,
+            2.0,
+            1.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S040",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/kilo-kontrol-kayitlari/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        2.0,
+        2.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            2.0,
+            2.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S041",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/metatronslove/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        2.0,
+        0.0,
+        1.0,
+        2.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            2.0,
+            0.0,
+            1.0,
+            2.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S042",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/occultabjadcalculator/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S043",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/open-statistics-platform/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S044",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/reversi/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S045",
+      "source_url": "https://github.com/AlfrescoLabs/alfresco-addons-catalog/blob/15ad77637685a95a80ce60575d7f9b4dd3ea7d7a/traffic-data/clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        3.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        2.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            3.0,
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            2.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S046",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/NumberFansBot/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        2.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            2.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S047",
+      "source_url": "https://github.com/rajveer43/veloxquant-go/blob/bed69f6d347b6863773b6405561424eba74ba1ab/traffic-history.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        3.0,
+        1.0,
+        1.0,
+        7.0,
+        1.0,
+        3.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            3.0,
+            1.0,
+            1.0,
+            7.0,
+            1.0,
+            3.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S048",
+      "source_url": "https://github.com/michaeltouati/AMoRE/blob/3ba75c1096b00256399a331be680e9b049ef38c9/.github/clone.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        16.0,
+        8.0,
+        57.0,
+        12.0,
+        21.0,
+        13.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            16.0,
+            8.0,
+            57.0,
+            12.0,
+            21.0,
+            13.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S049",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/MrPrepper-Mods/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        2.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S050",
+      "source_url": "https://github.com/SasanLabs/VulnerableApp/blob/15dcde7574da4d383fba05917b20b74ce9db374a/metrics/traffic.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        4.0,
+        2.0,
+        4.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            4.0,
+            2.0,
+            4.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [
+        {
+          "path": "csv",
+          "date": "2026-10-13"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-13"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-13"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-14"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-14"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-14"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-15"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-15"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-15"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-16"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-16"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-16"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-17"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-17"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-17"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-18"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-18"
+        },
+        {
+          "path": "csv",
+          "date": "2026-10-18"
+        }
+      ],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S051",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/-Autonomous-Social-Media-Federation/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        2.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S052",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/CPU-Only-Local-GPT-Neo-Test-Server-AI-GUI/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        2.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            2.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S053",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/chat-widget/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        2.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            2.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S054",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/img2txt2mp4-co-ai-ui4win11-july2026/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            1.0,
+            1.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S055",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/magic-square-generator/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        2.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S056",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/magicsquare-widget/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        2.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S057",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/sayiya-zar-at/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        2.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            2.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S058",
+      "source_url": "https://github.com/MichaelaIsaacs/pq-adbc-advisor/blob/7bdbddf2b8c18ec08f1f005859d7694b9908cc75/dashboard/data/snapshot.json",
+      "retained_subpath": "clones_history",
+      "original_values": [
+        55.0,
+        87.0,
+        193.0,
+        81.0,
+        10.0,
+        8.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones_history",
+          "values": [
+            55.0,
+            87.0,
+            193.0,
+            81.0,
+            10.0,
+            8.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S059",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/travelers-rest-translation-preview/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        3.0,
+        1.0,
+        2.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            3.0,
+            1.0,
+            2.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S060",
+      "source_url": "https://github.com/uniswap-python/uniswap-python/blob/0ab3059f87749710dc6d34c96e1039226e0b8623/metrics/adoption-2026-10-19.json",
+      "retained_subpath": "github_traffic/clones_daily",
+      "original_values": [
+        73.0,
+        228.0,
+        57.0,
+        40.0,
+        35.0,
+        25.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "github_traffic/clones_daily",
+          "values": [
+            73.0,
+            228.0,
+            57.0,
+            40.0,
+            35.0,
+            25.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S061",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/abjad-widget/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        1.0,
+        0.0,
+        2.0,
+        4.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            1.0,
+            0.0,
+            2.0,
+            4.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S062",
+      "source_url": "https://github.com/Krissz55555/SIGVERN-RF/blob/eacab88aff2923c9aab4441469af897845590cc7/stats/clones-latest.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        5.0,
+        1.0,
+        25.0,
+        5.0,
+        12.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            5.0,
+            1.0,
+            25.0,
+            5.0,
+            12.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S063",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Angela-WebDesign/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S064",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/DiveOrDie-Mods/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        2.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            2.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S065",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/FieldsOfMistria-Mods/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        4.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            4.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S066",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/GodotPCKExplorer/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S067",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/KamiSetup/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S068",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/ONI-Mods-TestFix/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        2.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            2.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S069",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Spoon-Knife/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S070",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/StardewMods/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S071",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Stranded-FanGenerations/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S072",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Universal-TTS-Guide/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        2.0,
+        3.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            2.0,
+            3.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S073",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/cantorsdust-stardewmods/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S074",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/davethediver-bulgarian-mod/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S075",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/github-motion/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S076",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/stardew-valley-mods/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S077",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/the-planetcrafter-translation-mod/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        2.0,
+        0.0,
+        1.0,
+        0.0,
+        2.0,
+        5.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            2.0,
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            5.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S078",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/uelockit/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        2.0,
+        0.0,
+        1.0,
+        0.0,
+        3.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            2.0,
+            0.0,
+            1.0,
+            0.0,
+            3.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S079",
+      "source_url": "https://github.com/andresleecom/andresleecom/blob/a5dd9e13dedd8f4d89b58f7e7f13b31f696be3e0/traffic/speech.json",
+      "retained_subpath": "history/clones",
+      "original_values": [
+        1.0,
+        7.0,
+        0.0,
+        6.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "history/clones",
+          "values": [
+            1.0,
+            7.0,
+            0.0,
+            6.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S080",
+      "source_url": "https://github.com/bitbarista/CaffePeso/blob/dac9de9737588297640dee41b68294e580b2064d/traffic/clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        3.0,
+        1.0,
+        1.0,
+        0.0,
+        5.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            3.0,
+            1.0,
+            1.0,
+            0.0,
+            5.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S081",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/AudioZoom/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        2.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            2.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S082",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/Ilce-isimleri-Numerolojik-Kayitlari/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        2.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            2.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S083",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/Vanilla-JavaScript-Numerology-Calculator/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S084",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/bash-installer-genearator/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S085",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/batch-and-bash-conversion-scripts-for-ffmpeg/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S086",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/dogrudan-irade-platformu/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S087",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/hermes-ai-trainer/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S088",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/liliths-luck/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S089",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/local-previewer-html/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S090",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/offline-downloader-script-and-gui/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S091",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/profile-pic-scraper/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S092",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/square-checker/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S093",
+      "source_url": "https://github.com/griddynamics/rosetta/blob/f0a5aa687c815184c2950aff923752aeb10bf4c4/docs/github-stats.json",
+      "retained_subpath": "traffic/clones_daily",
+      "original_values": [
+        921.0,
+        208.0,
+        307.0,
+        106.0,
+        91.0,
+        49.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "traffic/clones_daily",
+          "values": [
+            921.0,
+            208.0,
+            307.0,
+            106.0,
+            91.0,
+            49.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S094",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/cutscene-locator/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        4.0,
+        2.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            4.0,
+            2.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S095",
+      "source_url": "https://github.com/PennLINC/sypres-docs/blob/1d2358a38c4eecff287aea3080ffb500b6213892/_data/clone-tracking/daily/metapsy-project_data-depression-psiloctr_daily_clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        7.0,
+        2.0,
+        1.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clone_count",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            7.0,
+            2.0,
+            1.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clone_count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S096",
+      "source_url": "https://github.com/bsphinney/DE-LIMP/blob/1cf3239629247310315bfa78c96460135b3551ac/stats/latest_clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        18.0,
+        12.0,
+        17.0,
+        110.0,
+        343.0,
+        60.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            18.0,
+            12.0,
+            17.0,
+            110.0,
+            343.0,
+            60.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S097",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/travellers-rest-translation-mod/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        5.0,
+        15.0,
+        1.0,
+        1.0,
+        3.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            5.0,
+            15.0,
+            1.0,
+            1.0,
+            3.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S098",
+      "source_url": "https://github.com/CoWork-OS/CoWork-OS/blob/e9d6d9a9aeb757b5983f73a0106d662a46146a07/data/adoption/public-stats-latest.json",
+      "retained_subpath": "github/traffic/clones/data/clones",
+      "original_values": [
+        1111.0,
+        666.0,
+        1297.0,
+        2512.0,
+        1763.0,
+        16305.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "github/traffic/clones/data/clones",
+          "values": [
+            1111.0,
+            666.0,
+            1297.0,
+            2512.0,
+            1763.0,
+            16305.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S099",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/icon-image-resizer/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        2.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            2.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S100",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/rdr2-l10n-tool/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        2.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            2.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S101",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/uv-app-starter-pack/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S102",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/Local-Deepseek-R1/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S103",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/Pentagramme-Veritatis-Wallpaper/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        2.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            2.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S104",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/auto-clicker/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S105",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/cuma13/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S106",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/emoji-editor/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        1.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            1.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S107",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/let-my-girl-friend-enjoy-our-coffee/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        1.0,
+        0.0,
+        2.0,
+        6.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            6.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S108",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/okult-ebced-hesaplayici-cordova-android-app/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S109",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/turkiye-nin-karanlik-labirenti-bir-uyanis-cagsi/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S110",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/upsidedown/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S111",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/metatronslove.github.io/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        5.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            5.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S112",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Nightwater-Bulgarian-Localization/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        30.0,
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            30.0,
+            2.0,
+            1.0,
+            1.0,
+            2.0,
+            3.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S113",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/LocresStudio/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        6.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            2.0,
+            0.0,
+            0.0,
+            0.0,
+            6.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S114",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Necesse-Lang-Translator/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        3.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            3.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S115",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/sihirli-kare-olusturucu-cordova-android-app/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        3.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S116",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/GraveyardKeeper2-Mods/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        29.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        2.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            29.0,
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            2.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S117",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/OutboundBulgarianTranslation/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        19.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            19.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S118",
+      "source_url": "https://github.com/Wilhao-CN/WilhasonOceanMaster/blob/98fd7b26e03516c629457990cc6d08a3cbe3294c/traffic-data/clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        1134.0,
+        10.0,
+        60.0,
+        4.0,
+        3.0,
+        12.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            1134.0,
+            10.0,
+            60.0,
+            4.0,
+            3.0,
+            12.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S119",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/AcTePuKc/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S120",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Chatterb0x/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S121",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Little-Geeky-s-Learning-UI/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S122",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Mods-of-Mistria-Installer/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S123",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Stardrop/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S124",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/SteamBulkActivator/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S125",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/Witcher3StringEditor/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S126",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/code-institute/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S127",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/colorization_project/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S128",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/dataset/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S129",
+      "source_url": "https://github.com/AcTePuKc/repo-metrics/blob/822eebaaa847a451700a8e669db58fe2f8782a0d/data/locflow/daily.json",
+      "retained_subpath": "days",
+      "original_values": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clones",
+      "parsed_candidates": [
+        {
+          "subpath": "days",
+          "values": [
+            2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clones"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S130",
+      "source_url": "https://github.com/PennLINC/sypres-docs/blob/1d2358a38c4eecff287aea3080ffb500b6213892/_data/clone-tracking/daily/metapsy-project_data-ptsd-mdmactr_daily_clones.csv",
+      "retained_subpath": "csv",
+      "original_values": [
+        9.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "clone_count",
+      "parsed_candidates": [
+        {
+          "subpath": "csv",
+          "values": [
+            9.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "clone_count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S131",
+      "source_url": "https://github.com/andresleecom/andresleecom/blob/a5dd9e13dedd8f4d89b58f7e7f13b31f696be3e0/traffic/x-cli.json",
+      "retained_subpath": "history/clones",
+      "original_values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "history/clones",
+          "values": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S132",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/Letter-Count-Tool/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S133",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/YouTube-sohbet-asistan-/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S134",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/flat-earth-celestial-tracker/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S135",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/lilithian/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        3.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S136",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/proxy2/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S137",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/witchy/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    },
+    {
+      "source_id": "S138",
+      "source_url": "https://github.com/metatronslove/github-repo-traffic-viewer/blob/f89326c9a2b2165547109b3ab661cccb9f4bca4d/docs/data/repos/yeni-parti/clones.json",
+      "retained_subpath": "clones",
+      "original_values": [
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "result": "matched",
+      "count_field": "count",
+      "parsed_candidates": [
+        {
+          "subpath": "clones",
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "count_field": "count"
+        }
+      ],
+      "duplicate_date_records": [],
+      "duplicate_json_keys": []
+    }
+  ]
+}

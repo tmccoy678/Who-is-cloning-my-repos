@@ -1,0 +1,133 @@
+{
+  "generated_at": "2026-10-19T15:34:29Z",
+  "repo": "MichaelaIsaacs/pq-adbc-advisor",
+  "reach": {},
+  "resolution": {},
+  "value": {},
+  "trend": [],
+  "versions": [],
+  "per_workspace": [],
+  "skip_reasons": [],
+  "state_backends": [],
+  "first_vs_return": [],
+  "github": {
+    "clones_14d": 654,
+    "unique_cloners_14d": 239
+  },
+  "clones_history": [
+    {
+      "timestamp": "2026-10-05T00:00:00Z",
+      "count": 35,
+      "uniques": 14
+    },
+    {
+      "timestamp": "2026-10-06T00:00:00Z",
+      "count": 56,
+      "uniques": 22
+    },
+    {
+      "timestamp": "2026-10-07T00:00:00Z",
+      "count": 17,
+      "uniques": 10
+    },
+    {
+      "timestamp": "2026-10-08T00:00:00Z",
+      "count": 19,
+      "uniques": 10
+    },
+    {
+      "timestamp": "2026-10-09T00:00:00Z",
+      "count": 31,
+      "uniques": 16
+    },
+    {
+      "timestamp": "2026-10-10T00:00:00Z",
+      "count": 18,
+      "uniques": 11
+    },
+    {
+      "timestamp": "2026-10-11T00:00:00Z",
+      "count": 25,
+      "uniques": 15
+    },
+    {
+      "timestamp": "2026-10-12T00:00:00Z",
+      "count": 19,
+      "uniques": 10
+    },
+    {
+      "timestamp": "2026-10-13T00:00:00Z",
+      "count": 55,
+      "uniques": 27
+    },
+    {
+      "timestamp": "2026-10-14T00:00:00Z",
+      "count": 87,
+      "uniques": 29
+    },
+    {
+      "timestamp": "2026-10-15T00:00:00Z",
+      "count": 193,
+      "uniques": 79
+    },
+    {
+      "timestamp": "2026-10-16T00:00:00Z",
+      "count": 81,
+      "uniques": 37
+    },
+    {
+      "timestamp": "2026-10-17T00:00:00Z",
+      "count": 10,
+      "uniques": 6
+    },
+    {
+      "timestamp": "2026-10-18T00:00:00Z",
+      "count": 8,
+      "uniques": 6
+    }
+  ],
+  "releases": [
+    {
+      "tag": "v0.3.1",
+      "name": "v0.3.1: David's UX follow-up",
+      "published": "2026-08-24T16:49:14Z",
+      "downloads": 0,
+      "url": "https://github.com/MichaelaIsaacs/pq-adbc-advisor/releases/tag/v0.3.1"
+    },
+    {
+      "tag": "v0.3.0",
+      "name": "v0.3.0 \u2014 Data Pipelines, SP auth, HTML pagination",
+      "published": "2026-08-20T18:14:58Z",
+      "downloads": 0,
+      "url": "https://github.com/MichaelaIsaacs/pq-adbc-advisor/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.2.4",
+      "name": "v0.2.4 \u2014 Architectural rethink",
+      "published": "2026-08-20T18:14:57Z",
+      "downloads": 0,
+      "url": "https://github.com/MichaelaIsaacs/pq-adbc-advisor/releases/tag/v0.2.4"
+    },
+    {
+      "tag": "v0.2.3",
+      "name": "v0.2.3 \u2014 23-minute-scan perf + UX feedback",
+      "published": "2026-08-20T18:14:56Z",
+      "downloads": 0,
+      "url": "https://github.com/MichaelaIsaacs/pq-adbc-advisor/releases/tag/v0.2.3"
+    },
+    {
+      "tag": "v0.2.2",
+      "name": "v0.2.2 \u2014 David Coe PR review fixes",
+      "published": "2026-08-20T18:14:55Z",
+      "downloads": 0,
+      "url": "https://github.com/MichaelaIsaacs/pq-adbc-advisor/releases/tag/v0.2.2"
+    },
+    {
+      "tag": "v0.2.1",
+      "name": "v0.2.1 \u2014 Initial preview release",
+      "published": "2026-08-20T18:14:54Z",
+      "downloads": 0,
+      "url": "https://github.com/MichaelaIsaacs/pq-adbc-advisor/releases/tag/v0.2.1"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+field,n,median,zero_count,min,max
+followers,32,0.0,28,0,2
+public_repositories,32,5.0,0,3,17
+original_repositories_in_first_20,32,5.0,0,3,17
+stars_on_original_repositories_in_first_20,32,0.0,27,0,2
+forks_on_original_repositories_in_first_20,32,0.0,31,0,1

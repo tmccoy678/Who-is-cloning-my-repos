@@ -1,0 +1,21 @@
+{
+  "source_id": "S050",
+  "source_url": "https://github.com/SasanLabs/VulnerableApp/blob/15dcde7574da4d383fba05917b20b74ce9db374a/metrics/traffic.csv",
+  "local_path": "evidence/public/sources/050.csv",
+  "classification": "Date-only extraction collides across repositories; exclude the historical extracted row from the revised observational subset.",
+  "source_repository": "SasanLabs/VulnerableApp",
+  "measured_repository_selected_by_original_parser": "SasanLabs/SAFE",
+  "source_lines": [890, 913],
+  "dates_utc": ["2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18"],
+  "original_values": [4, 2, 4, 0, 0, 0],
+  "source_repositories_per_date": [
+    "SasanLabs/VulnerableApp",
+    "SasanLabs/VulnerableApp-facade",
+    "SasanLabs/LLMForge",
+    "SasanLabs/SAFE"
+  ],
+  "duplicate_date_records": 18,
+  "explanation": "The source has four rows for each selected date, one per repository. The original parser used the date as its only key, so each later row overwrote the preceding repository's row. All six retained values belong to SAFE. The extraction is mechanically reproducible but its source-host label is insufficient to identify the measured repository.",
+  "count_interval_semantics": "Not independently established from the CSV alone.",
+  "revision_effect": "Preserve the original extracted row and exclude it from the observational sensitivity subset. Do not silently replace it with another series."
+}

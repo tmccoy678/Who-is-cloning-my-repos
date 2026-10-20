@@ -1,0 +1,31 @@
+{
+  "queries": [
+    "\"2026-10-18T00:00:00Z\" \"uniques\" \"clones\"",
+    "\"2026-10-18\" \"clones\" \"uniques\" path:traffic",
+    "\"2026-10-18\" \"daily_clones\"",
+    "\"2026-10-18\" \"unique_cloners\"",
+    "\"2026-10-18\" filename:clones.csv",
+    "\"2026-10-18\" filename:clones.json",
+    "\"2026-10-18\" \"clones_latest\""
+  ],
+  "endpoint": "GET search/code",
+  "per_page": 100,
+  "pagination": "none",
+  "recorded_candidate_file_count": 226,
+  "recorded_extracted_series_count": 138,
+  "candidate_key": [
+    "repository.full_name",
+    "path"
+  ],
+  "candidate_ledger": "not recovered; original program retained it only in memory",
+  "parser_limitations": [
+    "Parses one JSON document or CSV; no JSONL/NDJSON parsing branch.",
+    "Regex date recognition is restricted to October 13-18, 2026.",
+    "Repeated date records use the last encountered record.",
+    "Nested arrays are searched through only their first five elements after direct date-record parsing.",
+    "Identical value vectors within a JSON file are deduplicated without regard to path.",
+    "Files exceeding 5,000,000 bytes and fetch failures are omitted.",
+    "UTF-8 decoding replaces errors; several parse/conversion errors are silently ignored.",
+    "Cumulative exclusion was applied afterward by path/subpath containing cumulative or accum."
+  ]
+}

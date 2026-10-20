@@ -1,0 +1,377 @@
+{
+  "days": {
+    "2026-08-18": {
+      "clones": 4,
+      "unique_cloners": 4,
+      "unique_visitors": 34,
+      "views": 67
+    },
+    "2026-08-19": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 20,
+      "views": 40
+    },
+    "2026-08-20": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 18,
+      "views": 40
+    },
+    "2026-08-21": {
+      "clones": 6,
+      "unique_cloners": 6,
+      "unique_visitors": 19,
+      "views": 28
+    },
+    "2026-08-22": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 11,
+      "views": 21
+    },
+    "2026-08-23": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 23,
+      "views": 50
+    },
+    "2026-08-24": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 10,
+      "views": 13
+    },
+    "2026-08-25": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 17,
+      "views": 29
+    },
+    "2026-08-26": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 15,
+      "views": 23
+    },
+    "2026-08-27": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 21,
+      "views": 37
+    },
+    "2026-08-28": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 13,
+      "views": 40
+    },
+    "2026-08-29": {
+      "clones": 3,
+      "unique_cloners": 2,
+      "unique_visitors": 20,
+      "views": 41
+    },
+    "2026-08-30": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 16,
+      "views": 24
+    },
+    "2026-08-31": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 12,
+      "views": 28
+    },
+    "2026-09-01": {
+      "clones": 15,
+      "unique_cloners": 10,
+      "unique_visitors": 18,
+      "views": 28
+    },
+    "2026-09-02": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 20,
+      "views": 21
+    },
+    "2026-09-03": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 15,
+      "views": 26
+    },
+    "2026-09-04": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 8,
+      "views": 11
+    },
+    "2026-09-05": {
+      "clones": 5,
+      "unique_cloners": 4,
+      "unique_visitors": 6,
+      "views": 9
+    },
+    "2026-09-06": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 12,
+      "views": 16
+    },
+    "2026-09-07": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 12,
+      "views": 29
+    },
+    "2026-09-08": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 12,
+      "views": 31
+    },
+    "2026-09-09": {
+      "clones": 4,
+      "unique_cloners": 3,
+      "unique_visitors": 18,
+      "views": 38
+    },
+    "2026-09-10": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 20,
+      "views": 37
+    },
+    "2026-09-11": {
+      "clones": 5,
+      "unique_cloners": 5,
+      "unique_visitors": 13,
+      "views": 36
+    },
+    "2026-09-12": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 15,
+      "views": 35
+    },
+    "2026-09-13": {
+      "clones": 5,
+      "unique_cloners": 5,
+      "unique_visitors": 20,
+      "views": 35
+    },
+    "2026-09-14": {
+      "clones": 6,
+      "unique_cloners": 6,
+      "unique_visitors": 14,
+      "views": 29
+    },
+    "2026-09-15": {
+      "clones": 6,
+      "unique_cloners": 4,
+      "unique_visitors": 20,
+      "views": 33
+    },
+    "2026-09-16": {
+      "clones": 13,
+      "unique_cloners": 12,
+      "unique_visitors": 10,
+      "views": 20
+    },
+    "2026-09-17": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 13,
+      "views": 24
+    },
+    "2026-09-18": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 16,
+      "views": 21
+    },
+    "2026-09-19": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 10,
+      "views": 17
+    },
+    "2026-09-20": {
+      "clones": 26,
+      "unique_cloners": 20,
+      "unique_visitors": 15,
+      "views": 25
+    },
+    "2026-09-21": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 16,
+      "views": 26
+    },
+    "2026-09-22": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 25,
+      "views": 39
+    },
+    "2026-09-23": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 11,
+      "views": 15
+    },
+    "2026-09-24": {
+      "clones": 5,
+      "unique_cloners": 3,
+      "unique_visitors": 15,
+      "views": 20
+    },
+    "2026-09-25": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 17,
+      "views": 27
+    },
+    "2026-09-26": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 12,
+      "views": 22
+    },
+    "2026-09-27": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 15,
+      "views": 25
+    },
+    "2026-09-28": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 15,
+      "views": 24
+    },
+    "2026-09-29": {
+      "clones": 2,
+      "unique_cloners": 1,
+      "unique_visitors": 10,
+      "views": 18
+    },
+    "2026-09-30": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 16,
+      "views": 29
+    },
+    "2026-10-01": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 11,
+      "views": 22
+    },
+    "2026-10-02": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 11,
+      "views": 34
+    },
+    "2026-10-03": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 9,
+      "views": 16
+    },
+    "2026-10-04": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 15,
+      "views": 21
+    },
+    "2026-10-05": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 12,
+      "views": 19
+    },
+    "2026-10-06": {
+      "clones": 4,
+      "unique_cloners": 4,
+      "unique_visitors": 16,
+      "views": 22
+    },
+    "2026-10-07": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 11,
+      "views": 18
+    },
+    "2026-10-08": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 15,
+      "views": 25
+    },
+    "2026-10-09": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 11,
+      "views": 15
+    },
+    "2026-10-10": {
+      "clones": 4,
+      "unique_cloners": 4,
+      "unique_visitors": 11,
+      "views": 20
+    },
+    "2026-10-11": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 12,
+      "views": 19
+    },
+    "2026-10-12": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 18,
+      "views": 24
+    },
+    "2026-10-13": {
+      "clones": 6,
+      "unique_cloners": 6,
+      "unique_visitors": 10,
+      "views": 17
+    },
+    "2026-10-14": {
+      "clones": 5,
+      "unique_cloners": 4,
+      "unique_visitors": 7,
+      "views": 14
+    },
+    "2026-10-15": {
+      "clones": 2,
+      "unique_cloners": 1,
+      "unique_visitors": 10,
+      "views": 20
+    },
+    "2026-10-16": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 12,
+      "views": 34
+    },
+    "2026-10-17": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 14,
+      "views": 24
+    },
+    "2026-10-18": {
+      "clones": 3,
+      "unique_cloners": 3,
+      "unique_visitors": 12,
+      "views": 20
+    }
+  },
+  "repository": "AcTePuKc/Kokoro-Local-Gui"
+}

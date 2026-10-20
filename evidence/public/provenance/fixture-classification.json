@@ -1,0 +1,17 @@
+{
+  "source_url": "https://github.com/elboletaire/github-stats-action/blob/df725146461861bb243fa18d89751a049ea0838a/scripts/fixture-dataset.ts",
+  "retrieved_at_utc": "2026-10-20T14:25:39.105581+00:00",
+  "local_path": "evidence/public/provenance/github-stats-action-fixture-builder.ts.txt",
+  "sha256": "bbf6c73e1e50c45f8f5454ef0f33262c68e9674299b8376ed4e8fd77496012b8",
+  "bytes": 2311,
+  "affected_retained_source": "https://github.com/elboletaire/github-stats-action/blob/df725146461861bb243fa18d89751a049ea0838a/fixtures/traffic/clones.json",
+  "classification": "fixture with unresolved observational provenance; exclude from observed-repository comparison",
+  "source_repository": "elboletaire/github-stats-action",
+  "fixture_target_repository": "elboletaire/manga-downloader",
+  "evidence": [
+    "Builder line22 names elboletaire/manga-downloader.",
+    "Builder line40 reads traffic/clones.json from its fixtures directory.",
+    "The synthetic-data comment at line49 is specific to stargazers; it does not establish that clone counts were fabricated."
+  ],
+  "revision_effect": "Retain historical extracted record; exclude it only in revised observational subset. It was not a 1%-4% match or the nearest comparison."
+}

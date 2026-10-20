@@ -1,0 +1,4 @@
+group,n_series,n_source_host_repositories,median_daily_mean,n_mean_below_25,n_mean_below_1,n_range_1_to_4_percent,n_max_deviation_1_to_4_percent,n_range_at_most_4_percent,n_max_deviation_at_most_4_percent,min_range_percent,max_range_percent,largest_two_source_hosts_n_series
+original_non_cumulative_extraction,136,36,0.75,120,76,0,0,0,0,27.615062761506273,600.0,99
+reanalysis_screened,134,34,0.6666666666666666,118,76,0,0,0,0,27.615062761506273,600.0,99
+reanalysis_mean_100_to_200_inclusive,2,2,161.25,0,0,0,0,0,0,87.84246575342466,191.65580182529337,2

@@ -1,0 +1,117 @@
+import json, subprocess, csv, io, re, statistics, sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
+queries=[
+    '"2026-10-18T00:00:00Z" "uniques" "clones"',
+    '"2026-10-18" "clones" "uniques" path:traffic',
+    '"2026-10-18" "daily_clones"',
+    '"2026-10-18" "unique_cloners"',
+    '"2026-10-18" filename:clones.csv',
+    '"2026-10-18" filename:clones.json',
+    '"2026-10-18" "clones_latest"',
+]
+items={}
+for q in queries:
+    p=subprocess.run(['gh','api','-X','GET','search/code','-f',f'q={q}','-f','per_page=100'],capture_output=True,text=True)
+    if p.returncode:
+        print('QUERY ERROR',q,p.stderr[:300],file=sys.stderr); continue
+    d=json.loads(p.stdout)
+    for x in d.get('items',[]):
+        key=(x['repository']['full_name'],x['path'])
+        items[key]=x
+print('FILES',len(items),file=sys.stderr)
+
+dates=[f'2026-10-{d:02d}' for d in range(13,19)]
+
+def normdate(x):
+    if not isinstance(x,str): return None
+    m=re.search(r'2026-10-(1[3-8])',x)
+    return m.group(0) if m else None
+
+def series_from_json(obj):
+    out=[]
+    def rec(x,path):
+        if isinstance(x,dict):
+            # date-keyed dict
+            if all(d in x for d in dates):
+                vals=[x[d] for d in dates]
+                if all(isinstance(v,dict) for v in vals):
+                    for field in ('clones','clone_count','count'):
+                        if all(field in v and isinstance(v[field],(int,float)) for v in vals):
+                            if field!='count' or any('clone' in str(p).lower() for p in path):
+                                out.append(('/'.join(map(str,path)),[float(v[field]) for v in vals],field))
+                elif all(isinstance(v,(int,float)) for v in vals) and any('clone' in str(p).lower() for p in path):
+                    out.append(('/'.join(map(str,path)),[float(v) for v in vals],'value'))
+            # dict records under arbitrary keys or root date records
+            for k,v in x.items(): rec(v,path+[k])
+        elif isinstance(x,list):
+            recs={}
+            for v in x:
+                if isinstance(v,dict):
+                    dk=None
+                    for f in ('date','timestamp','day','recorded_at'):
+                        if f in v: dk=normdate(v[f]); break
+                    if dk: recs[dk]=v
+            if all(d in recs for d in dates):
+                vals=[recs[d] for d in dates]
+                for field in ('clones','clone_count','count'):
+                    if all(field in v and isinstance(v[field],(int,float)) for v in vals):
+                        if field!='count' or any('clone' in str(p).lower() for p in path):
+                            out.append(('/'.join(map(str,path)),[float(v[field]) for v in vals],field))
+            for i,v in enumerate(x[:5]): rec(v,path+[i])
+    rec(obj,[])
+    # dedupe series
+    seen=set(); uniq=[]
+    for x in out:
+        k=tuple(x[1])
+        if k not in seen:
+            seen.add(k); uniq.append(x)
+    return uniq
+
+def parse_content(text,path):
+    out=[]
+    try:
+        obj=json.loads(text)
+        out.extend(series_from_json(obj))
+    except Exception: pass
+    if path.lower().endswith('.csv'):
+        try:
+            rows=list(csv.DictReader(io.StringIO(text)))
+            by={}
+            for row in rows:
+                d=normdate(row.get('date') or row.get('timestamp') or '')
+                if d: by[d]=row
+            if all(d in by for d in dates):
+                for f in ('clones','clone_count','count'):
+                    try:
+                        vals=[float(by[d][f]) for d in dates]
+                        if f!='count' or 'clone' in path.lower(): out.append(('csv',vals,f))
+                    except Exception: pass
+        except Exception: pass
+    return out
+
+records=[]
+def fetch(entry):
+    (repo,path),item=entry
+    p=subprocess.run(['gh','api',item['url'],'-H','Accept: application/vnd.github.raw+json'],capture_output=True)
+    if p.returncode or len(p.stdout)>5_000_000: return []
+    text=p.stdout.decode('utf-8','replace')
+    out=[]
+    for subpath,vals,field in parse_content(text,path):
+        mean=statistics.mean(vals)
+        if mean<=0: continue
+        range_pct=(max(vals)-min(vals))/mean*100
+        cv=statistics.stdev(vals)/mean*100
+        out.append(dict(repo=repo,path=path,subpath=subpath,values=vals,mean=mean,range_pct=range_pct,cv=cv,html_url=item['html_url']))
+    return out
+with ThreadPoolExecutor(max_workers=12) as ex:
+    futures=[ex.submit(fetch,e) for e in items.items()]
+    for f in as_completed(futures):
+        try: records.extend(f.result())
+        except Exception as e: print('FETCH ERROR',e,file=sys.stderr)
+print('SERIES',len(records),file=sys.stderr)
+seen=set()
+for r in sorted(records,key=lambda x:(x['range_pct'],x['repo'],x['path'])):
+    k=(r['repo'],r['path'],tuple(r['values']))
+    if k in seen: continue
+    seen.add(k)
+    print(json.dumps(r,separators=(',',':')))

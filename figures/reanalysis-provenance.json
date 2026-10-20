@@ -1,0 +1,44 @@
+{
+  "inputs": [
+    {
+      "file": "data/traffic-snapshot-2026-10-19.csv",
+      "sha256": "c1c963bbda41d8dbc6a2cf111cf7aeefdfd1763c4e6649ac8d868b422e81d33f"
+    },
+    {
+      "file": "data/reanalysis-window-metrics.csv",
+      "sha256": "400818ff31272cab8aac5223398dcf37d800cac3d32679017028f80a436f56c1"
+    },
+    {
+      "file": "data/reanalysis-comparison-series.csv",
+      "sha256": "41f752d9bb9bd8011bd215485c05b2d781f485f221703ed97d4417f1c84dce2e"
+    }
+  ],
+  "matplotlib_version": "3.11.2",
+  "notes": [
+    "New scientific plots; original figures are preserved unchanged.",
+    "PNG and vector PDF formats contain the same plot content.",
+    "The analysis itself uses only Python's standard library; plotting additionally requires matplotlib."
+  ],
+  "numpy_version": "2.5.4",
+  "outputs": [
+    {
+      "file": "figures/reanalysis-window-sensitivity.png",
+      "sha256": "7c0f17c1a66dfcd67050991b7ed692a89e6efea21afe02168b39f7860d7a879f"
+    },
+    {
+      "file": "figures/reanalysis-window-sensitivity.pdf",
+      "sha256": "2634f6c131598c25b526db666237aa7ac16136e81838aa726f8a0e13d0de8de7"
+    },
+    {
+      "file": "figures/reanalysis-rate-comparison.png",
+      "sha256": "ac1279be615460c9318f60c9c89bfb402725020f751741502280a24ff150ccf9"
+    },
+    {
+      "file": "figures/reanalysis-rate-comparison.pdf",
+      "sha256": "9191983a4f1b6eaa7a6fe6a834807252a0145b7b5dc10999d4d2afdebc057d4e"
+    }
+  ],
+  "python_version": "3.14.7",
+  "script": "scripts/plot_reanalysis.py",
+  "script_sha256": "ada0e139c798f1e444325f3fee9543371020076f2002fd12a53f926e12259191"
+}

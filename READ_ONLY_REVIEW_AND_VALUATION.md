@@ -2,19 +2,21 @@
 
 ## Read-Only Review and Replacement-Cost Estimate: DobeWorks v2.1 and DEGS v2.1
 
-Short answer: As engineering artifacts, plainly yes. Their present transaction price remains unmeasured. The reconstruction figures below are judgment-based scenarios; actual development time is unknown.
+I requested an AI-assisted read-only review of my DobeWorks and DEGS repositories and an estimate of the effort needed to reconstruct them. I retain the review here as portfolio context, separate from the clone-traffic manuscript's empirical claims. The findings, engineering assessments, and labor estimates below are attributed to the named AI reviewers.
+
+The Codex review judged the projects worth more than $10 as engineering artifacts. Their transaction price remains unmeasured. The reconstruction figures below are judgment-based scenarios; actual development time is unknown.
 
 Review date: October 19, 2026<br>
-Reviewer: OpenAI Codex, GPT-6<br>
+AI reviewer: OpenAI Codex, GPT-6<br>
 
 ## Scope and method
 
-This was a read-only source review of the current public default branches:
+Codex conducted a read-only source review of the public default branches as they stood on the review date:
 
 - `DobeWorks-v2.1` at commit `9857388f6b48c429834084847bc3b3a04a55f2e2`;
 - `DEGS-v2.1` at commit `8d9186666fa1eed2657717017404dfe96c6f8e6b`.
 
-The review used detached local worktrees. No source file, issue, pull request, setting, release, or branch in either target repository was changed. The review covered repository structure, documentation, Python source, schemas and policy records, tests, benchmarks, commit history, portability, release readiness, and two adversarial input probes written only under `/tmp`.
+The review used detached local worktrees. No source file, issue, pull request, setting, release, or branch in either target repository was changed. The review covered repository structure, documentation, Python source, schemas and policy records, tests, benchmarks, commit history, portability, release readiness, and temporary adversarial input probes written only under `/tmp`.
 
 This source review covers the listed commits, tests, benchmarks, and adversarial probes. Penetration testing, production qualification, legal appraisal, and exhaustive path coverage remain outside its scope.
 
@@ -47,7 +49,7 @@ Line counts describe the review surface. Quality, effort, and commercial value r
 
 ### DobeWorks
 
-The current public core and benchmark suites passed:
+The reviewed public core and benchmark suites passed:
 
 - 70 of 70 Worker and Observer tests;
 - 6 of 6 benchmark tests over the published corpus;
@@ -60,7 +62,7 @@ The strongest implementation qualities are bounded input and output sizes, expli
 
 ### DEGS
 
-The current published suites passed:
+The reviewed published suites passed:
 
 - 67 of 67 unit tests; and
 - 5 of 5 benchmark tests.
@@ -89,7 +91,7 @@ The observed impact is an availability and result-contract failure: an untrusted
 
 Severity: Moderate interface-hardening weakness.
 
-An independent Astra source review identified invalid UTF-8 as another exception outside `load_task()`'s handled boundary. A separate temporary-input probe reproduced it: a JSON-shaped file containing byte `0xff` caused an unhandled `UnicodeDecodeError`, empty standard output, and exit 1 instead of the documented JSON `FAIL` result and exit 4. The reviewed repository remained unchanged.
+A separate Astra AI source review identified invalid UTF-8 as another exception outside `load_task()`'s handled boundary. A temporary-input probe reproduced it: a JSON-shaped file containing byte `0xff` caused an unhandled `UnicodeDecodeError`, empty standard output, and exit 1 instead of the documented JSON `FAIL` result and exit 4. The reviewed repository remained unchanged.
 
 The input loader should catch `UnicodeDecodeError` at the same boundary as `OSError`, `json.JSONDecodeError`, and `RecursionError`, then return the documented machine-readable failure contract.
 
@@ -109,7 +111,7 @@ Severity: Low portability and clarity defect.
 
 Severity: Release-readiness limitation.
 
-Both repositories currently lack a versioned public release, installable package, and repository-local continuous-integration workflow. DobeWorks explicitly limits itself to synthetic Worker and Observer behavior. DEGS reports one tested macOS/Python environment and contains a monolithic 1,213-line gate module with policy concepts repeated across Python, JSON Schema, policy JSON, fixtures, and prose. Those repeated representations create a maintenance and drift risk even though the current test suite passes.
+At the review date, both repositories lacked a versioned public release, installable package, and repository-local continuous-integration workflow. DobeWorks explicitly limits itself to synthetic Worker and Observer behavior. DEGS reports one tested macOS/Python environment and contains a monolithic 1,213-line gate module with policy concepts repeated across Python, JSON Schema, policy JSON, fixtures, and prose. The reviewer judged those repeated representations a maintenance and drift risk even though the reviewed test suite passed.
 
 DobeWorks' current public seam is better bounded than its breadth first suggests, but its multi-context historical material makes onboarding difficult. A reader must distinguish the current 70-test core, the assurance standard, old phase packages, preserved validation results, and the retired October 6 bridge experiment. That depth is valuable evidence, but it needs a clearer “current product surface versus historical record” map before a third party could maintain it efficiently.
 
@@ -117,29 +119,29 @@ DobeWorks' current public seam is better bounded than its breadth first suggests
 
 ### DobeWorks
 
-DobeWorks is substantial and unusually careful about system boundaries: unknown state, promotion authority, stale evidence, partial-work preservation, and failure containment. The current synthetic core is coherent, readable, and well tested. I found no confirmed high- or moderate-severity defect in the Worker or Observer public seam during this review.
+The Codex review assessed DobeWorks as substantial and unusually careful about system boundaries: unknown state, promotion authority, stale evidence, partial-work preservation, and failure containment. It judged the reviewed synthetic core coherent, readable, and well tested. The review found no confirmed high- or moderate-severity defect in the Worker or Observer public seam.
 
 Its principal limitation is maturity. It is a high-quality research and engineering snapshot with deployment work remaining in live adapters, production monitoring, packaging, release automation, cross-platform verification, and a concise public API. The source honestly says so.
 
 ### DEGS
 
-DEGS has a strong control model and a meaningful test-to-source ratio. Its fail-closed risk and approval semantics are more rigorous than those of many larger projects. The two confirmed parser findings matter because DEGS presents itself as a deterministic boundary for evidence records. They are narrow and fixable, and the overall design remains sound.
+The Codex review assessed DEGS as having a strong control model and a meaningful test-to-source ratio. It judged the fail-closed risk and approval semantics more rigorous than those of many larger projects. The confirmed input-loader findings matter because DEGS presents itself as a deterministic boundary for evidence records. The reviewer considered them narrow and fixable, with the overall design remaining sound.
 
-The bigger product question is whether DEGS should remain a personal policy snapshot or become a reusable library. A reusable edition would need a packaged API, bounded canonical input loader, separated rule modules, one generated source of truth for schema and rule identifiers, portable example policy, CI across supported Python versions, and a versioned release contract.
+I intend DEGS to retain a command-line entry point. The review's maintainability recommendations can support that interface: a bounded canonical input loader, one internal assessment function, cohesive rule modules, portable examples, and a versioned result contract. An internal assessment function would give the CLI and its tests one place to invoke the same decision logic.
 
-## Independent Astra architecture review
+## Separate Astra AI architecture review
 
-A separate read-only code-architecture review dated October 19, 2026, examined DobeWorks commit `9857388` and DEGS commit `8d91866`; it explicitly states that applications and test suites were not run and that no repositories were modified. Its method therefore differs from the executed tests, benchmarks, and temporary adversarial inputs reported above.
+A separate read-only AI code-architecture review by Astra, dated October 19, 2026, examined DobeWorks commit `9857388` and DEGS commit `8d91866`; it explicitly states that applications and test suites were not run and that no repositories were modified. Its method therefore differs from the executed tests, benchmarks, and temporary adversarial inputs reported above.
 
-The independent review corroborates the strongest architectural finding: DobeWorks and DEGS separate observation, assessment, execution, and acceptance so that uncertainty remains visible and completed work stays separate from accepted work. It specifically praises Worker's injected-runner seam, detached input copies, retained expected digest, and forged-output rejection, as well as Observer's use of `UNKNOWN` for stale signals.
+The Astra review concurs with the Codex review's strongest architectural assessment: DobeWorks and DEGS separate observation, assessment, execution, and acceptance so that uncertainty remains visible and completed work stays separate from accepted work. It specifically praises Worker's injected-runner seam, detached input copies, retained expected digest, and forged-output rejection, as well as Observer's use of `UNKNOWN` for stale signals.
 
 It also adds three useful source-level concerns:
 
 1. DobeWorks couples deadlines and staging to platform behavior through process-global `SIGALRM`, compatible main-thread execution, and rejection of an occupied timer. A platform adapter would improve portability without changing policy semantics.
-2. Separate path and size checks followed by opening a file can leave a replacement window. The independent review recommends validating the opened file itself when consolidating bounded-file reading.
-3. DEGS repeats approval requirements across JSON Schema, Python predicates, and documentary `policy.json`; the runtime ignores the documentary policy file. Its limited custom schema interpreter silently ignores unsupported keywords, so a supported-keyword check and focused consistency tests would reduce rule drift.
+2. Separate path and size checks followed by opening a file can leave a replacement window. The Astra review recommends validating the opened file itself when consolidating bounded-file reading.
+3. DEGS repeats approval requirements across JSON Schema, Python predicates, and documentary `policy.json`; the runtime ignores the documentary policy file. Its limited custom schema interpreter silently ignores unsupported keywords. The proposed supported-keyword check and cross-representation consistency tests would extend the existing risk-tier, authority, and schema regression coverage.
 
-The independent review prefers keeping DEGS command-line driven at its present scale. That is a reasonable alternative to the reusable-library direction discussed above. Both views agree that the input boundary and policy consistency deserve the next engineering effort.
+The Astra review's preference for keeping DEGS command-line driven at its present scale aligns with my intended interface. Both AI reviews identify the input boundary and policy consistency as priorities for the next engineering effort. The existing tests already guard important policy behavior; the remaining recommendation concerns keeping repeated rule representations aligned as they change.
 
 ## Replacement-cost estimate
 
@@ -147,7 +149,7 @@ The independent review prefers keeping DEGS command-line driven at its present s
 
 The U.S. Bureau of Labor Statistics reported a May 2025 median annual wage of $135,980 for software developers and a mean of $148,100. The June 2026 Employer Costs for Employee Compensation report said wages were 70% of private-industry compensation. Those figures imply an employer compensation baseline around $93–$102 per productive hour before specialized seniority, management, tools, recruiting, and organizational overhead (U.S. Bureau of Labor Statistics, 2026a, 2026b).
 
-The estimate therefore uses two explicit scenarios:
+The Codex estimate therefore uses two explicit scenarios:
 
 1. Independent professional replacement: $95–$145 per hour, including a seniority and overhead allowance above the BLS-derived baseline.
 2. Specialist consultancy procurement: $175–$250 per hour as an upper sensitivity scenario.
@@ -166,13 +168,13 @@ The report's unvalidated AI-assisted scenario assigns 450–900 hours after over
 
 ### What “worth” means here
 
-The figures above estimate replacement cost. Sale price remains unmeasured because DobeWorks and DEGS have no observed transaction, revenue, external users, support contracts, versioned releases, or sustained public-adoption record. A buyer could value the governance model, tests, documentation, or strategic fit, but any acquisition price would depend on rights, exclusivity, maintenance commitment, proof of deployment, and the buyer's own avoided development cost.
+The figures above estimate replacement cost. The review did not establish a transaction, revenue, external users, support contracts, versioned releases, or a sustained public-adoption record for DobeWorks and DEGS. Sale price remains unmeasured. A buyer could value the governance model, tests, documentation, or strategic fit, but any acquisition price would depend on rights, exclusivity, maintenance commitment, proof of deployment, and the buyer's own avoided development cost.
 
-The codebases plausibly embody low-to-mid six figures of conventional institutional reconstruction work together. Agent-assisted reproduction from the existing specifications would cost materially less, and commercial market value remains unmeasured.
+The reviewer judged the codebases to plausibly embody low-to-mid six figures of conventional institutional reconstruction work together. The agent-assisted reproduction scenario assigns materially lower costs to rebuilding from the existing specifications. Neither scenario measures commercial market value.
 
 ## Sources
 
-Astra. (2026, October 19). *DobeWorks and DEGS code architecture review* [Unpublished code review supplied for this study].
+Astra. (2026, October 19). *DobeWorks and DEGS code architecture review* [Unpublished AI code review supplied for the portfolio assessment].
 
 McCoy, T. (2026a). *DobeWorks v2.1* [Computer software]. GitHub. https://github.com/tmccoy678/DobeWorks-v2.1
 
