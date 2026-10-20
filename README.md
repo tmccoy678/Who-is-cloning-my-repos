@@ -65,7 +65,7 @@ The original exploratory search used a 1%–4% interval. The revised analysis al
 
 Repository-level unique-cloner and unique-visitor counts are not summed into an account-wide audience estimate. Cross-repository overlap is unavailable. Clone events and page views are additive event counts. The four-repository clone aggregate is secondary because aggregation can reduce variation.
 
-No significance test or GitHub-wide anomaly probability is reported. The windows are short, the sample is selected, and repository-days and archive sources are dependent. `scripts/analyze_and_plot.R` is hand-written R code that reads the preserved raw response and scan-history summary, produces the current derived tables, calculates every reported current-window statistic, and renders Figures 2–3 as PNG and vector PDF files. `scripts/analyze.py` independently reproduces the earlier preserved-window analysis. AI assistance supported collection, extraction, analysis, and revision under my direction; the roles and verification limits are described in the declarations and [MODEL.md](MODEL.md).
+No significance test or GitHub-wide anomaly probability is reported. The windows are short, the sample is selected, and repository-days and archive sources are dependent. `scripts/analyze_and_plot.R` is hand-written R code that reads the preserved raw response and scan-history summary, produces the current derived tables, calculates every reported current-window statistic, and renders Figures 1 and 3 as PNG and vector PDF files. `scripts/analyze.py` independently reproduces the earlier preserved-window analysis. AI assistance supported collection, extraction, analysis, and revision under my direction; the roles and verification limits are described in the declarations and [MODEL.md](MODEL.md).
 
 ## Results
 
@@ -86,10 +86,6 @@ Table 1. Original October 3–16 snapshot, collected October 17.
 The four high-traffic repositories account for 8,271 events, or 98.79% of the total. The original total divided by 14 is exactly 598. Recovered daily output reproduces all four repository totals; all 48 overlapping repository-days agree with the follow-up snapshot.
 
 At the original audit, DobeWorks and DEGS also had empty popular-referrer results, zero GitHub stars, zero forks, and no outside public discussion found through exact-name and exact-URL searches. Those observations define the zero-engagement language in the title.
-
-![Original DEGS Traffic screenshot showing 2,011 clones, 1,254 unique cloners, and zero views.](figures/figure-1-degs-traffic-overview-2026-10-14.png)
-
-Figure 1. Original October 14 screenshot. Its September 30–October 13 window differs from Table 1. Image provenance and hashes are recorded in `figures/README.md`.
 
 ### A narrow plateau, with scan-aligned spikes
 
@@ -117,11 +113,15 @@ Table 3. Sensitivity to the observation window. Values are range-to-mean percent
 | TrashTreasurePickup | 62.13% / 16.61% | 3.49% / 1.44% |
 | Combined | 25.98% / 7.43% | 2.45% / 0.90% |
 
-The plateau continues through October 19. DobeWorks and TrashTreasurePickup are substantially more variable when their earlier spikes remain in the window (Figure 2). The recovered original October 3–16 aggregate has a range-to-mean percentage of 25.90% and a sample CV of 7.40%, close to the current full-window result. Across the three newly observed dates, October 17–19, the combined counts were 575, 568, and 582, with a sample CV of 1.22%.
+The plateau continues through October 19. DobeWorks and TrashTreasurePickup are substantially more variable when their earlier spikes remain in the window (Figure 1). The recovered original October 3–16 aggregate has a range-to-mean percentage of 25.90% and a sample CV of 7.40%, close to the current full-window result. Across the three newly observed dates, October 17–19, the combined counts were 575, 568, and 582, with a sample CV of 1.22%.
 
 ![Four daily clone-count series over October 6–19, with recorded Codex Security scan dates marked and the interval after the final recorded scan shaded.](figures/r-window-sensitivity-2026-10-20.png)
 
-Figure 2. Clone traffic and Codex Security scan alignment, generated in R. Filled diamonds mark UTC dates with recorded successful commit-scan jobs. Those two repository-days rank first and second among the 56 plotted repository-days. Grey shading begins after the final recorded scan on October 11. All panels use the same zero-based vertical scale; the displayed range percentages and sample CVs describe the October 13–19 continuation. [Vector PDF](figures/r-window-sensitivity-2026-10-20.pdf).
+Figure 1. Clone traffic and Codex Security scan alignment, generated in R. Filled diamonds mark UTC dates with recorded successful commit-scan jobs. Those two repository-days rank first and second among the 56 plotted repository-days. Grey shading begins after the final recorded scan on October 11. All panels use the same zero-based vertical scale; the displayed range percentages and sample CVs describe the October 13–19 continuation. [Vector PDF](figures/r-window-sensitivity-2026-10-20.pdf).
+
+![Original DEGS Traffic screenshot showing 2,011 clones, 1,254 unique cloners, and zero views.](figures/figure-1-degs-traffic-overview-2026-10-14.png)
+
+Figure 2. Original October 14 GitHub Traffic screenshot. Its September 30–October 13 window differs from Table 1. Image provenance and hashes are recorded in `figures/README.md`.
 
 ### Codex Security Cloud as a candidate mechanism
 
