@@ -9,3 +9,7 @@ Taylor's work constitutes substantive veterinary-medicine scholarship, including
 ## Source
 
 McCoy, T. (2026). *Veterinarian, heal thyself: Establishment and evaluation of ruminative response styles among U.S. veterinarians and veterinary students, and the qualitative evaluation of the autobiographical memories of events and cases that they return to repeatedly when they feel sad, blue, or depressed* [Unpublished 59-page thesis literature-review manuscript]. University of Wisconsin–Madison.
+
+## Curriculum Vitae
+
+[Taylor Westfall-McCoy's curriculum vitae](001_CV_Taylor_Westfall-McCoy.pdf)

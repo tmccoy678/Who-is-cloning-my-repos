@@ -1,17 +1,17 @@
 # Who Is Cloning My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days—With 0 Visitors, 0 Views, No Referrals, Stars, Forks, or External Public Discussion for DobeWorks and DEGS at the Original Snapshot
 
-**Taylor McCoy**<br>
-**October 19, 2026**
+Taylor McCoy<br>
+October 19, 2026
 
 Research and drafting assistance: OpenAI Codex, GPT-6
 
-> **Supporting evaluations and evidence:** The repository includes a [read-only engineering review and replacement-cost analysis of DobeWorks and DEGS](READ_ONLY_REVIEW_AND_VALUATION.md), a [reproducible comparison with mini-SWE-agent, in-toto, Conftest, SLSA verifier, and Cedar using pinned source snapshots and public labor-rate evidence](COMPARABLE_SYSTEMS_COST_CONTEXT.md), and the [complete clone-traffic and attribution notes](SUPPLEMENTARY_ANALYSIS.md). DobeWorks and DEGS are substantial engineering artifacts; their transaction value remains unmeasured.
+> Supporting evaluations and evidence: The repository includes a [read-only engineering review and replacement-cost analysis of DobeWorks and DEGS](READ_ONLY_REVIEW_AND_VALUATION.md), a [reproducible comparison with mini-SWE-agent, in-toto, Conftest, SLSA verifier, and Cedar using pinned source snapshots and public labor-rate evidence](COMPARABLE_SYSTEMS_COST_CONTEXT.md), and the [complete clone-traffic and attribution notes](SUPPLEMENTARY_ANALYSIS.md). DobeWorks and DEGS are substantial engineering artifacts; their transaction value remains unmeasured.
 
 ## Abstract
 
-This descriptive case study examined an anomalous pattern in GitHub Traffic data for six public repositories owned by one developer. During the original 14-day window ending October 16, 2026, the repositories received exactly 8,372 GitHub-counted clone events, an average of 598 per day. Four repositories associated with agentic AI, model behavior, context transfer, software assurance, or security contributed 8,271 events and each received approximately 1,200–1,260 top-level unique cloners, while a conventional weather utility received three clones. DobeWorks and DEGS had zero views and zero unique visitors at that snapshot, no referrers, no stars or forks, and no external public discussion. Follow-up through October 18 strengthened the regularity finding: during October 13–18, the four selected repositories jointly recorded 568, 568, 572, 571, 575, and 568 clones per day, a coefficient of variation of 0.50%, while WeatherTicker recorded two clones. Each selected repository's six-day range was only 1.40%–3.50% of its mean, and its largest one-day deviation from its own mean was only 0.70%–2.10%; seven owner-published AI-, MCP-, and security-related comparison repositories varied by 66.67%–396.69% by range over the same dates. A separate numeric-first GitHub Code Search sweep inspected 226 candidate files and extracted 136 non-cumulative daily clone series regardless of subject. No external series met the 1%–4% criterion under either definition; the closest valid series averaged 79.67 clones/day, varied by 27.62% by range, and deviated as much as 15.48% from its mean. DobeWorks alone stayed at 141–144 per day and DEGS at 141–143. The October 6 DobeWorks spike coincided with a public Nova–Grok bridge experiment and nine pushes, reaching 272 clones and 211 daily unique cloners. Data came from authenticated GitHub Traffic endpoints, public event and commit histories, repository configuration, owner screenshots, source review, and owner-published comparison records. Stable automated collection plus event-triggered collection best fits the data. A public index documents the discovery mechanism and is unlikely to be the counted clone source. GitHub's public traffic data omit source identities, IP addresses, user agents, and clone referrers; the operator remains unknown. This manuscript is also an intentionally cheeky career signal: Taylor is seeking an internship at **DARPA, the CIA, the NSA, NASA, the FBI, Lockheed Martin, Palantir, or MITRE**, as well as a research-assistant position under a principal investigator interested in governed AI agents, software assurance, provenance, policy gates, human–AI systems, animal welfare, or similarly interdisciplinary questions. Six public repositories average 598 GitHub-counted clones per day, and the closest conceptual comparator identified for DobeWorks and DEGS—an evidence-and-authorization framework called in-toto—reports research support from DARPA, AFRL, and NSF (in-toto, 2026). Taylor's independent work occupies the same real research and engineering problem space as an institutionally supported peer.
+This descriptive case study examined an anomalous pattern in GitHub Traffic data for six public repositories owned by one developer. During the original 14-day window ending October 16, 2026, the repositories received exactly 8,372 GitHub-counted clone events, an average of 598 per day. Four repositories associated with agentic AI, model behavior, context transfer, software assurance, or security contributed 8,271 events and each received approximately 1,200–1,260 top-level unique cloners, while a conventional weather utility received three clones. DobeWorks and DEGS had zero views and zero unique visitors at that snapshot, no referrers, no stars or forks, and no external public discussion. Follow-up through October 18 strengthened the regularity finding: during October 13–18, the four selected repositories jointly recorded 568, 568, 572, 571, 575, and 568 clones per day, a coefficient of variation of 0.50%, while WeatherTicker recorded two clones. Each selected repository's six-day range was only 1.40%–3.50% of its mean, and its largest one-day deviation from its own mean was only 0.70%–2.10%; seven owner-published AI-, MCP-, and security-related comparison repositories varied by 66.67%–396.69% by range over the same dates. A separate numeric-first GitHub Code Search sweep inspected 226 candidate files and extracted 136 non-cumulative daily clone series regardless of subject. No external series met the 1%–4% criterion under either definition; the closest valid series averaged 79.67 clones/day, varied by 27.62% by range, and deviated as much as 15.48% from its mean. DobeWorks alone stayed at 141–144 per day and DEGS at 141–143. The October 6 DobeWorks spike coincided with a public Nova–Grok bridge experiment and nine pushes, reaching 272 clones and 211 daily unique cloners. Data came from authenticated GitHub Traffic endpoints, public event and commit histories, repository configuration, owner screenshots, source review, and owner-published comparison records. Stable automated collection plus event-triggered collection best fits the data. A public index documents the discovery mechanism and is unlikely to be the counted clone source. GitHub's public traffic data omit source identities, IP addresses, user agents, and clone referrers; the operator remains unknown. This manuscript is also an intentionally cheeky career signal: Taylor is seeking an internship at DARPA, the CIA, the NSA, NASA, the FBI, Lockheed Martin, Palantir, or MITRE, as well as a research-assistant position under a principal investigator interested in governed AI agents, software assurance, provenance, policy gates, human–AI systems, animal welfare, or similarly interdisciplinary questions. Six public repositories average 598 GitHub-counted clones per day, and the closest conceptual comparator identified for DobeWorks and DEGS—an evidence-and-authorization framework called in-toto—reports research support from DARPA, AFRL, and NSF (in-toto, 2026). Taylor's independent work occupies the same real research and engineering problem space as an institutionally supported peer.
 
-**Keywords:** GitHub Traffic, repository cloning, automated collection, public events, AI repositories, software archives
+Keywords: GitHub Traffic, repository cloning, automated collection, public events, AI repositories, software archives
 
 ## Introduction
 
@@ -21,7 +21,7 @@ The present investigation began after `DEGS-v2.1` displayed 2,011 clone events, 
 
 The traffic shape is the most striking evidence. Across the completed October 13–18 UTC interval, each of the four selected repositories varied by only 1.40%–3.50% of its own six-day mean by range, and no single day was more than 0.70%–2.10% from its repository's mean; their combined total stayed between 568 and 575 clones per day. Seven owner-published AI-, MCP-, and security-related repositories varied by 66.67%–396.69% by range over those exact dates. A broader numeric-first public-data sweep found no other qualifying 1%–4% daily series among 136 extracted non-cumulative series under either definition; the closest had a 27.62% range and a 15.48% maximum deviation from its mean. Meanwhile, the same-account `WeatherTicker` control remained near zero, DobeWorks and DEGS had zero views at the original snapshot, and DobeWorks nearly doubled its ordinary clone floor during nine public pushes on October 6. Ordinary human discovery and undirected background noise fit that combined pattern poorly.
 
-The central question was therefore: **What explanation best fits the scale, selectivity, timing, and zero-view character of the observed clone traffic?** A secondary question was whether repositories with similar AI, model-tooling, Model Context Protocol (MCP), or security subject matter showed comparable clone-heavy patterns.
+The central question was therefore: What explanation best fits the scale, selectivity, timing, and zero-view character of the observed clone traffic? A secondary question was whether repositories with similar AI, model-tooling, Model Context Protocol (MCP), or security subject matter showed comparable clone-heavy patterns.
 
 This study distinguishes observed data from inference, tests common explanations against the available record, and limits attribution to actors identified by source-level evidence.
 
@@ -97,7 +97,7 @@ Unique-cloner totals remain per-repository because GitHub hides cross-repository
 
 ### Scale and Repository Selectivity
 
-**Table 1**<br>
+Table 1<br>
 *GitHub Traffic Across the Six Public Repositories*
 
 | Repository | Primary subject | Clone events | Unique cloners | Views | Unique visitors | Mean clones/day |
@@ -108,7 +108,7 @@ Unique-cloner totals remain per-repository because GitHub hides cross-repository
 | `TrashTreasurePickup` | Agent context-management tooling | 2,122 | 1,253 | 1 | 1 | 151.57 |
 | `grok-bridge-writeup` | AI-agent bridge and security write-up | 98 | 63 | 7 | 1 | 7.00 |
 | `WeatherTicker` | Conventional weather utility | 3 | 3 | 0 | 0 | 0.21 |
-| **Total** |  | **8,372** | **Not additive** | **8** | **2** | **598.00** |
+| Total |  | 8,372 | Not additive | 8 | 2 | 598.00 |
 
 *Note.* Values are owner-accessible GitHub Traffic totals read October 17, 2026, for the rolling window ending October 16. “Not additive” means that GitHub provides no cross-repository deduplication rule.
 
@@ -118,7 +118,7 @@ The distribution was strongly selective. The four high-traffic repositories acco
 
 The four high-traffic repositories shared a narrow ordinary daily level. `BackspaceTextRetention` had a daily median of 142 clone events and a range of 138–144. `DEGS-v2.1` had a median of 142 and a range of 139–155. `DobeWorks-v2.1` had a median of 143 and a range of 140–272. `TrashTreasurePickup` had a median of 142 and a range of 141–235. The large ranges for the last two repositories were created by isolated update-associated spikes; their non-spike values remained close to the shared floor.
 
-**Table 2**<br>
+Table 2<br>
 *Temporal Alignment Between Public Pushes and Clone Spikes*
 
 | Repository | Ordinary daily level | Public repository activity | Observed traffic response | Internal Actions explanation |
@@ -154,7 +154,7 @@ ecosyste.ms documents an event-driven route for discovering Taylor's repositorie
 
 WeatherTicker is the most informative repository in the set precisely because it is ordinary. It is a public PowerShell desktop ticker using NOAA, National Weather Service, Weather Underground, and AccuWeather data. It was created September 22, had a README, source code, a Windows-oriented use case, weather-related topics, and the same public discoverability as the other repositories. ecosyste.ms indexed it in the same owner batch. Yet it recorded three clones in the original window and four in the October 19 follow-up window.
 
-The four repeatedly cloned repositories share **agentic-AI governance and model behavior** across different formats, sizes, ages, and degrees of software functionality:
+The four repeatedly cloned repositories share agentic-AI governance and model behavior across different formats, sizes, ages, and degrees of software functionality:
 
 - DobeWorks concerns bounded agent work, observation, authority, evidence, and promotion;
 - DEGS encodes engineering assurance, risk, approval, and evidence rules for agent-mediated work;
@@ -165,9 +165,9 @@ The smaller `grok-bridge-writeup` also fits the semantic theme, but it was creat
 
 ### The Daily Floor Continued Through October 18
 
-The follow-up data answer the question of whether DobeWorks and DEGS were still being cloned regularly: **yes, with exceptional regularity** (Figure 7).
+The follow-up data answer the question of whether DobeWorks and DEGS were still being cloned regularly: yes, with exceptional regularity (Figure 7).
 
-**Table 3**<br>
+Table 3<br>
 *Completed Daily Clone Counts After the Last Large Push-Associated Spike*
 
 | UTC date | DobeWorks | DEGS | Backspace | Trash/Treasure | Four-repository total |
@@ -178,8 +178,8 @@ The follow-up data answer the question of whether DobeWorks and DEGS were still 
 | October 16 | 144 | 141 | 144 | 142 | 571 |
 | October 17 | 143 | 143 | 144 | 145 | 575 |
 | October 18 | 141 | 142 | 142 | 143 | 568 |
-| **Mean** | **142.50** | **142.00** | **142.83** | **143.00** | **570.33** |
-| **Coefficient of variation** | **0.97%** | **0.63%** | **0.69%** | **1.47%** | **0.50%** |
+| Mean | 142.50 | 142.00 | 142.83 | 143.00 | 570.33 |
+| Coefficient of variation | 0.97% | 0.63% | 0.69% | 1.47% | 0.50% |
 
 WeatherTicker recorded only two clones across those six dates. DobeWorks remained at 141–144/day and DEGS at 141–143/day. A loose collection of unrelated crawlers could produce a roughly stable average, but four independent repositories converging on the same narrow band and a six-day combined range of only 568–575 is stronger evidence of a repeated systemic process.
 
@@ -189,15 +189,15 @@ The follow-up rolling totals were 2,144/1,253 clones/unique cloners for DobeWork
 
 Seven owners publicly preserved daily traffic for repositories involving AI workspaces, coding agents, Claude skills, MCP, network analysis, or shadow-AI security. The comparison uses exactly the same completed UTC dates, October 13–18, as Taylor's follow-up series (Abhiunix, 2026; AWS Samples, 2026; CoWork-OS, 2026; Joshua D. Campbell, 2026; NYBaywatch, 2026; Theguysudo, 2026; Wubabalala, 2026; Figure 8).
 
-**Table 4**<br>
+Table 4<br>
 *Clone-Count Variation Across the Same Six Dates*
 
 | Repository | Subject | Six-day counts | Mean/day | Range ÷ mean | Max deviation from mean | Sample CV |
 |---|---|---|---:|---:|---:|---:|
-| `BackspaceTextRetention` | Model behavior/text retention | 142, 143, 142, 144, 144, 142 | 142.83 | **1.40%** | **0.82%** | 0.69% |
-| `DEGS-v2.1` | Agent engineering assurance | 141, 143, 142, 141, 143, 142 | 142.00 | **1.41%** | **0.70%** | 0.63% |
-| `DobeWorks-v2.1` | Governed agent work | 144, 141, 142, 144, 143, 141 | 142.50 | **2.11%** | **1.05%** | 0.97% |
-| `TrashTreasurePickup` | Agent context transfer | 141, 141, 146, 142, 145, 143 | 143.00 | **3.50%** | **2.10%** | 1.47% |
+| `BackspaceTextRetention` | Model behavior/text retention | 142, 143, 142, 144, 144, 142 | 142.83 | 1.40% | 0.82% | 0.69% |
+| `DEGS-v2.1` | Agent engineering assurance | 141, 143, 142, 141, 143, 142 | 142.00 | 1.41% | 0.70% | 0.63% |
+| `DobeWorks-v2.1` | Governed agent work | 144, 141, 142, 144, 143, 141 | 142.50 | 2.11% | 1.05% | 0.97% |
+| `TrashTreasurePickup` | Agent context transfer | 141, 141, 146, 142, 145, 143 | 143.00 | 3.50% | 2.10% | 1.47% |
 | `abhiunix/AgentHarbor` | AI coding-agent desktop application | 34, 20, 19, 23, 20, 19 | 22.50 | 66.67% | 51.11% | 25.88% |
 | `theguysudo/ENZO` | Self-hosted AI-agent workspace | 41, 74, 69, 31, 24, 45 | 47.33 | 105.63% | 56.34% | 42.65% |
 | `NYBaywatch/AgrusScanner` | AI/ML and MCP network scanner | 13, 6, 9, 21, 13, 17 | 13.17 | 113.92% | 59.49% | 40.88% |
@@ -214,16 +214,16 @@ The public sample is purposive and small, leaving GitHub-wide prevalence unknown
 
 ### Numeric-First Search for Other 1%–4% Series
 
-No valid external daily clone series in the bounded public search met the requested 1%–4% criterion, whether “deviation from the mean” is read as the six-day range divided by the mean or the largest absolute daily deviation divided by the mean. The mean clone rate for qualifying external repositories is therefore **undefined because the qualifying set is empty**. One apparent range-based match averaged 339.33, but its file explicitly recorded cumulative clones; it was excluded before interpretation.
+No valid external daily clone series in the bounded public search met the requested 1%–4% criterion, whether “deviation from the mean” is read as the six-day range divided by the mean or the largest absolute daily deviation divided by the mean. The mean clone rate for qualifying external repositories is therefore undefined because the qualifying set is empty. One apparent range-based match averaged 339.33, but its file explicitly recorded cumulative clones; it was excluded before interpretation.
 
-The nearest valid daily series was `dikeckaan/easy-vphone`, which averaged **79.67 clones/day**, varied by **27.62%** by range, and reached **15.48%** from its mean on its most distant day. That range is almost eight times Taylor's highest individual value of 3.50% and about twenty times DEGS's 1.41%. Its subject is a native macOS interface for virtual-phone VM management and an IPA library, unrelated to Taylor's governance work (Dikeckaan, 2026).
+The nearest valid daily series was `dikeckaan/easy-vphone`, which averaged 79.67 clones/day, varied by 27.62% by range, and reached 15.48% from its mean on its most distant day. That range is almost eight times Taylor's highest individual value of 3.50% and about twenty times DEGS's 1.41%. Its subject is a native macOS interface for virtual-phone VM management and an IPA library, unrelated to Taylor's governance work (Dikeckaan, 2026).
 
-**Table 5**<br>
+Table 5<br>
 *Closest Non-Cumulative Daily Series in the Subject-Independent Search*
 
 | Repository | Subject matter | Six-day mean | Range ÷ mean | Max deviation from mean | Sample CV |
 |---|---|---:|---:|---:|---:|
-| `dikeckaan/easy-vphone` | macOS virtual-phone VM manager and IPA library | **79.67** | **27.62%** | **15.48%** | 9.68% |
+| `dikeckaan/easy-vphone` | macOS virtual-phone VM manager and IPA library | 79.67 | 27.62% | 15.48% | 9.68% |
 | `abhiunix/AgentHarbor` | desktop application for AI coding agents | 22.50 | 66.67% | 51.11% | 25.88% |
 | `iitian-vibes/India-Tech-Internships` | daily technology internship listings | 34.83 | 68.90% | 40.67% | 23.35% |
 | `devopscorner/golang-adot` | Go bookstore example with AWS OpenTelemetry | 22.83 | 74.45% | 38.69% | 25.45% |
@@ -241,13 +241,13 @@ October 6 consisted of a rapid public DobeWorks bridge experiment involving Nova
 - a small webhook receiver for `bridge.dobeworks.com` was added and then removed minutes later;
 - the bridge files were retired, the repository was restored, and `BRIDGE.md` was left as a public record.
 
-Nine pushes occurred that day. The current net difference from the preceding public-usability merge is only 63 inserted lines: a 38-line bridge note, four citation lines, and 21 lines adding an explicit JSON nesting-depth defense. Nevertheless, GitHub recorded **272 clones and 211 daily unique cloners**, almost twice the ordinary clone floor. The new `grok-bridge-writeup` repository recorded 69 clones and 43 unique cloners on October 6.
+Nine pushes occurred that day. The current net difference from the preceding public-usability merge is only 63 inserted lines: a 38-line bridge note, four citation lines, and 21 lines adding an explicit JSON nesting-depth defense. Nevertheless, GitHub recorded 272 clones and 211 daily unique cloners, almost twice the ordinary clone floor. The new `grok-bridge-writeup` repository recorded 69 clones and 43 unique cloners on October 6.
 
 The October 6 timing strongly implicates an event-triggered collector. A collector reacting to `PushEvent` records, changed content, AI-agent names, webhook/security terms, or all of those signals would see a burst even though the enduring software change was small. Project replacement cost and clone volume therefore vary independently: the spike tracked public activity and semantic interest while the enduring code change was small.
 
 ### Read-Only Review of DobeWorks and DEGS
 
-DobeWorks is best categorized as a **governed agent execution and observation framework** or an **engineering operating-system prototype**. DEGS is an **evidence-based engineering assurance engine** or **policy-as-code readiness gate**. Their central value lies in the control model, explicit uncertainty, authority boundaries, failure semantics, evidence structure, adversarial tests, and documentation (McCoy, 2026a, 2026b).
+DobeWorks is best categorized as a governed agent execution and observation framework or an engineering operating-system prototype. DEGS is an evidence-based engineering assurance engine or policy-as-code readiness gate. Their central value lies in the control model, explicit uncertainty, authority boundaries, failure semantics, evidence structure, adversarial tests, and documentation (McCoy, 2026a, 2026b).
 
 The DobeWorks review ran 70 core tests, six benchmark tests, 29 DEAS-validator tests, and 19 Phase 3 validator tests; all 124 executed tests passed. Thirty-two historical Phase 4 tests skipped because their explicitly required external historical specification was not supplied. The Worker and Observer cores are notably strong on bounded inputs, duplicate-key rejection, JSON depth, path and symlink handling, deterministic results, atomic staging, privacy-field rejection, and the absence of automatic promotion. No confirmed high- or moderate-severity defect was found in those two public cores.
 
@@ -268,16 +268,16 @@ The Bureau of Labor Statistics reported a May 2025 software-developer median of 
 
 Using a work breakdown for requirements recovery, control design, implementation, adversarial tests, benchmarks, documentation, provenance, and integration gives the following replacement estimate:
 
-**Table 6**<br>
+Table 6<br>
 *Estimated Conventional Replacement Cost*
 
 | Project | Estimated hours | At $95–$145/hour | Specialist consultancy sensitivity at $175–$250/hour |
 |---|---:|---:|---:|
-| DobeWorks public snapshot | 1,350–2,450 | **$128,000–$355,000** | **$236,000–$613,000** |
-| DEGS public snapshot | 1,020–1,850 | **$97,000–$268,000** | **$179,000–$463,000** |
-| Combined after overlap | 1,900–3,500 | **$181,000–$508,000** | **$333,000–$875,000** |
+| DobeWorks public snapshot | 1,350–2,450 | $128,000–$355,000 | $236,000–$613,000 |
+| DEGS public snapshot | 1,020–1,850 | $97,000–$268,000 | $179,000–$463,000 |
+| Combined after overlap | 1,900–3,500 | $181,000–$508,000 | $333,000–$875,000 |
 
-An efficient AI-assisted reconstruction using the current repositories as specifications could plausibly cost about **$43,000–$131,000**. That is materially different from independently discovering the domain model and evidence system from scratch.
+An efficient AI-assisted reconstruction using the current repositories as specifications could plausibly cost about $43,000–$131,000. That is materially different from independently discovering the domain model and evidence system from scratch.
 
 These figures model replacement cost. Current resale value remains unknown because no transaction, revenue, external user base, support contract, release history, or public adoption signal supplies a market price. A strategic buyer may value the avoided engineering effort.
 
@@ -289,10 +289,10 @@ Current resale value remains unmeasured because the record contains no arm's-len
 
 | System | Closest match | Shared structure |
 |---|---|---|
-| [in-toto](https://github.com/in-toto/in-toto) | **Closest conceptual peer** | Authorized steps, structured evidence, provenance, and verification separated from execution |
-| [Conftest](https://github.com/open-policy-agent/conftest) | **Closest to DEGS as a product** | Structured inputs enter a policy gate that returns explainable pass, warning, or failure results |
-| [SLSA verifier](https://github.com/slsa-framework/slsa-verifier) | **Closest repository-shape peer** | Provenance, attestations, expected-source checks, negative cases, and a large structured evidence surface |
-| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | **Closest agent-and-size neighbor** | Agent execution with explicit model and environment boundaries; nearly the same non-test source volume |
+| [in-toto](https://github.com/in-toto/in-toto) | Closest conceptual peer | Authorized steps, structured evidence, provenance, and verification separated from execution |
+| [Conftest](https://github.com/open-policy-agent/conftest) | Closest to DEGS as a product | Structured inputs enter a policy gate that returns explainable pass, warning, or failure results |
+| [SLSA verifier](https://github.com/slsa-framework/slsa-verifier) | Closest repository-shape peer | Provenance, attestations, expected-source checks, negative cases, and a large structured evidence surface |
+| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | Closest agent-and-size neighbor | Agent execution with explicit model and environment boundaries; nearly the same non-test source volume |
 
 The table compares architecture and engineering structure. Institutional affiliation and dollar value require separate evidence.
 
@@ -300,13 +300,13 @@ The full reproducible comparison is in [`COMPARABLE_SYSTEMS_COST_CONTEXT.md`](CO
 
 Public procurement data also make the rate assumptions testable. In GSA CALC+ data retrieved October 19, 2026, 177 exact `Senior Software Engineer` labor-ceiling records had a median of $154.65 per hour and a mean of $163.48; nine `Principal Programmer` records had a median of $188.30 and included one $250.25 record (U.S. General Services Administration, 2026a, 2026b, 2026c). The awarded public labor-rate data ground the manuscript's specialist-rate sensitivity. A sale appraisal would require transaction evidence.
 
-The most supportable reading is **$181,000–$508,000 for a conventional independent clean-room reconstruction**, approximately **$400,000–$575,000 as a balanced conventional-to-specialist center of gravity**, and **$875,000 as an intentionally aggressive upper stress case** in which both the longest schedule and the highest modeled specialist rate apply. If a capable team begins with the existing repositories as detailed specifications and uses modern AI assistance, the estimated reconstruction cost falls to **$43,000–$131,000**. A buyer's present transaction price remains unmeasured. As engineering artifacts, the repositories are plainly worth more than $10.
+The most supportable reading is $181,000–$508,000 for a conventional independent clean-room reconstruction, approximately $400,000–$575,000 as a balanced conventional-to-specialist center of gravity, and $875,000 as an intentionally aggressive upper stress case in which both the longest schedule and the highest modeled specialist rate apply. If a capable team begins with the existing repositories as detailed specifications and uses modern AI assistance, the estimated reconstruction cost falls to $43,000–$131,000. A buyer's present transaction price remains unmeasured. As engineering artifacts, the repositories are plainly worth more than $10.
 
 ### Accounts Created Near Taylor's Account
 
-Taylor's GitHub account was created August 10, 2026. A bounded public-API comparison examined the first 50 Search results, sorted by join date, for users created August 9–11 with 3–20 repositories and 0–10 followers. Thirty-two accounts met the nonfork/size filter. Their median public profile had **0 followers, 6 public repositories, 0 stars, and 0 forks**; 28 of 32 had zero stars and 31 of 32 had zero forks in the inspected owner-repository set (GitHub, 2026e).
+Taylor's GitHub account was created August 10, 2026. A bounded public-API comparison examined the first 50 Search results, sorted by join date, for users created August 9–11 with 3–20 repositories and 0–10 followers. Thirty-two accounts met the nonfork/size filter. Their median public profile had 0 followers, 6 public repositories, 0 stars, and 0 forks; 28 of 32 had zero stars and 31 of 32 had zero forks in the inspected owner-repository set (GitHub, 2026e).
 
-**Table 7**<br>
+Table 7<br>
 *Illustrative Same-Age Public Accounts and Repositories*
 
 | Public account | Created | Followers | Public repos | Stars across inspected original repos | Forks | Example repository |
@@ -328,7 +328,7 @@ Taylor's visible profile—six repositories, no followers, and almost no externa
 
 AI-, MCP-, model-tooling-, and security-related repositories can receive hundreds or thousands of unique cloners. The published Fun-ASR report recorded 1,029 clones from 766 unique cloners for `QwenAudio/Fun-ASR` and 1,132 from 660 for `QwenAudio/SenseVoice` in one 14-day window (ModelScope, 2026; Figure 6). These unique-cloner proportions—74% and 58%—overlap the approximately 59%–63% range of the four high-traffic repositories in this study.
 
-**Table 8**<br>
+Table 8<br>
 *Owner-Published GitHub Traffic Comparisons*
 
 | Repository | Subject | Clone events | Unique cloners | Views | Unique visitors | Source |
@@ -498,56 +498,56 @@ Zhurong2020. (2026, September 2). *Pyobfus current plan* [Project document]. Git
 
 ## Figures
 
-**Figure 1**<br>
+Figure 1<br>
 *GitHub Traffic Overview for DEGS-v2.1, October 14, 2026*
 
 ![GitHub Traffic page showing 2,011 clones, 1,254 unique cloners, zero views, and zero unique visitors for DEGS-v2.1.](figures/figure-1-degs-traffic-overview-2026-10-14.png)
 
 *Note.* Original owner screenshot of the GitHub Traffic page. The clone and unique-cloner graphs cover September 30–October 13, 2026.
 
-**Figure 2**<br>
+Figure 2<br>
 *Unique Cloners for DEGS-v2.1 During the Same 14-Day Window*
 
 ![Close view of the DEGS-v2.1 unique-cloner chart showing 1,254 unique cloners and a daily series near 131–145.](figures/figure-2-degs-unique-cloners-2026-10-14.png)
 
 *Note.* Original owner screenshot. The tightly bounded daily series is consistent with a recurring collection process whose source remains unknown.
 
-**Figure 3**<br>
+Figure 3<br>
 *GitHub’s Authenticated Repository-Clone Endpoint*
 
 ![GitHub documentation page for the Get repository clones endpoint.](figures/figure-3-github-clone-api-documentation.png)
 
 *Note.* Primary-source documentation captured October 19, 2026. The page identifies the authenticated endpoint used to retrieve repository clone traffic (GitHub, 2026a).
 
-**Figure 4**<br>
+Figure 4<br>
 *GitHub’s Public-Events Endpoint*
 
 ![GitHub documentation page for the List public events endpoint, including the statement that no fine-grained permissions are required.](figures/figure-4-github-public-events-api.png)
 
 *Note.* Primary-source documentation captured October 19, 2026. GitHub states that the endpoint requires no fine-grained repository permission and may lag by 30 seconds to 6 hours (GitHub, 2026c).
 
-**Figure 5**<br>
+Figure 5<br>
 *ecosyste.ms Documentation of Public-Event Repository Discovery*
 
 ![Raw ecosyste.ms synchronization documentation describing GitHub public-event discovery and periodic polling.](figures/figure-5-ecosystems-sync-documentation.png)
 
 *Note.* Primary-source documentation captured October 19, 2026. The service states that its GitHub discovery route reflects the public-events firehose and that recently active repositories are polled periodically (ecosyste.ms, 2026a).
 
-**Figure 6**<br>
+Figure 6<br>
 *Published GitHub Traffic Comparison for Fun-ASR and SenseVoice*
 
 ![ModelScope FunASR report table showing views, visitors, clones, and unique cloners for four related repositories.](figures/figure-6-funasr-traffic-comparison.png)
 
 *Note.* Primary-source owner-published comparison captured October 19, 2026. `QwenAudio/Fun-ASR` recorded 1,029 clones and 766 unique cloners; `QwenAudio/SenseVoice` recorded 1,132 and 660, respectively (ModelScope, 2026).
 
-**Figure 7**<br>
+Figure 7<br>
 *Daily Clone Events Across the Six Public Repositories, October 5–18, 2026*
 
 ![Two-panel line chart showing the four selected repositories near 140–146 clones per day except for DobeWorks and Trash/Treasure push spikes, while the Grok bridge write-up and WeatherTicker remain much lower.](figures/figure-7-daily-clone-regularity-2026-10-19.png)
 
 *Note.* Author-generated visualization from the authenticated GitHub Traffic API snapshot captured October 19, 2026. The shaded October 13–18 interval totals 568–575 daily clones across the four selected repositories. Raw values are in [`data/traffic-snapshot-2026-10-19.csv`](data/traffic-snapshot-2026-10-19.csv).
 
-**Figure 8**<br>
+Figure 8<br>
 *Clone-Count Variation in Taylor's Repositories and Seven Same-Date Subject-Matter Comparisons*
 
 ![Two-panel horizontal bar chart showing 1.40%–3.50% six-day range percentages for Taylor's four selected repositories and 66.67%–396.69% for seven public AI, MCP, and security comparisons.](figures/figure-8-six-day-variation-comparison-2026-10-19.png)

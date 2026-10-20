@@ -1,11 +1,11 @@
 # Comparable Systems and Cost Context for DobeWorks and DEGS
 
-**Prepared:** October 19, 2026<br>
-**Scope:** Replacement-cost context
+Prepared: October 19, 2026<br>
+Scope: Replacement-cost context
 
 ## The candid answer about the $875,000 figure
 
-The **$875,000 figure is defensible only as a high-end procurement stress case**. It is the result of multiplying both upper assumptions in the earlier model:
+The $875,000 figure is defensible only as a high-end procurement stress case. It is the result of multiplying both upper assumptions in the earlier model:
 
 > 3,500 reconstruction hours × $250 per specialist-consultancy hour = $875,000
 
@@ -15,10 +15,10 @@ The ceiling combines the longest modeled schedule with the highest modeled billi
 
 | Interpretation | Arithmetic | Modeled amount |
 |---|---:|---:|
-| Conventional independent rebuild, manuscript range | 1,900–3,500 h × $95–$145/h | **$181,000–$508,000** |
-| Specialist procurement, midpoint of both assumptions | 2,700 h × $212.50/h | **$573,750** |
-| Specialist procurement, upper stress case | 3,500 h × $250/h | **$875,000** |
-| AI-assisted reconstruction using the existing repositories as specifications | 450–900 h × $95–$145/h | **$43,000–$131,000** |
+| Conventional independent rebuild, manuscript range | 1,900–3,500 h × $95–$145/h | $181,000–$508,000 |
+| Specialist procurement, midpoint of both assumptions | 2,700 h × $212.50/h | $573,750 |
+| Specialist procurement, upper stress case | 3,500 h × $250/h | $875,000 |
+| AI-assisted reconstruction using the existing repositories as specifications | 450–900 h × $95–$145/h | $43,000–$131,000 |
 
 The U.S. Bureau of Labor Statistics reported a May 2025 median software-developer wage of $135,980. BLS also reported that wages were 70% of private-industry compensation in June 2026. Those figures support the manuscript's approximately $93-per-hour employer-compensation baseline before senior specialization, management, tools, recruiting, and organizational overhead ([BLS, 2026a](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm); [BLS, 2026b](https://www.bls.gov/news.release/ecec.nr0.htm)).
 
@@ -32,7 +32,7 @@ GSA's CALC+ API places a specialist procurement rate near $250 per hour in the u
 | GSA senior software-engineer mean | $163.48 | $310,612 | $572,180 |
 | GSA principal-programmer example | $250.25 | $475,475 | $875,875 |
 
-My practical reading is therefore: **$181,000–$508,000 is the stronger conventional replacement-cost range; roughly $574,000 is a useful high-end specialist midpoint; and $875,000 is a possible ceiling that needs its assumptions printed beside it.**
+My practical reading is therefore: $181,000–$508,000 is the stronger conventional replacement-cost range; roughly $574,000 is a useful high-end specialist midpoint; and $875,000 is a possible ceiling that needs its assumptions printed beside it.
 
 ## What is actually being compared
 
@@ -44,12 +44,12 @@ The comparison snapshot was taken October 19, 2026. Physical line counts were ca
 
 | System | What the official project says it does | Tracked files | Non-test source lines (files) | Test lines (files) | Markdown lines | Structured-material lines | History commits | Contributor records | Releases | Relationship to DobeWorks + DEGS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| **DobeWorks + DEGS** | Governed agent work/observation plus evidence-based engineering assurance | **551** | **5,467 (12)** | **4,146 (10)** | **7,832** | **34,474** | **56** | Not used | **0** | Reference pair |
-| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent/tree/04d809ceab9df28f9adaed044884180159172930) | A minimal software-engineering agent with multiple execution environments, model adapters, benchmark runners, and a trajectory inspector | 221 | 5,123 (59) | 9,907 (54) | 3,901 | 2,526 | 1,022 | 39 | 65 | **Same raw non-test Python line-count band.** Capability, architecture, maturity, and value differ. |
-| [in-toto](https://github.com/in-toto/in-toto/tree/e352b43ad7cb8915d84c36d791aa61346152a0a3) | Verifies that supply-chain tasks were performed as planned by authorized functionaries and that products were not altered in transit | 183 | 7,542 (25) | 7,806 (29) | 2,079 | 386 | 2,479 | 49 | 31 | **Conceptually comparable; more mature and larger in runnable/test code.** Taylor's pair contains much more documentary and corpus material. |
-| [Conftest](https://github.com/open-policy-agent/conftest/tree/ca2dfd71a5c673d5f8c207c8788f18c69a6250c7) | Evaluates structured configuration against Rego policies and reports passes, warnings, failures, and exceptions | 344 | 6,686 (65) | 7,156 (49) | 2,083 | 3,217 | 1,310 | 139 | 102 | **A close product-form comparator; modestly larger in code/tests and vastly more mature as a maintained public tool.** |
-| [SLSA verifier v2.7.1](https://github.com/slsa-framework/slsa-verifier/tree/ea584f4502babc6f60d9bc799dbbb13c1caa9ee6) | Verifies cryptographic provenance, expected builders, source repositories, refs, artifacts, containers, and attestations | 911 | 8,475 (58) | 12,514 (21) | 1,158 | 34,239 | 488 | 29 | 45 | **The closest whole-repository scale anchor:** about twice Taylor's code/test surface, nearly the same structured-material volume, and fewer Markdown lines. Overall it is larger and productized. |
-| [Cedar](https://github.com/cedar-policy/cedar/tree/bf15eb3718a291834c403f104aa56d064a72504e) | Implements a fine-grained authorization language, evaluator, validator, symbolic compiler, CLI, language server, formatter, and WebAssembly interface | 973 | 192,340 (311) | 39,729 (49) | 4,393 | 7,738 | 1,545 | 66 | 85 | **Far larger.** It supplies an upper scale anchor as a large policy-language ecosystem. |
+| DobeWorks + DEGS | Governed agent work/observation plus evidence-based engineering assurance | 551 | 5,467 (12) | 4,146 (10) | 7,832 | 34,474 | 56 | Not used | 0 | Reference pair |
+| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent/tree/04d809ceab9df28f9adaed044884180159172930) | A minimal software-engineering agent with multiple execution environments, model adapters, benchmark runners, and a trajectory inspector | 221 | 5,123 (59) | 9,907 (54) | 3,901 | 2,526 | 1,022 | 39 | 65 | Same raw non-test Python line-count band. Capability, architecture, maturity, and value differ. |
+| [in-toto](https://github.com/in-toto/in-toto/tree/e352b43ad7cb8915d84c36d791aa61346152a0a3) | Verifies that supply-chain tasks were performed as planned by authorized functionaries and that products were not altered in transit | 183 | 7,542 (25) | 7,806 (29) | 2,079 | 386 | 2,479 | 49 | 31 | Conceptually comparable; more mature and larger in runnable/test code. Taylor's pair contains much more documentary and corpus material. |
+| [Conftest](https://github.com/open-policy-agent/conftest/tree/ca2dfd71a5c673d5f8c207c8788f18c69a6250c7) | Evaluates structured configuration against Rego policies and reports passes, warnings, failures, and exceptions | 344 | 6,686 (65) | 7,156 (49) | 2,083 | 3,217 | 1,310 | 139 | 102 | A close product-form comparator; modestly larger in code/tests and vastly more mature as a maintained public tool. |
+| [SLSA verifier v2.7.1](https://github.com/slsa-framework/slsa-verifier/tree/ea584f4502babc6f60d9bc799dbbb13c1caa9ee6) | Verifies cryptographic provenance, expected builders, source repositories, refs, artifacts, containers, and attestations | 911 | 8,475 (58) | 12,514 (21) | 1,158 | 34,239 | 488 | 29 | 45 | The closest whole-repository scale anchor: about twice Taylor's code/test surface, nearly the same structured-material volume, and fewer Markdown lines. Overall it is larger and productized. |
+| [Cedar](https://github.com/cedar-policy/cedar/tree/bf15eb3718a291834c403f104aa56d064a72504e) | Implements a fine-grained authorization language, evaluator, validator, symbolic compiler, CLI, language server, formatter, and WebAssembly interface | 973 | 192,340 (311) | 39,729 (49) | 4,393 | 7,738 | 1,545 | 66 | 85 | Far larger. It supplies an upper scale anchor as a large policy-language ecosystem. |
 
 Contributor records were counted from GitHub's first-party contributors endpoints; these records can include bots and omit unattributed contributions. Release and commit counts came from GitHub's first-party repository interfaces on the snapshot date ([mini-SWE-agent contributors](https://api.github.com/repos/SWE-agent/mini-swe-agent/contributors?anon=true&per_page=100), [in-toto contributors](https://api.github.com/repos/in-toto/in-toto/contributors?anon=true&per_page=100), [Conftest contributors](https://api.github.com/repos/open-policy-agent/conftest/contributors?anon=true&per_page=100), [SLSA verifier contributors](https://api.github.com/repos/slsa-framework/slsa-verifier/contributors?anon=true&per_page=100), [Cedar contributors](https://api.github.com/repos/cedar-policy/cedar/contributors?anon=true&per_page=100)).
 
@@ -75,9 +75,9 @@ The in-toto project's official site states that its research was supported by th
 
 Taylor independently built substantial systems around the same class of hard engineering concerns found in this institutionally supported software-supply-chain project: authorization boundaries, signed or structured evidence, provenance, policy verification, failure semantics, and separation of execution from acceptance.
 
-Professionally, DobeWorks and DEGS provide credible portfolio evidence for work in software-supply-chain security, policy-as-code systems, provenance and attestation, secure-systems research engineering, and governed AI-agent infrastructure. **“I independently designed and implemented a governed execution and assurance system; a read-only review found its core concepts comparable to established provenance and policy-verification systems, while also documenting the concrete work needed to productize it.”** An interviewer can inspect that claim in the source, tests, review, and comparison tables.
+Professionally, DobeWorks and DEGS provide credible portfolio evidence for work in software-supply-chain security, policy-as-code systems, provenance and attestation, secure-systems research engineering, and governed AI-agent infrastructure. “I independently designed and implemented a governed execution and assurance system; a read-only review found its core concepts comparable to established provenance and policy-verification systems, while also documenting the concrete work needed to productize it.” An interviewer can inspect that claim in the source, tests, review, and comparison tables.
 
-Among the additional organizations that fit this work, **MITRE** is the strongest ninth target. MITRE defines AI assurance as a repeatable process for discovering, assessing, and managing risk throughout an AI-enabled system's life cycle, operates an AI Assurance and Discovery Lab, and publicly offers student internships and co-ops. That combination aligns directly with the assurance, evidence, risk, and governed-agent concerns in DobeWorks and DEGS (MITRE, 2026a, 2026b).
+Among the additional organizations that fit this work, MITRE is the strongest ninth target. MITRE defines AI assurance as a repeatable process for discovering, assessing, and managing risk throughout an AI-enabled system's life cycle, operates an AI Assurance and Discovery Lab, and publicly offers student internships and co-ops. That combination aligns directly with the assurance, evidence, risk, and governed-agent concerns in DobeWorks and DEGS (MITRE, 2026a, 2026b).
 
 ### Conftest: what a mature policy gate looks like
 
@@ -101,12 +101,12 @@ Cedar has more than 24 times the Taylor pair's code-and-test lines and supplies 
 
 These comparisons support four conclusions:
 
-1. **The pair is much larger than its five main Python modules suggest.** The executable core is the smallest visible layer of an evidence, test, and assurance artifact.
-2. **The pair has a real peer group.** in-toto, Conftest, and SLSA verifier all spend engineering effort on explicit policy, provenance, authorization, failure semantics, structured records, and verification.
-3. **The pair is substantially less mature than those products.** It has no public releases, package contract, production adapters, sustained contributor base, or comparable maintenance history. That limits present commercial value and argues against treating the consultancy ceiling as ordinary value.
-4. **A 1,900–3,500-hour clean-room range is plausible, but its top endpoint is judgmental.** It becomes credible when “replacement” includes rediscovering the control model, writing the negative cases, constructing evidence corpora, and documenting the reasoning. It becomes too high if replacement means reproducing only the present executable behavior from the existing repositories.
+1. The pair is much larger than its five main Python modules suggest. The executable core is the smallest visible layer of an evidence, test, and assurance artifact.
+2. The pair has a real peer group. in-toto, Conftest, and SLSA verifier all spend engineering effort on explicit policy, provenance, authorization, failure semantics, structured records, and verification.
+3. The pair is substantially less mature than those products. It has no public releases, package contract, production adapters, sustained contributor base, or comparable maintenance history. That limits present commercial value and argues against treating the consultancy ceiling as ordinary value.
+4. A 1,900–3,500-hour clean-room range is plausible, but its top endpoint is judgmental. It becomes credible when “replacement” includes rediscovering the control model, writing the negative cases, constructing evidence corpora, and documenting the reasoning. It becomes too high if replacement means reproducing only the present executable behavior from the existing repositories.
 
-If Taylor wants one number for personal context, **approximately $400,000–$575,000** is a more balanced conventional-to-specialist center of gravity for an independent clean-room reconstruction of both snapshots. The existing **$875,000** remains a valid “expensive specialist engagement went all the way to both upper assumptions” ceiling. The **$43,000–$131,000** range remains the more relevant estimate for a competent team using the current repositories, tests, and documents as a specification with modern AI assistance.
+If Taylor wants one number for personal context, approximately $400,000–$575,000 is a more balanced conventional-to-specialist center of gravity for an independent clean-room reconstruction of both snapshots. The existing $875,000 remains a valid “expensive specialist engagement went all the way to both upper assumptions” ceiling. The $43,000–$131,000 range remains the more relevant estimate for a competent team using the current repositories, tests, and documents as a specification with modern AI assistance.
 
 ## References
 
