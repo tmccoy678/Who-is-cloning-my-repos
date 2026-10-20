@@ -2,6 +2,16 @@
 
 The evidence comprises surviving October 17 and 19 research artifacts and pinned public-source files retrieved during the October 20 revision. Each manifest identifies the acquisition method and relevant timestamps.
 
+## Current authenticated snapshot
+
+[`live/2026-10-20/github-traffic-response.json`](live/2026-10-20/github-traffic-response.json) is the complete research response captured at 2026-10-20 14:30:13 UTC from GitHub's authenticated clone, view, popular-referrer, and popular-path endpoints for the six public repositories. It contains response data only; authentication headers and credentials were never written to the file. Its SHA-256 is `9efe0a041498518b44365b67756ffb0e56eb9990e73fbb9f29957516704fb1fd`.
+
+[`live/2026-10-20/github-repository-metadata.json`](live/2026-10-20/github-repository-metadata.json) preserves selected public repository metadata retrieved from GitHub's repository endpoint, including descriptions, topics, language, stars, forks, dates, visibility, and default branch. It contains no credentials or headers. Its SHA-256 is `0c7e22764fea07cc312198f31b1764056a708502102e7c7bfca3e8312690289a`.
+
+[`live/2026-10-20/comparison-repository-metadata.json`](live/2026-10-20/comparison-repository-metadata.json) preserves GitHub descriptions, topics, languages, and URLs for the two rate-stratum repositories and the nearest screened repository by range-to-mean percentage. It supports the subject labels in manuscript Table 4. Its SHA-256 is `7390d5dd9e4c0b4135c11fea6d6c76908bd88f40167e06104f43548ab73418cb`.
+
+`scripts/analyze_and_plot.R` reads that preserved JSON locally and creates the current long-form traffic table, window metrics, and three manuscript figures. [`../figures/r-figure-provenance-2026-10-20.json`](../figures/r-figure-provenance-2026-10-20.json) records the raw-input hash, screened-comparison-input hash, code hash, software versions, derived-table hashes, and figure hashes. Regeneration performs no network requests.
+
 ## Surviving historical artifacts
 
 [`recovery_manifest.json`](recovery_manifest.json) records the SHA-256, size, type, and original tool-call/completion UTC timestamps for 23 artifacts.

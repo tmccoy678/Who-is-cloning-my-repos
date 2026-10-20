@@ -1,19 +1,20 @@
 cff-version: 1.2.0
 message: "Please cite this manuscript using the metadata below."
-title: "Who Is Cloning My Repositories? A Case Study of Unusually Regular GitHub Traffic"
+title: "Who Is Cloning My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days—With 0 Visitors, 0 Views, No Referrals, Stars, Forks, or External Public Discussion for DobeWorks and DEGS at the Original Snapshot"
 type: report
 authors:
   - family-names: "McCoy"
     given-names: "Taylor"
 date-released: 2026-10-20
-version: 1.4.0
+version: 1.5.0
 license: MIT
 repository-code: "https://github.com/tmccoy678/Who-is-cloning-my-repos"
 abstract: >-
-  I investigated 8,372 GitHub-counted clone events across six public repositories
-  in a 14-day window. Four repositories showed a narrow daily plateau in a
-  retrospectively selected six-day interval. Reproducible reanalysis compares
-  observation windows and count rates, screens 138 external series to retain 134,
-  and replays all 138 original extracted vectors from pinned public sources.
-  Recurring automated collection is a plausible explanation; the operator and
-  causal mechanism remain unknown.
+  I investigated exactly 8,372 GitHub-counted clone events across six public
+  repositories in a 14-day window, averaging 598 per day. Four repositories
+  continued at 568-582 combined clones per day over October 13-19. Reproducible
+  R analysis compares observation windows, clone events, daily unique-cloner
+  counts, and count rates. A screened external comparison retains 134 series and
+  replays all 138 original extracted vectors from pinned public sources. The
+  pattern is consistent with recurring automated collection; the operator is
+  unknown.

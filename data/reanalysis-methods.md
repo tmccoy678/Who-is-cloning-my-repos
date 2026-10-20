@@ -24,17 +24,16 @@ It never adds overlapping rolling totals.
 Of 138 extracted series, two cumulative counters remain excluded, one fixture-path
 series is excluded because its observational provenance is unverified, and one
 multi-repository source is excluded because same-date rows were overwritten
-without preserving measured-repository identity. The fixture exclusion is a
-precaution, not a finding of fabricated data. The screened
-set contains 134 series from 34
-source-host repositories. A host can archive several measured repositories;
-these are not asserted to be independent units. The two largest hosts supply
+without preserving measured-repository identity. The fixture exclusion follows
+from its unresolved observational origin. The screened set contains 134 series
+from 34 source-host repositories. A host can archive several measured
+repositories, creating dependence among rows. The two largest hosts supply
 99 series.
 
 There are 118 screened series below 25 clones/day.
 For a nonconstant integer-count series, range is at least one; when mean is below
-25, range/mean exceeds 4%. A percentage is unitless, but comparability of count
-variation still depends on rate and acquisition. No screened series meets either
+25, range/mean exceeds 4%. Comparability of count variation depends on rate and
+acquisition. No screened series meets either
 the original 1–4% criterion or a <=4% criterion. The 100–200/day sensitivity
 stratum contains only 2 series; it is post hoc and too small
 to establish a population anomaly rate or a causal mechanism.

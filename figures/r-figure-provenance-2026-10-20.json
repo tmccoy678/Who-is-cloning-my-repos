@@ -1,0 +1,77 @@
+{
+  "generated_at_utc": "2026-10-20 14:56:54 UTC",
+  "workflow": "Hand-written R analysis and figure code for RStudio",
+  "execution_context": {
+    "interface": "RStudio Desktop",
+    "version": "2026.10.0+233",
+    "release_name": "Blue Mistflower"
+  },
+  "script": "scripts/analyze_and_plot.R",
+  "script_sha256": "bf30fb8a6cc2efbeff7f2c50e91ee44bf7f710aabd412d3572bdf45721c0a3d8",
+  "lockfile": {
+    "file": "renv.lock",
+    "sha256": "51bb926f0090238a6a942d7612221cfb4776099fabdffef35e2a0e3c670bd7ec"
+  },
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "platform": "aarch64-apple-darwin23",
+  "packages": {
+    "cowplot": "1.2.0",
+    "digest": "0.6.39",
+    "ggplot2": "4.0.3",
+    "jsonlite": "2.0.0",
+    "ragg": "1.5.2",
+    "rstudioapi": "0.19.0",
+    "scales": "1.4.0"
+  },
+  "inputs": [
+    {
+      "file": "evidence/live/2026-10-20/github-traffic-response.json",
+      "sha256": "9efe0a041498518b44365b67756ffb0e56eb9990e73fbb9f29957516704fb1fd"
+    },
+    {
+      "file": "data/reanalysis-comparison-series.csv",
+      "sha256": "41f752d9bb9bd8011bd215485c05b2d781f485f221703ed97d4417f1c84dce2e"
+    },
+    {
+      "file": "data/reanalysis-window-metrics.csv",
+      "sha256": "400818ff31272cab8aac5223398dcf37d800cac3d32679017028f80a436f56c1"
+    }
+  ],
+  "derived_tables": [
+    {
+      "file": "data/traffic-snapshot-2026-10-20.csv",
+      "sha256": "33f40c809cac14a2bf473de21913147817c4b8fc5ac8b0da43c80083529cb130"
+    },
+    {
+      "file": "data/r-analysis-window-metrics-2026-10-20.csv",
+      "sha256": "5f294f3f7e7bafc79bf5d9b824284609cec991330027210ac51a08c025b4bc55"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "figures/r-window-sensitivity-2026-10-20.png",
+      "sha256": "910f7837b4e93e1eedf96dad5c56a0b19b2d3bc8221930971be4b224f1823f41"
+    },
+    {
+      "file": "figures/r-window-sensitivity-2026-10-20.pdf",
+      "sha256": "57f0575013f171a2261550f33b17044bdb2a896d7f891ea9146ab276b3b2e40b"
+    },
+    {
+      "file": "figures/r-rate-comparison-2026-10-20.png",
+      "sha256": "611e300b88c83db145485707065f073e275a480047686a56150b5bf1b9d4c6d0"
+    },
+    {
+      "file": "figures/r-rate-comparison-2026-10-20.pdf",
+      "sha256": "3a5316330b5c79796c2b913db98687381c6521344f95462d0dbb2d4089c2d829"
+    },
+    {
+      "file": "figures/r-clones-versus-daily-uniques-2026-10-20.png",
+      "sha256": "c1469067cbb74dca4abbd6089dd918aaa4bcf22ba57b4cd7d738922a2029be57"
+    },
+    {
+      "file": "figures/r-clones-versus-daily-uniques-2026-10-20.pdf",
+      "sha256": "4ad69417fa8cbf12e237476de8b6654aa5bc8a7b379dc3b4c02ce6c7dde8a129"
+    }
+  ],
+  "notes": ["No network access occurs in this script.", "The raw authenticated GitHub traffic response is preserved separately from derived CSV tables.", "The script validates complete daily coverage, nonnegative counts, and reconciliation of daily clone counts to each window total.", "The shared six-day focal metrics are checked against the independent Python analysis before figures are written.", "PNG and vector PDF versions are generated from the same ggplot objects.", "The six-day comparison remains October 13-18 because that is the shared interval in the preserved external comparison set."]
+}

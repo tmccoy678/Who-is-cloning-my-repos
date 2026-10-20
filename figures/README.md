@@ -2,25 +2,28 @@
 
 The original eight images remain preserved under their existing filenames. Original files 1 and 2 are byte-identical copies of the supplied captures. Original files 3–6 are unedited window captures of the cited primary webpages made with the isolated Codex browser. Original files 7 and 8 are charts from the earlier analysis.
 
-The revised manuscript numbers its selected figures separately: Figure 1 uses the original overview screenshot; Figures 2 and 3 use the new window-sensitivity and rate-comparison plots below. This numbering leaves the historical filenames stable.
+The revised manuscript numbers its selected figures separately: Figure 1 uses the original overview screenshot; Figures 2–4 use the R figures below. This numbering leaves the historical filenames stable.
 
 ## Revised Analytical Figures
 
 | Manuscript figure | Files | Data and purpose |
 |---|---|---|
-| 2 | [PNG](reanalysis-window-sensitivity.png), [vector PDF](reanalysis-window-sensitivity.pdf) | Preserved October 5–18 daily counts and recalculated window metrics; distinguishes the full window, selected six-day interval, and two new dates |
-| 3 | [PNG](reanalysis-rate-comparison.png), [vector PDF](reanalysis-rate-comparison.pdf) | Recalculated six-day rates and relative variation; shows the 134 screened external series and the two-series 100–200/day stratum |
+| 2 | [PNG](r-window-sensitivity-2026-10-20.png), [vector PDF](r-window-sensitivity-2026-10-20.pdf) | October 6–19 authenticated daily counts; distinguishes the full window, seven-day continuation, and three dates beyond the original snapshot |
+| 3 | [PNG](r-rate-comparison-2026-10-20.png), [vector PDF](r-rate-comparison-2026-10-20.pdf) | Recalculated six-day rates and relative variation; shows the 134 screened external series and the two-series 100–200/day stratum |
+| 4 | [PNG](r-clones-versus-daily-uniques-2026-10-20.png), [vector PDF](r-clones-versus-daily-uniques-2026-10-20.pdf) | October 13–19 clone events, repository-level daily unique-cloner sums, and their difference |
 
-[The provenance manifest](reanalysis-provenance.json) records the input, output, and plotting-script hashes and library versions. Both figures use black-and-white marks and were reopened for visual inspection. The analysis uses Python's standard library; plotting additionally requires Matplotlib and NumPy. The recorded environment used Python 3.14.7, Matplotlib 3.11.2, and NumPy 2.5.4.
+[The R provenance manifest](r-figure-provenance-2026-10-20.json) records the execution context, raw and derived input hashes, code and lockfile hashes, output hashes, R version, and package versions. All three figures use black-and-white marks and were reopened for visual inspection. The final figures were generated from RStudio Desktop 2026.10.0+233 “Blue Mistflower” with R 4.6.1, cowplot 1.2.0, digest 0.6.39, ggplot2 4.0.3, jsonlite 2.0.0, ragg 1.5.2, rstudioapi 0.19.0, and scales 1.4.0. [`renv.lock`](../renv.lock) pins the complete R package dependency graph.
 
-From the repository root, in an environment with those plotting dependencies:
+Open `Who-is-cloning-my-repos.Rproj` in RStudio and run:
 
-```sh
-python3 scripts/analyze.py
-python3 scripts/plot_reanalysis.py
+```r
+renv::restore()
+source("scripts/analyze_and_plot.R")
 ```
 
-The plotting script writes only the new `figures/reanalysis-*` files. Fonts and rendering-library versions can affect output bytes; the manifest identifies the produced files.
+`renv::restore()` is required only when recreating the recorded dependency environment. The equivalent analysis command is `Rscript scripts/analyze_and_plot.R`. The hand-written R script reads the preserved raw response and screened comparison CSV without network access, validates daily coverage and totals, cross-checks its six-day focal metrics against the independent Python output, regenerates both current derived tables, and writes the three PNG/PDF pairs plus the provenance manifest. Fonts, PDF timestamps, and rendering-library versions can affect output bytes; the manifest identifies the produced files.
+
+The earlier Python-rendered `reanalysis-*` figures remain in Git history at revision `71bb9e1`; the manuscript now uses the R figures.
 
 ## Preserved Original Figures
 

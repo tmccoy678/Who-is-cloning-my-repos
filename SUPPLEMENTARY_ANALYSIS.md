@@ -1,9 +1,26 @@
 # Supplementary Analysis and Reproduction
 
-For *Who Is Cloning My Repositories? A Case Study of Unusually Regular GitHub Traffic*.<br>
+For *Who Is Cloning My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days—With 0 Visitors, 0 Views, No Referrals, Stars, Forks, or External Public Discussion for DobeWorks and DEGS at the Original Snapshot*.<br>
 Revised October 20, 2026.
 
-## Reproduce the descriptive analysis
+## Reproduce the current R analysis and figures
+
+Open `Who-is-cloning-my-repos.Rproj` in RStudio and run:
+
+```r
+renv::restore()
+source("scripts/analyze_and_plot.R")
+```
+
+The equivalent terminal command is:
+
+```sh
+Rscript scripts/analyze_and_plot.R
+```
+
+`renv::restore()` recreates the package environment pinned in `renv.lock` and is required only for a new or changed R library. The hand-written R script itself performs no network requests. It reads the preserved October 20 GitHub response and the screened external-series table, validates complete daily coverage and window totals, cross-checks the October 13–18 focal statistics against the independent Python output, rewrites `data/traffic-snapshot-2026-10-20.csv` and `data/r-analysis-window-metrics-2026-10-20.csv`, then generates Figures 2–4 in PNG and vector PDF formats. The final run was sourced from RStudio Desktop 2026.10.0+233 “Blue Mistflower” using R 4.6.1. `figures/r-figure-provenance-2026-10-20.json` records execution context, input, code, lockfile, output, R, and package identities.
+
+## Reproduce the independent preserved-window analysis
 
 From the repository root, using Python 3.9 or later:
 
@@ -15,7 +32,7 @@ python3 -B -m unittest discover -s scripts -p 'test_analysis.py' -v
 
 The first command validates the preserved CSV inputs without writing. The second generates `data/reanalysis-*` outputs. The tests check arithmetic, input integrity, explicit exclusions, and deterministic regeneration. The analysis uses the Python standard library. Plotting has separate dependencies and instructions in the plotting script.
 
-The generated `data/reanalysis-summary.json` contains source hashes, original totals, window overlap, comparison exclusions, count-rate summaries, and account statistics. `data/reanalysis-window-metrics.csv` reports every focal series over October 5–18, October 13–18, and October 17–18, and the four high-traffic repositories over the recovered original October 3–16 window. `data/reanalysis-comparison-series.csv` preserves the link from each original row to its inclusion decision and recalculated values. Undefined relative statistics are represented explicitly.
+The generated `data/reanalysis-summary.json` contains source hashes, original totals, window overlap, comparison exclusions, count-rate summaries, and account statistics. `data/reanalysis-window-metrics.csv` reports every focal series over October 5–18, October 13–18, and October 17–18, and the four high-traffic repositories over the recovered original October 3–16 window. `data/reanalysis-comparison-series.csv` preserves the link from each original row to its inclusion decision and recalculated values. Undefined relative statistics are represented explicitly. This Python workflow is retained as an independent implementation of the historical analysis; it is no longer the manuscript figure renderer.
 
 ## What was preserved and recovered
 
@@ -29,9 +46,9 @@ The recovered evidence includes:
 - its 138-record JSONL extraction output and seven-query search protocol; and
 - original downloads for several public comparisons.
 
-The recovered October 19 responses were collected earlier that day than the CSV-writing calls. They corroborate the retained values but are not the exact response bodies that produced those CSVs. Session recovery copies selected research output; private conversations and unrelated account records are excluded. Later retrieval of a public file at its recorded Git commit is separately identified as a revision-time retrieval.
+The recovered October 19 responses were collected earlier that day than the CSV-writing calls. Their values corroborate the retained CSVs; their capture times identify them as separate response bodies. Session recovery copies selected research output; private conversations and unrelated account records are excluded. Later retrieval of a public file at its recorded Git commit is separately identified as a revision-time retrieval.
 
-Full October 17 response bodies and the complete original 226-candidate/rejection ledger were not recovered. The original parser and output establish the search procedure and retained results. They cannot recover every missing candidate or explain every absent series. Historical data cannot be restored by substituting a response from the current rolling endpoint.
+Full October 17 response bodies and the complete original 226-candidate/rejection ledger were not recovered. The original parser and output establish the search procedure and retained results. Candidate-level rejection reasons remain unavailable. Today’s rolling endpoint cannot restore an expired historical window.
 
 All 138 retained public-source files were retrieved at their original immutable commits during revision. Replay reproduced all 138 historical vectors. The recovered original four-repository daily table reproduces the October 17 totals, and all 48 overlapping repository-days agree with the follow-up data. The [evidence guide](evidence/README.md) records file types, acquisition times, hashes, and the offline replay command:
 
@@ -43,7 +60,7 @@ Offline replay reads the cached source files and rewrites the manifest and repla
 
 ## Search protocol and screening
 
-The original search made seven Code Search requests with `per_page=100`, without pagination. A set keyed by repository and file path produced the recorded count of 226 candidates. The parser attempted JSON and CSV, kept positive-mean series containing all six target dates, retained the last encountered record for repeated dates, and collapsed identical value vectors within a file. It did not implement a separate JSONL-input parser. The recovered query text and source script are retained in `evidence/recovery/2026-10-19/`.
+The original search made seven Code Search requests with `per_page=100`, without pagination. A set keyed by repository and file path produced the recorded count of 226 candidates. The parser attempted JSON and CSV, kept positive-mean series containing all six target dates, retained the last encountered record for repeated dates, and collapsed identical value vectors within a file. Its input branches cover JSON documents and CSV files; JSONL input is absent. The recovered query text and source script are retained in `evidence/recovery/2026-10-19/`.
 
 Of the 138 extracted series, two cumulative counters were excluded in the original analysis. I also excluded the `elboletaire/github-stats-action` fixture-path series because the observational provenance is uncertain. Its fixture builder identifies the measured repository as `elboletaire/manga-downloader`; archive host and measurement target are different fields. The builder's synthetic-data comment concerns stargazers, leaving the clone counts' origin unresolved.
 
@@ -59,23 +76,25 @@ There are 118 series below 25 clones/day, including 76 below one/day. The screen
 
 An exploratory 100–200/day stratum contains two series: `Romaxa55/MegaV_Public` (194.67/day; range 87.84%; CV 35.29%) and `databricks-solutions/consort` (127.83/day; range 191.66%; CV 72.02%). The band was selected during revision around the focal rate. Its size is insufficient to estimate a population anomaly rate.
 
-The October 3–16 and October 5–18 windows overlap by 12 days. The highlighted October 13–18 interval was selected after observed spikes. Its four-repository aggregate has sample CV 0.50%, compared with 7.40% for the original October 3–16 interval, 7.43% for the full October 5–18 interval, and 0.87% for the two new dates, October 17–18. The individual-repository metrics are reported alongside the aggregate in the generated window table. Each rolling total remains attached to its own window.
+The October 3–16 and October 6–19 windows overlap by 11 days. The shared external-comparison interval remains October 13–18; the current continuation extends through October 19. The four-repository aggregate has a 0.90% sample CV and a 2.45% range-to-mean percentage over October 13–19, compared with a 7.40% CV in the original October 3–16 interval and 7.43% in the current October 6–19 interval. Across the three new dates, October 17–19, the aggregate CV is 1.22%. The individual-repository metrics are reported alongside the aggregate in the generated R window table. Each rolling total remains attached to its own window.
 
-The two revised figures use the generated analysis tables. [Figure provenance](figures/README.md) identifies their source and output hashes. `scripts/plot_reanalysis.py` documents the plotting dependencies and regeneration command. The original eight images remain preserved; the main manuscript uses the original overview screenshot and the two revised analytical figures.
+The three current analytical figures use the R-generated tables. [Figure provenance](figures/README.md) identifies their source and output hashes. The original eight images remain preserved in Git history and the six original source screenshots remain in the working tree; the main manuscript uses the original overview screenshot and three R figures.
 
 ## Corrections to historical tables
 
 The original October 17 CSV’s `TOTAL` row retains a unique-visitors value of `2`, the arithmetic sum of two repository-level values. Account-wide visitor overlap is unknown. The revised manuscript marks this cell “Not additive,” and the generated summary uses `null` for both account-wide unique measures. The source row remains available for tracing the correction.
 
-The account-age comparison has 32 rows, all created August 9, 2026. Its nominal search covered August 9–11, but taking the first 50 results in ascending creation order truncated the available cohort. The observed median public-repository count is 5; 27 accounts have zero stars, 28 have zero followers, and 31 have zero forks in the inspected sets. Earlier prose reported 6 and 28 for the first two figures. The generated account summary corrects those values. This sample supplies contextual public-engagement data; its clone traffic is unavailable, so it does not enter the main comparison.
+The account-age comparison has 32 rows, all created August 9, 2026. Taking the first 50 ascending results truncated the nominal August 9–11 search to August 9 accounts. The observed median public-repository count is 5; 27 accounts have zero stars, 28 have zero followers, and 31 have zero forks in the inspected sets. Earlier prose reported 6 and 28 for the first two figures. The generated account summary corrects those values. This sample supplies contextual public-engagement data; its clone traffic is unavailable and stays outside the main comparison.
 
 The original subject-related table and closest-series table remain preserved with their source commits. The two recorded AgentHarbor source commits return identical JSON bytes, so their different identifiers do not change the calculations.
 
 ## Known owner activity and event interpretation
 
-The original investigation identified an owner-authorized October 2 usability review that cloned the then-public repositories. That date falls before the October 3–16 analysis window. The October 19 architecture review also acquired fresh copies; the analyzed follow-up ends October 18. Neither observation establishes a complete inventory of owner-side automation.
+The original investigation identified an owner-authorized October 2 usability review that cloned the then-public repositories. That date falls before the October 3–16 analysis window. A separate October 19 architecture review acquired fresh copies; the current follow-up includes that date, and the daily aggregate cannot isolate its contribution. The inventory of owner-side automation is incomplete.
 
-Push dates and recorded clone spikes can be aligned by UTC day. The data do not establish the within-day order or identify the actor responsible for an increment. Repository-local Actions histories likewise describe one acquisition route. External services and other owner-authorized tools remain possible contributors.
+GitHub Community discussion #208852 documents a public-repository traffic interruption after September 23 and a GitHub staff statement on September 30 that a fix had shipped. This platform event overlaps the beginning of the preserved history. The October 13–19 continuation occurs after the reported fix and remains the cleanest interval for describing sustained regularity.
+
+Push dates and recorded clone spikes can be aligned by UTC day. Within-day order and actor identity are unavailable. Repository-local Actions histories likewise describe one acquisition route. External services and other owner-authorized tools remain possible contributors.
 
 ## Materials outside the manuscript’s empirical claims
 

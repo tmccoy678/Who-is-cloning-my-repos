@@ -1,0 +1,981 @@
+{
+  "captured_at": "2026-10-20T14:30:13.679952+00:00",
+  "owner": "tmccoy678",
+  "repositories": {
+    "BackspaceTextRetention": {
+      "clones": {
+        "count": 1992,
+        "uniques": 1196,
+        "clones": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 141,
+            "uniques": 137
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 142,
+            "uniques": 138
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 138,
+            "uniques": 135
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 143,
+            "uniques": 131
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 142,
+            "uniques": 135
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 143,
+            "uniques": 138
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 142,
+            "uniques": 137
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 142,
+            "uniques": 133
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 143,
+            "uniques": 139
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 142,
+            "uniques": 141
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 144,
+            "uniques": 141
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 144,
+            "uniques": 136
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 142,
+            "uniques": 136
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 144,
+            "uniques": 137
+          }
+        ]
+      },
+      "views": {
+        "count": 0,
+        "uniques": 0,
+        "views": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          }
+        ]
+      },
+      "referrers": [],
+      "paths": []
+    },
+    "DEGS-v2.1": {
+      "clones": {
+        "count": 2001,
+        "uniques": 1245,
+        "clones": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 155,
+            "uniques": 145
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 140,
+            "uniques": 136
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 139,
+            "uniques": 131
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 142,
+            "uniques": 136
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 143,
+            "uniques": 141
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 143,
+            "uniques": 133
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 142,
+            "uniques": 137
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 141,
+            "uniques": 133
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 143,
+            "uniques": 138
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 142,
+            "uniques": 137
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 141,
+            "uniques": 136
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 143,
+            "uniques": 137
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 142,
+            "uniques": 139
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 145,
+            "uniques": 141
+          }
+        ]
+      },
+      "views": {
+        "count": 3,
+        "uniques": 2,
+        "views": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 2,
+            "uniques": 1
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 1,
+            "uniques": 1
+          }
+        ]
+      },
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/tmccoy678/DEGS-v2.1",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/tmccoy678/DEGS-v2.1/graphs/traffic",
+          "title": "/graphs/traffic",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/tmccoy678/DEGS-v2.1/pulse",
+          "title": "/pulse",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    "DobeWorks-v2.1": {
+      "clones": {
+        "count": 2134,
+        "uniques": 1258,
+        "clones": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 272,
+            "uniques": 211
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 152,
+            "uniques": 145
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 141,
+            "uniques": 140
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 141,
+            "uniques": 135
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 142,
+            "uniques": 137
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 143,
+            "uniques": 133
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 140,
+            "uniques": 135
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 144,
+            "uniques": 138
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 141,
+            "uniques": 137
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 142,
+            "uniques": 138
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 144,
+            "uniques": 142
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 143,
+            "uniques": 140
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 141,
+            "uniques": 138
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 148,
+            "uniques": 137
+          }
+        ]
+      },
+      "views": {
+        "count": 0,
+        "uniques": 0,
+        "views": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          }
+        ]
+      },
+      "referrers": [],
+      "paths": []
+    },
+    "grok-bridge-writeup": {
+      "clones": {
+        "count": 101,
+        "uniques": 66,
+        "clones": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 69,
+            "uniques": 43
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 21,
+            "uniques": 13
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 2,
+            "uniques": 2
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 2,
+            "uniques": 2
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 1,
+            "uniques": 1
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 2,
+            "uniques": 2
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 1,
+            "uniques": 1
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 2,
+            "uniques": 2
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 1,
+            "uniques": 1
+          }
+        ]
+      },
+      "views": {
+        "count": 7,
+        "uniques": 1,
+        "views": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 7,
+            "uniques": 1
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          }
+        ]
+      },
+      "referrers": [
+        {
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/tmccoy678/grok-bridge-writeup",
+          "title": "Overview",
+          "count": 5,
+          "uniques": 1
+        }
+      ]
+    },
+    "TrashTreasurePickup": {
+      "clones": {
+        "count": 2118,
+        "uniques": 1227,
+        "clones": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 144,
+            "uniques": 138
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 142,
+            "uniques": 130
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 141,
+            "uniques": 139
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 142,
+            "uniques": 134
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 142,
+            "uniques": 137
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 235,
+            "uniques": 174
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 169,
+            "uniques": 155
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 141,
+            "uniques": 130
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 141,
+            "uniques": 137
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 146,
+            "uniques": 143
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 142,
+            "uniques": 135
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 145,
+            "uniques": 140
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 143,
+            "uniques": 138
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 145,
+            "uniques": 136
+          }
+        ]
+      },
+      "views": {
+        "count": 1,
+        "uniques": 1,
+        "views": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 1,
+            "uniques": 1
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          }
+        ]
+      },
+      "referrers": [],
+      "paths": [
+        {
+          "path": "/tmccoy678/TrashTreasurePickup",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    "WeatherTicker": {
+      "clones": {
+        "count": 5,
+        "uniques": 5,
+        "clones": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 1,
+            "uniques": 1
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 1,
+            "uniques": 1
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 1,
+            "uniques": 1
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 2,
+            "uniques": 2
+          }
+        ]
+      },
+      "views": {
+        "count": 0,
+        "uniques": 0,
+        "views": [
+          {
+            "timestamp": "2026-10-06T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-07T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-08T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-09T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-10T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-11T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-12T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-13T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-14T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-15T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-16T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-17T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-18T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          },
+          {
+            "timestamp": "2026-10-19T00:00:00Z",
+            "count": 0,
+            "uniques": 0
+          }
+        ]
+      },
+      "referrers": [],
+      "paths": []
+    }
+  }
+}
