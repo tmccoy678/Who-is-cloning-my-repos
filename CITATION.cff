@@ -6,17 +6,13 @@ authors:
   - family-names: "McCoy"
     given-names: "Taylor"
 date-released: 2026-10-19
-version: 1.2.1
+version: 1.3.0
 license: MIT
-repository-code: "https://github.com/tmccoy678/github-clone-traffic-investigation"
+repository-code: "https://github.com/tmccoy678/Who-is-cloning-my-repos"
 abstract: >-
   A descriptive case study of 8,372 GitHub-counted clone events across six public
   repositories in a 14-day window, with a follow-up regularity analysis,
   same-age-account, subject-matched, and numeric-first variation comparisons,
   October 6 event reconstruction, and read-only review and replacement-cost estimate for
   DobeWorks and DEGS. The observed pattern is best explained by selective scheduled
-  and push-triggered automated collection;
-  the actor remains unknown. The manuscript also serves as an openly stated
-  career and research signal: Taylor McCoy seeks an internship in public-interest,
-  national-security, aerospace, or AI-assurance engineering and a research-assistant
-  position with a principal investigator whose interests overlap the work.
+  and push-triggered automated collection; the actor remains unknown.

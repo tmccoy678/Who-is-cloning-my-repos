@@ -2,11 +2,10 @@
 
 ## Read-Only Review and Replacement-Cost Estimate: DobeWorks v2.1 and DEGS v2.1
 
-Short answer: As engineering artifacts, plainly yes. Their present transaction price remains unmeasured. The reconstruction figures below are judgment-based scenarios; Taylor's actual development time is unknown.
+Short answer: As engineering artifacts, plainly yes. Their present transaction price remains unmeasured. The reconstruction figures below are judgment-based scenarios; actual development time is unknown.
 
 Review date: October 19, 2026<br>
 Reviewer: OpenAI Codex, GPT-6<br>
-Owner: Taylor McCoy
 
 ## Scope and method
 
@@ -130,7 +129,7 @@ The bigger product question is whether DEGS should remain a personal policy snap
 
 ## Independent Astra architecture review
 
-Taylor supplied a separate read-only code-architecture review dated October 19, 2026. It examined DobeWorks commit `9857388` and DEGS commit `8d91866`; it explicitly states that applications and test suites were not run and that no repositories were modified. Its method therefore differs from the executed tests, benchmarks, and temporary adversarial inputs reported above.
+A separate read-only code-architecture review dated October 19, 2026, examined DobeWorks commit `9857388` and DEGS commit `8d91866`; it explicitly states that applications and test suites were not run and that no repositories were modified. Its method therefore differs from the executed tests, benchmarks, and temporary adversarial inputs reported above.
 
 The independent review corroborates the strongest architectural finding: DobeWorks and DEGS separate observation, assessment, execution, and acceptance so that uncertainty remains visible and completed work stays separate from accepted work. It specifically praises Worker's injected-runner seam, detached input copies, retained expected digest, and forged-output rejection, as well as Observer's use of `UNKNOWN` for stale signals.
 
@@ -153,7 +152,7 @@ The estimate therefore uses two explicit scenarios:
 1. Independent professional replacement: $95–$145 per hour, including a seniority and overhead allowance above the BLS-derived baseline.
 2. Specialist consultancy procurement: $175–$250 per hour as an upper sensitivity scenario.
 
-The hours are a judgment-based work-breakdown scenario covering requirements recovery, control and domain design, implementation, adversarial tests, benchmarks, documentation, provenance, integration, and review. Taylor's actual development time remains unknown. The estimate excludes building a production service, customer support, sales, hosted infrastructure, formal security certification, and continuing maintenance.
+The hours are a judgment-based work-breakdown scenario covering requirements recovery, control and domain design, implementation, adversarial tests, benchmarks, documentation, provenance, integration, and review. Actual development time remains unknown. The estimate excludes building a production service, customer support, sales, hosted infrastructure, formal security certification, and continuing maintenance.
 
 ### Estimated hours and replacement cost
 
@@ -173,7 +172,7 @@ The codebases plausibly embody low-to-mid six figures of conventional institutio
 
 ## Sources
 
-Astra. (2026, October 19). *DobeWorks and DEGS code architecture review* [Unpublished code review supplied by the repository owner].
+Astra. (2026, October 19). *DobeWorks and DEGS code architecture review* [Unpublished code review supplied for this study].
 
 McCoy, T. (2026a). *DobeWorks v2.1* [Computer software]. GitHub. https://github.com/tmccoy678/DobeWorks-v2.1
 
