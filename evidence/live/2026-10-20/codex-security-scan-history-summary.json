@@ -1,0 +1,39 @@
+{
+  "captured_at_utc": "2026-10-20T15:04:48Z",
+  "source": {
+    "product": "OpenAI Codex Security Cloud",
+    "interface": "connected read-only app",
+    "operation": "defense_factory_scan_history",
+    "parameters": {
+      "limit": 100
+    }
+  },
+  "reduction": "The connected response was reduced in memory to repository names, UTC scan dates, counts, success states, and first and last start times. Commit identifiers, account identifiers, email addresses, and generated threat-model bodies were omitted.",
+  "history": {
+    "recorded_commit_scan_jobs": 99,
+    "unique_recorded_commits": 99,
+    "successful_scan_jobs": 99,
+    "failed_or_unfinished_scan_jobs": 0,
+    "earliest_started_at_utc": "2026-09-28T22:47:12.938736Z",
+    "latest_started_at_utc": "2026-10-11T20:29:06.850165Z",
+    "repository_scan_jobs": {
+      "BackspaceTextRetention": 6,
+      "DEGS-v2.1": 12,
+      "DobeWorks-v2.1": 36,
+      "TrashTreasurePickup": 45
+    },
+    "daily_scan_jobs_utc": {
+      "2026-09-28": 81,
+      "2026-10-02": 2,
+      "2026-10-05": 3,
+      "2026-10-06": 9,
+      "2026-10-11": 4
+    }
+  },
+  "current_usage_state": {
+    "scan_funding_available": false,
+    "outcome": "credits_exhausted",
+    "legacy_grace_ends_at_utc": "2026-10-21T18:53:00Z"
+  },
+  "dashboard_observation": "The supplied October 20 dashboard captures display Monitoring for BackspaceTextRetention, DEGS-v2.1, DobeWorks-v2.1, and TrashTreasurePickup. Those are exactly the four repositories in the high-traffic group. The captures are not republished because they display account information unrelated to the analysis."
+}

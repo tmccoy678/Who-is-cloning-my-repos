@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-20 14:56:54 UTC",
+  "generated_at_utc": "2026-10-20 15:15:45 UTC",
   "workflow": "Hand-written R analysis and figure code for RStudio",
   "execution_context": {
     "interface": "RStudio Desktop",
@@ -7,7 +7,7 @@
     "release_name": "Blue Mistflower"
   },
   "script": "scripts/analyze_and_plot.R",
-  "script_sha256": "bf30fb8a6cc2efbeff7f2c50e91ee44bf7f710aabd412d3572bdf45721c0a3d8",
+  "script_sha256": "a75ef2eae7c4a6d795ae25e79f873d73bdcfcb84329f75ad448c11bad3820ad4",
   "lockfile": {
     "file": "renv.lock",
     "sha256": "51bb926f0090238a6a942d7612221cfb4776099fabdffef35e2a0e3c670bd7ec"
@@ -35,6 +35,10 @@
     {
       "file": "data/reanalysis-window-metrics.csv",
       "sha256": "400818ff31272cab8aac5223398dcf37d800cac3d32679017028f80a436f56c1"
+    },
+    {
+      "file": "data/codex-security-scan-history-summary-2026-10-20.csv",
+      "sha256": "76f72d92b4b45eeb01cf1e7657b1fa1a3122b08f1719b2747dee0a6d97307a50"
     }
   ],
   "derived_tables": [
@@ -45,33 +49,29 @@
     {
       "file": "data/r-analysis-window-metrics-2026-10-20.csv",
       "sha256": "5f294f3f7e7bafc79bf5d9b824284609cec991330027210ac51a08c025b4bc55"
+    },
+    {
+      "file": "data/r-codex-security-alignment-metrics-2026-10-20.csv",
+      "sha256": "9e4e51e593f8e21d580aa674df25465afd764a65d95e2d5104aa0f933be7421b"
     }
   ],
   "outputs": [
     {
       "file": "figures/r-window-sensitivity-2026-10-20.png",
-      "sha256": "910f7837b4e93e1eedf96dad5c56a0b19b2d3bc8221930971be4b224f1823f41"
+      "sha256": "2c57f4ba8a6c9ef1a61870d3d5d54fbdf779cb39d2d4a8155b72be5ea7f81661"
     },
     {
       "file": "figures/r-window-sensitivity-2026-10-20.pdf",
-      "sha256": "57f0575013f171a2261550f33b17044bdb2a896d7f891ea9146ab276b3b2e40b"
+      "sha256": "9fa45ef6450c925f42a18c68efed92b50ef0ddaef377a2d4d48701719c6365a0"
     },
     {
       "file": "figures/r-rate-comparison-2026-10-20.png",
-      "sha256": "611e300b88c83db145485707065f073e275a480047686a56150b5bf1b9d4c6d0"
+      "sha256": "585947e2188b1bf281d0edac154ed3e0c2195a14365f73373ee6d5f62a8894ba"
     },
     {
       "file": "figures/r-rate-comparison-2026-10-20.pdf",
-      "sha256": "3a5316330b5c79796c2b913db98687381c6521344f95462d0dbb2d4089c2d829"
-    },
-    {
-      "file": "figures/r-clones-versus-daily-uniques-2026-10-20.png",
-      "sha256": "c1469067cbb74dca4abbd6089dd918aaa4bcf22ba57b4cd7d738922a2029be57"
-    },
-    {
-      "file": "figures/r-clones-versus-daily-uniques-2026-10-20.pdf",
-      "sha256": "4ad69417fa8cbf12e237476de8b6654aa5bc8a7b379dc3b4c02ce6c7dde8a129"
+      "sha256": "7ba0d37e50f63d7bac7851248c7ab0f533a02849a7bdd2c4fc0e3918120778d9"
     }
   ],
-  "notes": ["No network access occurs in this script.", "The raw authenticated GitHub traffic response is preserved separately from derived CSV tables.", "The script validates complete daily coverage, nonnegative counts, and reconciliation of daily clone counts to each window total.", "The shared six-day focal metrics are checked against the independent Python analysis before figures are written.", "PNG and vector PDF versions are generated from the same ggplot objects.", "The six-day comparison remains October 13-18 because that is the shared interval in the preserved external comparison set."]
+  "notes": ["No network access occurs in this script.", "The raw authenticated GitHub traffic response is preserved separately from derived CSV tables.", "The script validates complete daily coverage, nonnegative counts, and reconciliation of daily clone counts to each window total.", "The shared six-day focal metrics are checked against the independent Python analysis before figures are written.", "The Codex Security summary is checked for the exact four-repository set, 99 successful jobs, and the last recorded scan timestamp.", "PNG and vector PDF versions are generated from the same ggplot objects.", "The six-day comparison remains October 13-18 because that is the shared interval in the preserved external comparison set.", "The unique-cloner chart was removed because repository-level daily unique counts cannot be deduplicated across repositories and did not add a distinct visual finding."]
 }

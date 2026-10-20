@@ -1,0 +1,5 @@
+"repository","recorded_scan_jobs","first_recorded_scan_utc","last_recorded_scan_utc","current_window_scan_jobs","no_scan_day_median_clones","peak_date_utc","peak_clones","peak_rank_among_56_repository_days","scan_jobs_on_peak_date","peak_minus_no_scan_median"
+"DobeWorks-v2.1",36,"2026-09-28T22:49:26.350339Z","2026-10-06T17:35:35.378261Z",9,142,2026-10-06,272,1,9,130
+"DEGS-v2.1",12,"2026-09-28T22:48:50.760592Z","2026-10-05T23:21:38.932934Z",0,142,2026-10-06,155,4,0,13
+"BackspaceTextRetention",6,"2026-09-28T22:47:12.938736Z","2026-09-28T22:48:40.347817Z",0,142,2026-10-16,144,11,0,2
+"TrashTreasurePickup",45,"2026-09-28T22:56:19.245655Z","2026-10-11T20:29:06.850165Z",4,142,2026-10-11,235,2,4,93

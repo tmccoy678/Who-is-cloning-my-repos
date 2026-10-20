@@ -30,6 +30,9 @@ evidence_path <- file.path(
 )
 comparison_path <- file.path(data_dir, "reanalysis-comparison-series.csv")
 historical_metrics_path <- file.path(data_dir, "reanalysis-window-metrics.csv")
+security_history_path <- file.path(
+  data_dir, "codex-security-scan-history-summary-2026-10-20.csv"
+)
 script_path <- file.path(root, "scripts", "analyze_and_plot.R")
 lockfile_path <- file.path(root, "renv.lock")
 
@@ -115,6 +118,57 @@ validate_snapshot <- function(snapshot) {
         stop(repository, " has inconsistent ", field, " values within the window.")
       }
     }
+  }
+
+  invisible(TRUE)
+}
+
+read_security_history <- function(path) {
+  history <- utils::read.csv(path, stringsAsFactors = FALSE, check.names = FALSE)
+  history$date_utc <- as.Date(history$date_utc)
+  history$scan_jobs <- as.integer(history$scan_jobs)
+  history$successful_scan_jobs <- as.integer(history$successful_scan_jobs)
+  history
+}
+
+validate_security_history <- function(history) {
+  required <- c(
+    "repository", "date_utc", "scan_jobs", "successful_scan_jobs",
+    "first_started_at_utc", "last_started_at_utc"
+  )
+  if (!identical(names(history), required)) {
+    stop("The Codex Security history table has an unexpected schema.")
+  }
+  if (anyNA(history) || any(history$scan_jobs < 1L)) {
+    stop("Codex Security history rows must be complete and contain positive counts.")
+  }
+  if (!identical(sort(unique(history$repository)), sort(high_traffic_repositories))) {
+    stop("The monitored repository set does not match the four focal repositories.")
+  }
+  if (sum(history$scan_jobs) != 99L ||
+      sum(history$successful_scan_jobs) != 99L ||
+      any(history$scan_jobs != history$successful_scan_jobs)) {
+    stop("The Codex Security history does not reconcile to 99 successful jobs.")
+  }
+  if (max(history$last_started_at_utc) != "2026-10-11T20:29:06.850165Z") {
+    stop("The last recorded Codex Security scan timestamp changed.")
+  }
+
+  current <- history[
+    history$date_utc >= as.Date("2026-10-06") &
+      history$date_utc <= as.Date("2026-10-19"),
+    c("repository", "date_utc", "scan_jobs")
+  ]
+  current <- current[order(current$repository, current$date_utc), ]
+  rownames(current) <- NULL
+  expected <- data.frame(
+    repository = c("DobeWorks-v2.1", "TrashTreasurePickup"),
+    date_utc = as.Date(c("2026-10-06", "2026-10-11")),
+    scan_jobs = c(9L, 4L),
+    stringsAsFactors = FALSE
+  )
+  if (!identical(current, expected)) {
+    stop("Current-window Codex Security scan dates or counts changed.")
   }
 
   invisible(TRUE)
@@ -251,6 +305,57 @@ validate_historical_overlap <- function(metrics, path) {
   invisible(TRUE)
 }
 
+calculate_security_alignment <- function(snapshot, history) {
+  focal_snapshot <- snapshot[
+    snapshot$repository %in% high_traffic_repositories,
+  ]
+  focal_snapshot$repository_day_rank <- rank(
+    -focal_snapshot$clones,
+    ties.method = "min"
+  )
+
+  rows <- lapply(high_traffic_repositories, function(repository) {
+    repo_history <- history[history$repository == repository, ]
+    repo_snapshot <- focal_snapshot[
+      focal_snapshot$repository == repository,
+    ]
+    jobs <- integer(nrow(repo_snapshot))
+    matched <- match(repo_snapshot$date_utc, repo_history$date_utc)
+    jobs[!is.na(matched)] <- repo_history$scan_jobs[matched[!is.na(matched)]]
+    no_scan_clones <- repo_snapshot$clones[jobs == 0L]
+    peak_index <- which.max(repo_snapshot$clones)[1]
+
+    data.frame(
+      repository = repository,
+      recorded_scan_jobs = sum(repo_history$scan_jobs),
+      first_recorded_scan_utc = min(repo_history$first_started_at_utc),
+      last_recorded_scan_utc = max(repo_history$last_started_at_utc),
+      current_window_scan_jobs = sum(jobs),
+      no_scan_day_median_clones = stats::median(no_scan_clones),
+      peak_date_utc = repo_snapshot$date_utc[peak_index],
+      peak_clones = repo_snapshot$clones[peak_index],
+      peak_rank_among_56_repository_days =
+        repo_snapshot$repository_day_rank[peak_index],
+      scan_jobs_on_peak_date = jobs[peak_index],
+      peak_minus_no_scan_median =
+        repo_snapshot$clones[peak_index] - stats::median(no_scan_clones),
+      stringsAsFactors = FALSE
+    )
+  })
+  alignment <- do.call(rbind, rows)
+  scan_aligned <- alignment[alignment$scan_jobs_on_peak_date > 0L, ]
+  if (!identical(
+    scan_aligned$repository,
+    c("DobeWorks-v2.1", "TrashTreasurePickup")
+  ) || !identical(
+    as.integer(scan_aligned$peak_rank_among_56_repository_days),
+    c(1L, 2L)
+  )) {
+    stop("Scan-aligned peaks are no longer the top two of 56 repository-days.")
+  }
+  alignment
+}
+
 save_plot <- function(plot, stem, width, height) {
   png_path <- file.path(figure_dir, paste0(stem, ".png"))
   pdf_path <- file.path(figure_dir, paste0(stem, ".pdf"))
@@ -296,90 +401,101 @@ theme_manuscript <- function(base_size = 10) {
     )
 }
 
-build_window_figure <- function(snapshot, metrics) {
+build_window_figure <- function(snapshot, metrics, security_history) {
   focal <- snapshot[snapshot$repository %in% high_traffic_repositories, ]
   focal$repository <- factor(focal$repository, levels = high_traffic_repositories)
+  focal$scan_jobs <- 0L
+  for (index in seq_len(nrow(security_history))) {
+    matched <- focal$repository == security_history$repository[index] &
+      focal$date_utc == security_history$date_utc[index]
+    focal$scan_jobs[matched] <- security_history$scan_jobs[index]
+  }
 
   seven_day <- metrics[
     metrics$window == "continuation_7_days" &
       metrics$measure == "clones" &
       metrics$repository %in% high_traffic_repositories,
   ]
-  full_window <- metrics[
-    metrics$window == "current_14_days" &
-      metrics$measure == "clones" &
-      metrics$repository %in% high_traffic_repositories,
+  annotations <- seven_day[
+    , c("repository", "range_percent_of_mean", "sample_cv_percent")
   ]
-
-  annotations <- merge(
-    full_window[, c("repository", "range_percent_of_mean", "sample_cv_percent")],
-    seven_day[, c("repository", "range_percent_of_mean", "sample_cv_percent")],
-    by = "repository",
-    suffixes = c("_14", "_7")
-  )
   annotations$repository <- factor(
     annotations$repository,
     levels = high_traffic_repositories
   )
   annotations$date_utc <- as.Date("2026-10-06")
-  annotations$y <- 18
+  annotations$y <- 17
   annotations$label <- sprintf(
-    "14 days: range %.2f%%; CV %.2f%%\n7-day continuation: range %.2f%%; CV %.2f%%",
-    annotations$range_percent_of_mean_14,
-    annotations$sample_cv_percent_14,
-    annotations$range_percent_of_mean_7,
-    annotations$sample_cv_percent_7
+    "Oct 13-19: range %.2f%%; CV %.2f%%",
+    annotations$range_percent_of_mean,
+    annotations$sample_cv_percent
+  )
+
+  scan_annotations <- focal[focal$scan_jobs > 0L, ]
+  scan_annotations$label <- sprintf(
+    "%d recorded scans\n%d clones",
+    scan_annotations$scan_jobs,
+    scan_annotations$clones
+  )
+  scan_annotations$label_hjust <- ifelse(
+    scan_annotations$date_utc == as.Date("2026-10-06"),
+    0,
+    0.5
   )
 
   ggplot2::ggplot(focal, ggplot2::aes(x = date_utc, y = clones)) +
     ggplot2::annotate(
       "rect",
-      xmin = as.Date("2026-10-13") - 0.5,
+      xmin = as.Date("2026-10-12") - 0.5,
       xmax = as.Date("2026-10-19") + 0.5,
       ymin = -Inf,
       ymax = Inf,
-      fill = "grey92"
-    ) +
-    ggplot2::annotate(
-      "rect",
-      xmin = as.Date("2026-10-17") - 0.5,
-      xmax = as.Date("2026-10-19") + 0.5,
-      ymin = -Inf,
-      ymax = Inf,
-      fill = "grey82",
-      alpha = 0.7
+      fill = "grey94"
     ) +
     ggplot2::geom_line(linewidth = 0.45, colour = "black") +
-    ggplot2::geom_point(size = 1.6, colour = "black") +
+    ggplot2::geom_point(shape = 21, size = 1.9, stroke = 0.45, fill = "white") +
+    ggplot2::geom_point(
+      data = scan_annotations,
+      shape = 23,
+      size = 3.2,
+      stroke = 0.5,
+      fill = "black"
+    ) +
+    ggplot2::geom_text(
+      data = scan_annotations,
+      ggplot2::aes(label = label, hjust = label_hjust),
+      vjust = -0.65,
+      size = 2.8,
+      family = "serif"
+    ) +
     ggplot2::geom_text(
       data = annotations,
       ggplot2::aes(x = date_utc, y = y, label = label),
       inherit.aes = FALSE,
       hjust = 0,
       vjust = 0,
-      size = 2.8,
+      size = 2.7,
       family = "serif"
     ) +
     ggplot2::facet_wrap(~repository, ncol = 2) +
     ggplot2::scale_x_date(
       limits = as.Date(c("2026-10-06", "2026-10-19")),
-      breaks = seq(as.Date("2026-10-06"), as.Date("2026-10-18"), by = "2 days"),
+      breaks = as.Date(c("2026-10-06", "2026-10-09", "2026-10-12", "2026-10-15", "2026-10-19")),
       date_labels = "%b %d"
     ) +
-    ggplot2::scale_y_continuous(breaks = c(0, 100, 200, 300), limits = c(0, 300)) +
+    ggplot2::scale_y_continuous(breaks = c(0, 100, 200, 300), limits = c(0, 320)) +
     ggplot2::labs(
-      title = "Daily clone counts and continuation of the recurring plateau",
-      subtitle = "Current authenticated window: October 6-19, 2026 (UTC)",
+      title = "Recorded Security Cloud scans align with the two large clone spikes",
+      subtitle = "GitHub clone events and successful Codex Security commit-scan jobs, October 6-19, 2026 (UTC)",
       x = NULL,
       y = "GitHub-counted clone events",
       caption = paste0(
-        "Light shading: October 13-19 continuation interval. Darker shading: dates beyond the original October 3-16 window.\n",
-        "Range = 100 x (maximum - minimum) / mean. CV uses the sample standard deviation. Shared axes include zero."
+        "Filled diamonds mark dates with recorded scan jobs. Grey shading begins after the final recorded scan on October 11; the plateau continues.\n",
+        "The connected history contains 99 successful jobs in total. Range = 100 x (maximum - minimum) / mean; CV uses sample SD. Shared axes include zero."
       )
     ) +
     theme_manuscript(10) +
     ggplot2::theme(
-      axis.text.x = ggplot2::element_text(angle = 30, hjust = 1),
       plot.margin = ggplot2::margin(10, 18, 10, 10)
     )
 }
@@ -398,10 +514,26 @@ build_comparison_figure <- function(metrics) {
       metrics$repository %in% high_traffic_repositories,
   ]
   below_25 <- sum(comparisons$mean < 25)
+  integer_lower_bound <- data.frame(
+    mean = 10^seq(log10(0.16), log10(5000), length.out = 400)
+  )
+  integer_lower_bound$minimum_nonzero_range_percent <-
+    100 / integer_lower_bound$mean
+  integer_lower_bound <- integer_lower_bound[
+    integer_lower_bound$minimum_nonzero_range_percent >= 0.8 &
+      integer_lower_bound$minimum_nonzero_range_percent <= 900,
+  ]
 
   panel_a <- ggplot2::ggplot() +
     ggplot2::geom_hline(yintercept = 4, linetype = "dashed", linewidth = 0.35) +
     ggplot2::geom_vline(xintercept = 25, linetype = "dotted", linewidth = 0.35) +
+    ggplot2::geom_line(
+      data = integer_lower_bound,
+      ggplot2::aes(x = mean, y = minimum_nonzero_range_percent),
+      linetype = "dotdash",
+      colour = "grey25",
+      linewidth = 0.45
+    ) +
     ggplot2::geom_point(
       data = comparisons,
       ggplot2::aes(x = mean, y = range_percent_of_mean),
@@ -417,18 +549,14 @@ build_comparison_figure <- function(metrics) {
       size = 2.4
     ) +
     ggplot2::annotate(
-      "text",
-      x = 0.18,
-      y = 12,
-      hjust = 0,
-      vjust = 0,
-      size = 3,
+      "label",
+      x = 3.2,
+      y = 38,
+      size = 2.8,
       family = "serif",
-      label = sprintf(
-        "%d/%d screened series average <25/day.\nA nonconstant integer series below 25/day\ncannot have range/mean <=4%%.",
-        below_25,
-        nrow(comparisons)
-      )
+      label = "Integer-count lower bound:\n100 / mean",
+      linewidth = 0,
+      fill = "white"
     ) +
     ggplot2::scale_x_log10(
       breaks = c(0.2, 1, 10, 100, 1000),
@@ -440,7 +568,7 @@ build_comparison_figure <- function(metrics) {
       labels = scales::label_number()
     ) +
     ggplot2::labs(
-      title = "A. Broad convenience sample",
+      title = "A. All screened comparison series",
       x = "Mean daily clone count",
       y = "Six-day range / mean (%) - log scale"
     ) +
@@ -488,7 +616,7 @@ build_comparison_figure <- function(metrics) {
   panels <- cowplot::plot_grid(panel_a, panel_b, nrow = 1, rel_widths = c(1.15, 1))
   title <- cowplot::ggdraw() +
     cowplot::draw_label(
-      "Comparison depends on the underlying clone rate\nSame six dates: October 13-18, 2026 (UTC)",
+      "The focal repositories occupy a sparse high-rate, low-variation region\nSame six dates: October 13-18, 2026 (UTC)",
       fontfamily = "serif",
       size = 15,
       lineheight = 1.1
@@ -497,8 +625,8 @@ build_comparison_figure <- function(metrics) {
     cowplot::draw_label(
       paste0(
         "Open circles: screened external series (n = ", nrow(comparisons), "). Black squares: four focal repositories.\n",
-        "Cumulative and provenance-ambiguous records are excluded; source-host series can be clustered.\n",
-        "Only two external series meet the rate stratum."
+        below_25, "/", nrow(comparisons), " screened series average <25/day; source-host series can be clustered.\n",
+        "Only two external series meet the rate stratum; no screened external series has range/mean <=4%."
       ),
       x = 0,
       hjust = 0,
@@ -509,118 +637,35 @@ build_comparison_figure <- function(metrics) {
   cowplot::plot_grid(title, panels, footer, ncol = 1, rel_heights = c(0.12, 1, 0.13))
 }
 
-build_clone_unique_figure <- function(snapshot) {
-  selected <- snapshot[
-    snapshot$repository %in% high_traffic_repositories &
-      snapshot$date_utc >= as.Date("2026-10-13"),
-  ]
-  aggregate <- stats::aggregate(
-    cbind(clones, daily_unique_cloners) ~ date_utc,
-    data = selected,
-    FUN = sum
-  )
-  aggregate$excess_clone_events <- aggregate$clones - aggregate$daily_unique_cloners
-  lines <- rbind(
-    data.frame(
-      date_utc = aggregate$date_utc,
-      measure = "Clone events",
-      value = aggregate$clones
-    ),
-    data.frame(
-      date_utc = aggregate$date_utc,
-      measure = "Sum of repository-level daily unique cloners",
-      value = aggregate$daily_unique_cloners
-    )
-  )
-  lines$measure <- factor(
-    lines$measure,
-    levels = c("Clone events", "Sum of repository-level daily unique cloners")
-  )
-
-  panel_a <- ggplot2::ggplot(
-    lines,
-    ggplot2::aes(x = date_utc, y = value, linetype = measure, shape = measure)
-  ) +
-    ggplot2::geom_line(linewidth = 0.55, colour = "black") +
-    ggplot2::geom_point(size = 2, colour = "black") +
-    ggplot2::scale_linetype_manual(values = c("solid", "22")) +
-    ggplot2::scale_shape_manual(values = c(16, 1)) +
-    ggplot2::scale_x_date(date_breaks = "1 day", date_labels = "%b %d") +
-    ggplot2::scale_y_continuous(limits = c(520, 590), breaks = seq(520, 590, 10)) +
-    ggplot2::labs(
-      title = "A. Four-repository daily totals",
-      x = NULL,
-      y = "Count",
-      linetype = NULL,
-      shape = NULL
-    ) +
-    theme_manuscript(10) +
-    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 30, hjust = 1))
-
-  panel_b <- ggplot2::ggplot(
-    aggregate,
-    ggplot2::aes(x = date_utc, y = excess_clone_events)
-  ) +
-    ggplot2::geom_col(width = 0.64, fill = "grey35") +
-    ggplot2::geom_text(
-      ggplot2::aes(label = excess_clone_events),
-      vjust = -0.35,
-      family = "serif",
-      size = 3
-    ) +
-    ggplot2::scale_x_date(date_breaks = "1 day", date_labels = "%b %d") +
-    ggplot2::scale_y_continuous(limits = c(0, 40), breaks = seq(0, 40, 10)) +
-    ggplot2::labs(
-      title = "B. Clone events beyond the daily unique-cloner sum",
-      x = NULL,
-      y = "Clone events minus daily unique-cloner sum"
-    ) +
-    theme_manuscript(10) +
-    ggplot2::theme(
-      legend.position = "none",
-      axis.text.x = ggplot2::element_text(angle = 30, hjust = 1)
-    )
-
-  panels <- cowplot::plot_grid(panel_a, panel_b, ncol = 1, rel_heights = c(1.15, 0.85))
-  title <- cowplot::ggdraw() +
-    cowplot::draw_label(
-      "Clone events and daily unique-cloner counts moved together\nOctober 13-19, 2026 (UTC)",
-      fontfamily = "serif",
-      size = 15,
-      lineheight = 1.1
-    )
-  footer <- cowplot::ggdraw() +
-    cowplot::draw_label(
-      paste0(
-        "Daily unique-cloner values are summed across repositories; cross-repository deduplication is unavailable.\n",
-        "October 18 and 19 each sum to 551 daily unique cloners; clone events rose from 568 to 582."
-      ),
-      x = 0,
-      hjust = 0,
-      fontfamily = "serif",
-      size = 9
-    )
-
-  cowplot::plot_grid(title, panels, footer, ncol = 1, rel_heights = c(0.11, 1, 0.12))
-}
-
 sha256 <- function(path) {
   digest::digest(file = path, algo = "sha256", serialize = FALSE)
 }
 
 snapshot <- read_live_snapshot(evidence_path)
 validate_snapshot(snapshot)
+security_history <- read_security_history(security_history_path)
+validate_security_history(security_history)
 metrics <- calculate_metrics(snapshot)
 validate_historical_overlap(metrics, historical_metrics_path)
+security_alignment <- calculate_security_alignment(snapshot, security_history)
 
 snapshot_path <- file.path(data_dir, "traffic-snapshot-2026-10-20.csv")
 metrics_path <- file.path(data_dir, "r-analysis-window-metrics-2026-10-20.csv")
+security_alignment_path <- file.path(
+  data_dir, "r-codex-security-alignment-metrics-2026-10-20.csv"
+)
 utils::write.csv(snapshot, snapshot_path, row.names = FALSE, na = "")
 utils::write.csv(metrics, metrics_path, row.names = FALSE, na = "")
+utils::write.csv(
+  security_alignment,
+  security_alignment_path,
+  row.names = FALSE,
+  na = ""
+)
 
 output_paths <- c(
   save_plot(
-    build_window_figure(snapshot, metrics),
+    build_window_figure(snapshot, metrics, security_history),
     "r-window-sensitivity-2026-10-20",
     10.5,
     7.6
@@ -630,16 +675,15 @@ output_paths <- c(
     "r-rate-comparison-2026-10-20",
     10.8,
     6.2
-  ),
-  save_plot(
-    build_clone_unique_figure(snapshot),
-    "r-clones-versus-daily-uniques-2026-10-20",
-    9.2,
-    7.6
   )
 )
 
-input_paths <- c(evidence_path, comparison_path, historical_metrics_path)
+input_paths <- c(
+  evidence_path,
+  comparison_path,
+  historical_metrics_path,
+  security_history_path
+)
 execution_context <- if (rstudioapi::isAvailable()) {
   version_info <- rstudioapi::versionInfo()
   list(
@@ -667,9 +711,12 @@ provenance <- list(
   inputs = lapply(input_paths, function(path) {
     list(file = sub(paste0("^", root, "/"), "", path), sha256 = sha256(path))
   }),
-  derived_tables = lapply(c(snapshot_path, metrics_path), function(path) {
+  derived_tables = lapply(
+    c(snapshot_path, metrics_path, security_alignment_path),
+    function(path) {
     list(file = sub(paste0("^", root, "/"), "", path), sha256 = sha256(path))
-  }),
+    }
+  ),
   outputs = lapply(output_paths, function(path) {
     list(file = sub(paste0("^", root, "/"), "", path), sha256 = sha256(path))
   }),
@@ -678,8 +725,10 @@ provenance <- list(
     "The raw authenticated GitHub traffic response is preserved separately from derived CSV tables.",
     "The script validates complete daily coverage, nonnegative counts, and reconciliation of daily clone counts to each window total.",
     "The shared six-day focal metrics are checked against the independent Python analysis before figures are written.",
+    "The Codex Security summary is checked for the exact four-repository set, 99 successful jobs, and the last recorded scan timestamp.",
     "PNG and vector PDF versions are generated from the same ggplot objects.",
-    "The six-day comparison remains October 13-18 because that is the shared interval in the preserved external comparison set."
+    "The six-day comparison remains October 13-18 because that is the shared interval in the preserved external comparison set.",
+    "The unique-cloner chart was removed because repository-level daily unique counts cannot be deduplicated across repositories and did not add a distinct visual finding."
   )
 )
 

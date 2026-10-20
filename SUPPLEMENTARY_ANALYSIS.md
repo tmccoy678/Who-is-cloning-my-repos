@@ -18,7 +18,7 @@ The equivalent terminal command is:
 Rscript scripts/analyze_and_plot.R
 ```
 
-`renv::restore()` recreates the package environment pinned in `renv.lock` and is required only for a new or changed R library. The hand-written R script itself performs no network requests. It reads the preserved October 20 GitHub response and the screened external-series table, validates complete daily coverage and window totals, cross-checks the October 13–18 focal statistics against the independent Python output, rewrites `data/traffic-snapshot-2026-10-20.csv` and `data/r-analysis-window-metrics-2026-10-20.csv`, then generates Figures 2–4 in PNG and vector PDF formats. The final run was sourced from RStudio Desktop 2026.10.0+233 “Blue Mistflower” using R 4.6.1. `figures/r-figure-provenance-2026-10-20.json` records execution context, input, code, lockfile, output, R, and package identities.
+`renv::restore()` recreates the package environment pinned in `renv.lock` and is required only for a new or changed R library. The hand-written R script itself performs no network requests. It reads the preserved October 20 GitHub response, screened external-series table, and reduced Codex Security history. It validates complete daily coverage and window totals, cross-checks the October 13–18 focal statistics against the independent Python output, validates the 99-job/four-repository Security Cloud summary, rewrites three derived tables, then generates Figures 2–3 in PNG and vector PDF formats. The final run was sourced from RStudio Desktop 2026.10.0+233 “Blue Mistflower” using R 4.6.1. `figures/r-figure-provenance-2026-10-20.json` records execution context, input, code, lockfile, output, R, and package identities.
 
 ## Reproduce the independent preserved-window analysis
 
@@ -78,7 +78,15 @@ An exploratory 100–200/day stratum contains two series: `Romaxa55/MegaV_Public
 
 The October 3–16 and October 6–19 windows overlap by 11 days. The shared external-comparison interval remains October 13–18; the current continuation extends through October 19. The four-repository aggregate has a 0.90% sample CV and a 2.45% range-to-mean percentage over October 13–19, compared with a 7.40% CV in the original October 3–16 interval and 7.43% in the current October 6–19 interval. Across the three new dates, October 17–19, the aggregate CV is 1.22%. The individual-repository metrics are reported alongside the aggregate in the generated R window table. Each rolling total remains attached to its own window.
 
-The three current analytical figures use the R-generated tables. [Figure provenance](figures/README.md) identifies their source and output hashes. The original eight images remain preserved in Git history and the six original source screenshots remain in the working tree; the main manuscript uses the original overview screenshot and three R figures.
+The two current analytical figures use the R-generated tables. [Figure provenance](figures/README.md) identifies their source and output hashes. The original eight images remain preserved in Git history and the six original source screenshots remain in the working tree; the main manuscript uses the original overview screenshot and two R figures. The unique-cloner figure was removed because the undeduplicated cross-repository sum restricted interpretation and the exact comparison was clearer in prose.
+
+## Codex Security Cloud evidence
+
+The connected read-only scan-history query returned 99 successful commit-scan jobs and no failed or unfinished jobs. Eighty-one began on September 28, two on October 2, three on October 5, nine on October 6, and four on October 11. The repository totals are 45 for TrashTreasurePickup, 36 for DobeWorks, 12 for DEGS, and six for BackspaceTextRetention. Those are exactly the four repositories displayed as monitored in the supplied dashboard captures.
+
+The full connected response contained generated threat models and identifiers unnecessary for this analysis. The preserved reduction keeps repository names, UTC dates, counts, success counts, and first/last start times. Its JSON record states the query and omitted fields. The R workflow validates the exact four-repository set, total jobs, success count, current-window scan dates, and last scan timestamp before producing the alignment table or Figure 2.
+
+Within the October 6–19 traffic window, DobeWorks had nine recorded scan jobs on its 272-clone peak day, 130 above its no-scan-day median of 142. TrashTreasurePickup had four recorded jobs on its 235-clone peak day, 93 above its no-scan-day median. These scan-job observations rank first and second among the 56 focal repository-days. No completed scan job is recorded after October 11, while the stable four-repository aggregate continues through October 19. The read-only interface does not expose Cloud repository-acquisition events, so the recorded-job history cannot allocate individual GitHub clone events.
 
 ## Corrections to historical tables
 
@@ -94,7 +102,7 @@ The original investigation identified an owner-authorized October 2 usability re
 
 GitHub Community discussion #208852 documents a public-repository traffic interruption after September 23 and a GitHub staff statement on September 30 that a fix had shipped. This platform event overlaps the beginning of the preserved history. The October 13–19 continuation occurs after the reported fix and remains the cleanest interval for describing sustained regularity.
 
-Push dates and recorded clone spikes can be aligned by UTC day. Within-day order and actor identity are unavailable. Repository-local Actions histories likewise describe one acquisition route. External services and other owner-authorized tools remain possible contributors.
+Push dates, recorded Codex Security jobs, and clone spikes can be aligned by UTC day. Within-day order and actor identity are unavailable. Repository-local Actions histories describe another acquisition route. The exact monitored-set match makes Codex Security Cloud the leading candidate mechanism, while a controlled monitoring intervention remains necessary to estimate its contribution to the recurring floor.
 
 ## Materials outside the manuscript’s empirical claims
 
