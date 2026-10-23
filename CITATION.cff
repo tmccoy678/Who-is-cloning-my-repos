@@ -5,8 +5,8 @@ type: report
 authors:
   - family-names: "McCoy"
     given-names: "Taylor"
-date-released: 2026-10-20
-version: 1.5.0
+date-released: 2026-10-23
+version: 1.6.0
 license: MIT
 repository-code: "https://github.com/tmccoy678/Who-is-cloning-my-repos"
 abstract: >-
@@ -17,4 +17,8 @@ abstract: >-
   counts, and count rates. A screened external comparison retains 134 series and
   replays all 138 original extracted vectors from pinned public sources. The
   pattern is consistent with recurring automated collection; the operator is
-  unknown.
+  unknown. A post-publication follow-up records an abrupt decline from 808
+  clone events on October 20 to 152 on October 21 and 22 on October 22 across
+  the four focal repositories. GitHub does not expose actor identities or
+  within-day clone times, so the temporal association does not identify its
+  cause.

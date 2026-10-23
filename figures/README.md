@@ -2,14 +2,15 @@
 
 The original eight images remain preserved under their existing filenames. Original files 1 and 2 are byte-identical copies of the supplied captures. Original files 3–6 are unedited window captures of the cited primary webpages made with the isolated Codex browser. Original files 7 and 8 are charts from the earlier analysis.
 
-The revised manuscript numbers its selected figures separately: Figure 1 is the R scan-alignment result, Figure 2 is the original GitHub Traffic screenshot, and Figure 3 is the R rate–variation comparison. This numbering leaves the historical filenames stable.
+The revised manuscript numbers its selected figures separately: Figure 1 is the R scan-alignment result, Figure 2 is the original GitHub Traffic screenshot, Figure 3 is the paired October 23 discontinuity record, and Figure 4 is the R rate–variation comparison. This numbering leaves the historical filenames stable.
 
 ## Revised Analytical Figures
 
 | Manuscript figure | Files | Data and purpose |
 |---|---|---|
 | 1 | [PNG](r-window-sensitivity-2026-10-20.png), [vector PDF](r-window-sensitivity-2026-10-20.pdf) | October 6–19 authenticated daily counts with recorded Codex Security scan dates; shows scan-aligned spikes and continuation after the final recorded job |
-| 3 | [PNG](r-rate-comparison-2026-10-20.png), [vector PDF](r-rate-comparison-2026-10-20.pdf) | Recalculated six-day rates and relative variation; shows the integer-count lower bound, 134 screened external series, and the two-series 100–200/day stratum |
+| 3 | [`figure-9-degs-traffic-discontinuity-2026-10-23.png`](figure-9-degs-traffic-discontinuity-2026-10-23.png), [`figure-10-dobeworks-traffic-discontinuity-2026-10-23.png`](figure-10-dobeworks-traffic-discontinuity-2026-10-23.png) | Exact owner-supplied GitHub Traffic screenshots; shows the October 20 spikes and subsequent clone and daily-unique discontinuities beside low page-view counts |
+| 4 | [PNG](r-rate-comparison-2026-10-20.png), [vector PDF](r-rate-comparison-2026-10-20.pdf) | Recalculated six-day rates and relative variation; shows the integer-count lower bound, 134 screened external series, and the two-series 100–200/day stratum |
 
 [The R provenance manifest](r-figure-provenance-2026-10-20.json) records the execution context, raw and derived input hashes, code and lockfile hashes, output hashes, R version, and package versions. Both analytical figures use black-and-white marks and were reopened for visual inspection. The final figures were generated from RStudio Desktop 2026.10.0+233 “Blue Mistflower” with R 4.6.1, cowplot 1.2.0, digest 0.6.39, ggplot2 4.0.3, jsonlite 2.0.0, ragg 1.5.2, rstudioapi 0.19.0, and scales 1.4.0. [`renv.lock`](../renv.lock) pins the complete R package dependency graph.
 
@@ -25,6 +26,17 @@ source("scripts/analyze_and_plot.R")
 The earlier unique-cloner chart was removed during visual-quality review. Its repository-level unique counts could not be deduplicated across repositories, and its main observation was clearer as an exact textual comparison. Removing it leaves each manuscript figure with a separate analytical purpose.
 
 The earlier Python-rendered `reanalysis-*` figures remain in Git history at revision `71bb9e1`; the manuscript now uses the R figures.
+
+## Post-publication Primary Screenshots
+
+Taylor captured both GitHub Traffic pages on October 23 and supplied them for this follow-up. The repository files are exact byte copies; no crop, annotation, resampling, or color adjustment was applied.
+
+| File | Repository page | Pixel dimensions | SHA-256 |
+|---|---|---:|---|
+| [`figure-9-degs-traffic-discontinuity-2026-10-23.png`](figure-9-degs-traffic-discontinuity-2026-10-23.png) | [tmccoy678/DEGS traffic](https://github.com/tmccoy678/DEGS/graphs/traffic) | 955 × 778 | `cc6c03d7d5f3fd931e76dd4cd0218d7ee1720f3ae86855f977d5be35a79e2b08` |
+| [`figure-10-dobeworks-traffic-discontinuity-2026-10-23.png`](figure-10-dobeworks-traffic-discontinuity-2026-10-23.png) | [tmccoy678/DobeWorks traffic](https://github.com/tmccoy678/DobeWorks/graphs/traffic) | 933 × 779 | `c651c9f9e8a86a2c856f310ca6eaceb78d1bfbd587175740943a07a2426a89b9` |
+
+Because GitHub Traffic is an owner-only page, the public links do not expose these charts to unauthenticated visitors. The preserved images and authenticated JSON response are the auditable records.
 
 ## Preserved Original Figures
 

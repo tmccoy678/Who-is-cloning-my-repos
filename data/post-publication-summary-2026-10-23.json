@@ -1,0 +1,52 @@
+{
+  "baseline": {
+    "daily_clone_events": [
+      568,
+      568,
+      572,
+      571,
+      575,
+      568,
+      582
+    ],
+    "dates_utc": [
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-17",
+      "2026-10-18",
+      "2026-10-19"
+    ],
+    "maximum_daily_clone_events": 582,
+    "mean_clone_events_per_day": 572,
+    "minimum_daily_clone_events": 568,
+    "total_clone_events": 4004
+  },
+  "captured_at_utc": "2026-10-23T14:58:42Z",
+  "first_full_days_after_public_event": {
+    "2026-10-20": {
+      "clone_events": 808,
+      "summed_repository_daily_unique_cloner_observations": 628
+    },
+    "2026-10-21": {
+      "clone_events": 152,
+      "summed_repository_daily_unique_cloner_observations": 4
+    },
+    "2026-10-22": {
+      "clone_events": 22,
+      "summed_repository_daily_unique_cloner_observations": 13
+    }
+  },
+  "focal_repositories": [
+    "Backspace-Text-Retention",
+    "DEGS",
+    "DobeWorks",
+    "TrashTreasurePickup"
+  ],
+  "interpretation_boundary": "The repository-level daily unique-cloner values are not an account-wide audience estimate. GitHub supplies no actor identities or within-day event times.",
+  "investigation_repository_public_event_utc": "2026-10-19T16:36:10Z",
+  "october_22_decline_from_baseline_mean_percent": 96.15384615384616,
+  "schema": "github-clone-traffic-post-publication-followup.v2",
+  "source_evidence_sha256": "d5994ade9feaf33301b14fac4faddc2759594791299467d2bedb280189a87926"
+}

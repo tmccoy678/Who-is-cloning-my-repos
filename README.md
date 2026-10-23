@@ -1,13 +1,13 @@
 # Who Is Cloning My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days—With 0 Visitors, 0 Views, No Referrals, Stars, Forks, or External Public Discussion for DobeWorks and DEGS at the Original Snapshot
 
 Taylor McCoy<br>
-October 19, 2026; revised October 20, 2026
+October 19, 2026; revised October 20, 2026; post-publication follow-up October 23, 2026
 
 > Associated portfolio analyses: [Are My Repositories Worth More Than $10? A read-only engineering review and replacement-cost estimate](READ_ONLY_REVIEW_AND_VALUATION.md) and [Comparable Systems and Cost Context for DobeWorks and DEGS](COMPARABLE_SYSTEMS_COST_CONTEXT.md). These assessments remain separate from the manuscript's empirical clone-traffic claims.
 
 ## Abstract
 
-GitHub clone counts can reveal an audience that never visits a repository page. I investigated this mismatch across my six public repositories. The original October 3–16, 2026 snapshot recorded exactly 8,372 clone events, averaging 598 per day; four repositories contributed 8,271 events. DobeWorks and DEGS recorded zero page views and zero visitors in that snapshot. The four high-traffic repositories then recorded 4,004 clone events during October 13–19, averaging 572 per day within a range of 568–582 and a sample coefficient of variation (CV) of 0.90%. The individual repositories varied by only 1.40%–4.89% of their means. After screening 138 extracted external series, I retained 134; none varied by 4% or less over the shared six dates. The 100–200-clones/day comparison stratum contained only two external series, whose range-to-mean percentages were 87.84% and 191.66%, versus 1.40%–3.50% for the four focal repositories. A read-only Codex Security Cloud history supplied the strongest mechanistic lead: the four high-traffic repositories were exactly the four configured for monitoring, and the service recorded 99 successful commit-scan jobs. Nine DobeWorks jobs coincided with its 272-clone October 6 spike; four TrashTreasurePickup jobs coincided with its 235-clone October 11 spike. Those two repository-days ranked first and second among the 56 repository-days in the current traffic window. No recorded job followed October 11, while the 568–582 daily plateau continued through October 19. Codex Security Cloud is the leading candidate mechanism for the spikes and selective repository set. Completed-job history does not account for the continuing floor, and the available interfaces expose neither Cloud repository-acquisition events nor GitHub clone actors.
+GitHub clone counts can reveal an audience that never visits a repository page. I investigated this mismatch across my six public repositories. The original October 3–16, 2026 snapshot recorded exactly 8,372 clone events, averaging 598 per day; four repositories contributed 8,271 events. DobeWorks and DEGS recorded zero page views and zero visitors in that snapshot. The four high-traffic repositories then recorded 4,004 clone events during October 13–19, averaging 572 per day within a range of 568–582 and a sample coefficient of variation (CV) of 0.90%. The individual repositories varied by only 1.40%–4.89% of their means. After screening 138 extracted external series, I retained 134; none varied by 4% or less over the shared six dates. The 100–200-clones/day comparison stratum contained only two external series, whose range-to-mean percentages were 87.84% and 191.66%, versus 1.40%–3.50% for the four focal repositories. A read-only Codex Security Cloud history supplied the strongest mechanistic lead: the four high-traffic repositories were exactly the four configured for monitoring, and the service recorded 99 successful commit-scan jobs. Nine DobeWorks jobs coincided with its 272-clone October 6 spike; four TrashTreasurePickup jobs coincided with its 235-clone October 11 spike. Those two repository-days ranked first and second among the 56 repository-days in the current traffic window. No recorded job followed October 11, while the 568–582 daily plateau continued through October 19. GitHub records this investigation repository becoming public at 16:36:10 UTC on October 19. The four-repository total was 808 clones on October 20, the first full UTC day afterward, 152 on October 21, and 22 on October 22. The October 22 count was 96.15% below the prior seven-day mean. Codex Security Cloud is the leading candidate mechanism for the earlier spikes and selective repository set. The abrupt post-publication discontinuity is temporally striking, but GitHub exposes neither clone-actor identities nor within-day event times, so its cause remains unknown.
 
 Keywords: GitHub Traffic, Codex Security Cloud, repository telemetry, empirical software engineering, automated collection, case study, reproducibility
 
@@ -43,9 +43,13 @@ The six repositories were the account’s complete public set at the original co
 
 The original snapshot, collected October 17, covers October 3–16, 2026. The October 19 snapshot covers October 5–18, and the October 20 response covers October 6–19. The original and current windows share 11 days. I retain October 13–18 as the shared six-day interval for the external comparison and report October 13–19 as the seven-day continuation. October 17–19 are the three dates beyond the original window. These intervals were selected retrospectively after the observed spikes. No pushes or repositories were created as an experimental intervention.
 
+On October 23, I captured a second authenticated follow-up covering October 9–22 for all 12 repositories then public on the account. GitHub's public-events endpoint records this investigation repository becoming public at 2026-10-19 16:36:10 UTC. Publication was not a preregistered intervention, and GitHub supplies only daily traffic aggregates, so the follow-up can establish date-level timing but not actor identity, exposure, or within-day order.
+
 ### Data collection and evidence
 
 Authenticated collection used GitHub’s clone, view, popular-referrer, and popular-path endpoints. The original repository-level totals are preserved in `data/traffic-snapshot-2026-10-17.csv`; the first follow-up is in `data/traffic-snapshot-2026-10-19.csv`. The complete October 20 response is preserved at `evidence/live/2026-10-20/github-traffic-response.json`, and the R workflow derives `data/traffic-snapshot-2026-10-20.csv` from it. The response was captured at 2026-10-20 14:30:13 UTC and contains no authentication headers or credentials. The October 14 screenshots preserve an earlier DEGS window. Public repository activity, Actions histories, configuration checks, and external indexing records supplied contextual evidence.
+
+The October 23 response is preserved at `evidence/live/2026-10-23/github-traffic-response.json`. It was captured at 2026-10-23 14:58:42 UTC and contains decoded response bodies and selected public metadata, but no authentication headers or credentials. The selected public-visibility event is preserved separately at `evidence/live/2026-10-23/investigation-repository-public-event.json`. `scripts/analyze_followup.py` validates the traffic response and derives `data/post-publication-traffic-2026-10-23.csv` and `data/post-publication-summary-2026-10-23.json`. Two owner-captured GitHub Traffic screenshots provide a direct visual record of the DEGS and DobeWorks discontinuities; their exact byte identities are recorded in `figures/README.md`.
 
 On October 20, I queried my connected Codex Security Cloud workspace through its read-only scan-history interface. I reduced the response to repository, UTC date, scan count, success count, and first and last start times, omitting account identifiers, commit identifiers, generated threat models, and email addresses. The resulting table is `data/codex-security-scan-history-summary-2026-10-20.csv`; its capture and reduction record is preserved in `evidence/live/2026-10-20/codex-security-scan-history-summary.json`. The dashboard captures supplied for this check contain account information and are not republished.
 
@@ -65,7 +69,7 @@ The original exploratory search used a 1%–4% interval. The revised analysis al
 
 Repository-level unique-cloner and unique-visitor counts are not summed into an account-wide audience estimate. Cross-repository overlap is unavailable. Clone events and page views are additive event counts. The four-repository clone aggregate is secondary because aggregation can reduce variation.
 
-No significance test or GitHub-wide anomaly probability is reported. The windows are short, the sample is selected, and repository-days and archive sources are dependent. `scripts/analyze_and_plot.R` is hand-written R code that reads the preserved raw response and scan-history summary, produces the current derived tables, calculates every reported current-window statistic, and renders Figures 1 and 3 as PNG and vector PDF files. `scripts/analyze.py` independently reproduces the earlier preserved-window analysis. AI assistance supported collection, extraction, analysis, and revision under my direction; the roles and verification limits are described in the declarations and [MODEL.md](MODEL.md).
+No significance test or GitHub-wide anomaly probability is reported. The windows are short, the sample is selected, and repository-days and archive sources are dependent. `scripts/analyze_and_plot.R` is hand-written R code that reads the preserved raw response and scan-history summary, produces the current derived tables, calculates every reported current-window statistic, and renders Figures 1 and 4 as PNG and vector PDF files. `scripts/analyze.py` independently reproduces the earlier preserved-window analysis. `scripts/capture_github_traffic.py` performs the read-only follow-up capture through the authenticated GitHub CLI, and `scripts/analyze_followup.py` validates its daily intervals and totals before producing the October 23 derived files. Repository-level unique-cloner counts remain labeled as summed observations because cross-repository overlap is unavailable. AI assistance supported collection, extraction, analysis, and revision under my direction; the roles and verification limits are described in the declarations and [MODEL.md](MODEL.md).
 
 ## Results
 
@@ -123,11 +127,33 @@ Figure 1. Clone traffic and Codex Security scan alignment, generated in R. Fille
 
 Figure 2. Original October 14 GitHub Traffic screenshot. Its September 30–October 13 window differs from Table 1. Image provenance and hashes are recorded in `figures/README.md`.
 
+### Post-publication discontinuity
+
+Table 4. Clone events for the four focal repositories around the October 19 public-visibility event. The final column sums repository-level daily unique-cloner observations; it is not an account-wide audience count.
+
+| UTC date | DobeWorks | DEGS | Backspace | Trash/Treasure | Combined clone events | Summed repository daily unique-cloner observations |
+|---|---:|---:|---:|---:|---:|---:|
+| October 19 | 148 | 145 | 144 | 145 | 582 | 551 |
+| October 20 | 229 | 249 | 144 | 186 | 808 | 628 |
+| October 21 | 48 | 43 | 31 | 30 | 152 | 4 |
+| October 22 | 16 | 3 | 2 | 1 | 22 | 13 |
+
+The October 13–19 baseline averaged 572 combined clone events per day and ranged from 568 to 582. GitHub's public event is timestamped October 19 at 16:36:10 UTC, within the final baseline date. October 20, the first complete UTC day after that event, rose to 808. The four-repository total then fell to 152 on October 21 and to 22 on October 22—96.15% below the baseline mean.
+
+The counters continued to record activity elsewhere on October 22: `Personal-Use-AI-Agent-Discussion-Site` recorded 73 clones and 30 daily unique cloners, and `Samsung-TV-Debloat` recorded 19 and 14. The investigation repository itself recorded eight clones and seven daily unique cloners on October 20, zero on October 21, and one and one on October 22; it did not join the earlier approximately 143-clones/day plateau. These observations weigh against a universal zeroing of the account's GitHub Traffic counters.
+
+<p align="center">
+  <img src="figures/figure-9-degs-traffic-discontinuity-2026-10-23.png" alt="DEGS GitHub Traffic charts showing the October 20 spike followed by a sharp decline" width="49%">
+  <img src="figures/figure-10-dobeworks-traffic-discontinuity-2026-10-23.png" alt="DobeWorks GitHub Traffic charts showing the October 20 spike followed by a sharp decline" width="49%">
+</p>
+
+Figure 3. Owner-captured GitHub Traffic pages for DEGS (left) and DobeWorks (right), October 23. The clone charts show the prior plateau, October 20 spikes, and subsequent decline; the view charts remain comparatively small. These are exact, unedited copies of the supplied screenshots. GitHub does not expose clone-actor identities or within-day clone times, so the temporal association does not establish why the pattern ended.
+
 ### Codex Security Cloud as a candidate mechanism
 
 The connected history contains 99 successful commit-scan jobs: 81 on September 28, two on October 2, three on October 5, nine on October 6, and four on October 11. The September 28 batch comprises 39 TrashTreasurePickup jobs, 25 DobeWorks jobs, 11 DEGS jobs, and six BackspaceTextRetention jobs. These four repositories are exactly the four repositories displayed as monitored in the supplied Codex Security Cloud dashboard captures. WeatherTicker and the other low-traffic public repositories are not displayed as monitored.
 
-Table 4. Codex Security scan history and clone alignment. The no-scan median uses October 6–19 dates without a recorded job for that repository.
+Table 5. Codex Security scan history and clone alignment. The no-scan median uses October 6–19 dates without a recorded job for that repository.
 
 | Repository | Recorded scan jobs | Last recorded scan (UTC) | Jobs in current window | No-scan median clones | Peak date | Peak clones | Peak rank of 56 | Jobs on peak date | Peak excess over no-scan median |
 |---|---:|---|---:|---:|---|---:|---:|---:|---:|
@@ -146,11 +172,11 @@ OpenAI describes the initial Codex Security process as building a threat model a
 
 None of the 134 retained external series had a range-to-mean or maximum-deviation percentage at or below 4%. The nearest by range was `dikeckaan/easy-vphone`: 92, 82, 80, 81, 70, and 73 clones, averaging 79.67/day, with a 27.62% range-to-mean percentage and 9.68% sample CV. The seven subject-related comparisons had range percentages of 66.67%–396.69%.
 
-The comparison corpus is dominated by small counts: 118 of 134 series averaged below 25/day, and 76 averaged below one/day. The median mean was 0.67/day. Most nonconstant series in this corpus cannot meet the 4% range threshold because of the integer-count constraint. The large descriptive contrast therefore requires interpretation alongside the count rates (Figure 3).
+The comparison corpus is dominated by small counts: 118 of 134 series averaged below 25/day, and 76 averaged below one/day. The median mean was 0.67/day. Most nonconstant series in this corpus cannot meet the 4% range threshold because of the integer-count constraint. The large descriptive contrast therefore requires interpretation alongside the count rates (Figure 4).
 
 Only two retained external series averaged 100–200 clones/day. Their means were 194.67 and 127.83/day, with range percentages of 87.84% and 191.66% and sample CVs of 35.29% and 72.02%, respectively. Neither approached the focal six-day plateau. This small stratum leaves its frequency among comparable repositories unknown.
 
-Table 5. The focal repositories, two rate peers, and the nearest external series by variation over October 13–18.
+Table 6. The focal repositories, two rate peers, and the nearest external series by variation over October 13–18.
 
 | Repository or group | Subject | Mean clones/day | Range ÷ mean | Sample CV |
 |---|---|---:|---:|---:|
@@ -161,13 +187,13 @@ Table 5. The focal repositories, two rate peers, and the nearest external series
 
 ![Mean daily clone count versus range-to-mean percentage for the screened external series and four focal repositories, with a separate panel for the 100–200 per day stratum.](figures/r-rate-comparison-2026-10-20.png)
 
-Figure 3. Count rate and relative variation over October 13–18, generated in R. Open circles represent the 134 screened external series; filled squares represent the four focal repositories. The dot-dash curve is the mathematical lower bound `100 / mean` for a nonconstant integer-count series. The vertical scale is logarithmic in both panels; the horizontal scale is logarithmic in the broad comparison and linear in the rate stratum. Points can overlap. The 4% line marks the exploratory threshold. [Vector PDF](figures/r-rate-comparison-2026-10-20.pdf).
+Figure 4. Count rate and relative variation over October 13–18, generated in R. Open circles represent the 134 screened external series; filled squares represent the four focal repositories. The dot-dash curve is the mathematical lower bound `100 / mean` for a nonconstant integer-count series. The vertical scale is logarithmic in both panels; the horizontal scale is logarithmic in the broad comparison and linear in the rate stratum. Points can overlap. The 4% line marks the exploratory threshold. [Vector PDF](figures/r-rate-comparison-2026-10-20.pdf).
 
 The repository-level daily unique-cloner sums ranged from 534 to 559 during the seven-day continuation, with a 1.41% sample CV. Cross-repository overlap is unavailable, so these values remain repository-level daily observations rather than an account-wide audience estimate. On October 18 and 19, the sum was identical at 551 while clone events rose by 14. A separate figure was omitted because this result is clearer as an exact textual comparison and the undeduplicated sum limits visual interpretation.
 
 ### Within-account subject and repository form
 
-Table 6. Current October 6–19 authenticated response and primary subject.
+Table 7. Current October 6–19 authenticated response and primary subject.
 
 | Repository | Primary subject and form | Clone events | Window unique cloners | Views |
 |---|---|---:|---:|---:|
@@ -202,6 +228,8 @@ GitHub’s public Events API and ecosyste.ms documentation describe routes for d
 
 Codex Security Cloud is the leading candidate mechanism. Its monitored repository set matches the high-traffic set exactly, and the only two repository-days with recorded jobs are the two largest counts in the 56-day-by-repository window. The continuing plateau after its last recorded job remains unexplained because the available interfaces contain no backend repository-acquisition log.
 
+The October 23 follow-up adds a sharp stopping boundary. The October 19 daily aggregate remained within the plateau range and contains the repository's 16:36:10 UTC public event. The first full UTC day afterward rose to 808, and the series then collapsed over the next two daily aggregates. The timing is consistent with a finite automated collection episode that stopped after the investigation became public, but the evidence cannot connect publication to an actor or causal decision. A prospective test remains necessary to distinguish monitoring, another automated collector, and an unobserved concurrent change.
+
 GitHub traffic reporting had a documented public-repository interruption shortly before this study. Owners reported daily clone and view series stopping after September 23, and a GitHub staff response on September 30 stated that a fix had shipped (GitHub Community, 2026). The focal plateau is visible from September 30 and persists through October 19. The interruption makes pre-fix and immediately backfilled values less secure for temporal inference; the sustained October 13–19 regularity occurs nearly two weeks after the reported fix.
 
 WeatherTicker remains informative because it is public, belongs to the same account, received very little traffic, and was not displayed as monitored in Codex Security Cloud. That monitoring difference now supplies a more concrete explanation for its contrast with the four focal repositories than subject matter alone.
@@ -212,7 +240,7 @@ The recorded regularity deserves attention. The analysis also shows why the comp
 
 ### Limitations
 
-This case covers one owner and a short period. Four repositories were selected for attention after their high counts were observed, and the stable interval was chosen retrospectively. The collection windows overlap heavily. The comparison corpus is a truncated, self-published convenience sample with clustered archive sources and heterogeneous collection practices. Its original parser used permissive date matching and last-record selection; a complete original candidate/rejection ledger has not been recovered. Full October 17 response bodies also remain unavailable; recovered transformed output corroborates the original summaries. GitHub’s September traffic interruption adds a platform-level measurement event near the start of the available history.
+This case covers one owner and a short period. Four repositories were selected for attention after their high counts were observed, and the stable interval was chosen retrospectively. The collection windows overlap heavily. The investigation repository's public release was observed rather than randomized or preregistered, and daily aggregation prevents ordering the visibility event and clone activity within October 19. The comparison corpus is a truncated, self-published convenience sample with clustered archive sources and heterogeneous collection practices. Its original parser used permissive date matching and last-record selection; a complete original candidate/rejection ledger has not been recovered. Full October 17 response bodies also remain unavailable; recovered transformed output corroborates the original summaries. GitHub’s September traffic interruption adds a platform-level measurement event near the start of the available history.
 
 GitHub’s measurement implementation and unique-count deduplication are unavailable for audit. Codex Security exposes completed scan jobs but not its repository-acquisition logs, worker count, network identities, or background monitoring operations. Reporting delay, backfill, incomplete automation inventories, and within-day ordering remain unresolved. The evidence package distinguishes preserved responses, session-recovered outputs, derived tables, and later retrievals of pinned public sources. Those distinctions determine which parts of the investigation can be independently replayed.
 
@@ -222,7 +250,7 @@ The title's “no external public discussion” observation is bounded to the ex
 
 The original snapshot records exactly 8,372 clone events across six repositories, or 598 per day. Four account for 98.79% of that total and continue at 568–582 combined clones per day through October 19. DobeWorks and DEGS contribute exactly 2,000 events during that seven-day continuation. The full-window analysis retains the earlier spikes, while the rate-stratified comparison shows that matched external evidence is scarce and dramatically more variable in the two available rate peers.
 
-I began with a simple question: who is cloning my repositories? Codex Security Cloud is now the strongest candidate mechanism. It is directly connected to exactly the four high-traffic repositories, recorded 99 successful commit scans, and aligns with the two largest repository-day counts in the current window. Its completed-job history ends before the continuing plateau. A controlled monitoring intervention can test whether the recurring floor responds to Cloud configuration.
+I began with a simple question: who is cloning my repositories? Codex Security Cloud is now the strongest candidate mechanism for the earlier selective traffic. It is directly connected to exactly the four high-traffic repositories, recorded 99 successful commit scans, and aligns with the two largest repository-day counts in the October 6–19 window. Its completed-job history ends before the continuing plateau. After this investigation became public, the four-repository series fell from 808 clone events on October 20 to 152 and then 22. The discontinuity creates a clear boundary for future testing while leaving its actor and cause unknown. A controlled monitoring intervention can test whether the recurring traffic responds to Cloud configuration.
 
 ## Statements and Declarations
 
@@ -236,7 +264,7 @@ OpenAI Codex, using the GPT-6 model family, assisted with authenticated data col
 
 ### Data and code availability
 
-The study’s data, analysis scripts, evidence provenance, and revision record are maintained in this private repository. External reviewer access requires my authorization. Existing input CSVs remain preserved; corrected results and explicit exclusions are generated separately. [SUPPLEMENTARY_ANALYSIS.md](SUPPLEMENTARY_ANALYSIS.md) documents the files, reproduction commands, and remaining acquisition gaps. Historical snapshots cannot be recreated by asking today’s rolling endpoint for the old dates.
+The study’s data, analysis scripts, evidence provenance, and revision record are maintained in this public repository. Existing input CSVs and screenshots remain preserved; corrected results, explicit exclusions, and the post-publication follow-up are generated or documented separately. [SUPPLEMENTARY_ANALYSIS.md](SUPPLEMENTARY_ANALYSIS.md) documents the original files, reproduction commands, and remaining acquisition gaps; the [evidence guide](evidence/README.md) documents the October 23 capture and derivation. Historical snapshots cannot be recreated by asking today’s rolling endpoint for the old dates.
 
 ## References
 
@@ -272,6 +300,7 @@ Comparison-data sources are cited by exact file path and source commit in the pr
 
 - [Supplementary methods, reproduction, and data corrections](SUPPLEMENTARY_ANALYSIS.md)
 - [RStudio project](Who-is-cloning-my-repos.Rproj) and [hand-written R analysis and figure code](scripts/analyze_and_plot.R)
+- [Post-publication traffic data and machine-readable summary](data/post-publication-summary-2026-10-23.json)
 - [Revision record](REVISION_NOTES.md)
 - [Original and revised figure provenance](figures/README.md)
 - [Separate engineering review and judgment-based cost scenarios](READ_ONLY_REVIEW_AND_VALUATION.md)

@@ -2,6 +2,28 @@
 
 The evidence comprises surviving October 17 and 19 research artifacts and pinned public-source files retrieved during the October 20 revision. Each manifest identifies the acquisition method and relevant timestamps.
 
+## October 23 post-publication follow-up
+
+[`live/2026-10-23/github-traffic-response.json`](live/2026-10-23/github-traffic-response.json) is a complete response captured at 2026-10-23 14:58:42 UTC from GitHub's authenticated clone, view, popular-referrer, and popular-path endpoints for all 12 repositories then public on the owner account. It also contains selected public repository metadata. It records decoded response bodies only: no authentication headers, credential values, or GitHub CLI configuration are present. Its SHA-256 is `d5994ade9feaf33301b14fac4faddc2759594791299467d2bedb280189a87926`.
+
+[`live/2026-10-23/investigation-repository-public-event.json`](live/2026-10-23/investigation-repository-public-event.json) preserves the selected `PublicEvent` returned by GitHub's public-events endpoint for this investigation repository. GitHub timestamps the event at 2026-10-19 16:36:10 UTC. Its SHA-256 is `26221fd08ab48b8272af25d5d80aba619100b140af409deeaff3b159f363e1e5`.
+
+The read-only collection script is [`../scripts/capture_github_traffic.py`](../scripts/capture_github_traffic.py). It delegates authentication to the installed GitHub CLI, refuses to overwrite an existing output, and records the capture scope in the response. The capture is not reproducible after the rolling window advances, so the preserved JSON is the primary evidence.
+
+[`../scripts/analyze_followup.py`](../scripts/analyze_followup.py) validates the schema, owner, repository count, four focal repositories, complete ordered 14-day intervals, integer/nonnegative daily values, and reconciliation of daily and window totals. It derives:
+
+- [`../data/post-publication-traffic-2026-10-23.csv`](../data/post-publication-traffic-2026-10-23.csv), SHA-256 `3be1f7522ea69a529db928630f3bafcf320b3e50da07b08fe1c68777ffa84518`;
+- [`../data/post-publication-summary-2026-10-23.json`](../data/post-publication-summary-2026-10-23.json), SHA-256 `68cf02fd49b57c0ab21e2f9d3c85c435b445cf32d14c44d2e6c6917b35df1036`.
+
+To verify that the checked-in derived outputs still match the raw response:
+
+```sh
+python3 scripts/analyze_followup.py --check
+python3 -m unittest discover -s scripts -p 'test_*.py'
+```
+
+The main post-publication comparison uses clone events, which are additive across repositories. The unique-cloner column is explicitly a sum of repository-level daily observations, not a deduplicated account-wide audience. GitHub supplies neither clone-actor identities nor within-day event times.
+
 ## Current authenticated snapshot
 
 [`live/2026-10-20/github-traffic-response.json`](live/2026-10-20/github-traffic-response.json) is the complete research response captured at 2026-10-20 14:30:13 UTC from GitHub's authenticated clone, view, popular-referrer, and popular-path endpoints for the six public repositories. It contains response data only; authentication headers and credentials were never written to the file. Its SHA-256 is `9efe0a041498518b44365b67756ffb0e56eb9990e73fbb9f29957516704fb1fd`.

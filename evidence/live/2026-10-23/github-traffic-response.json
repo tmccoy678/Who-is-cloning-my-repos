@@ -1,0 +1,2308 @@
+{
+  "captured_at": "2026-10-23T14:58:42Z",
+  "collection": {
+    "authentication_material_recorded": false,
+    "client": "GitHub CLI gh api",
+    "http_headers_recorded": false,
+    "scope": "all owner public repositories returned in one 100-item page",
+    "traffic_window": "rolling 14-day response supplied by GitHub"
+  },
+  "owner": "tmccoy678",
+  "repositories": {
+    "Backspace-Text-Retention": {
+      "clones": {
+        "clones": [
+          {
+            "count": 143,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 131
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 135
+          },
+          {
+            "count": 143,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 138
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 137
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 133
+          },
+          {
+            "count": 143,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 139
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 141
+          },
+          {
+            "count": 144,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 141
+          },
+          {
+            "count": 144,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 136
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 136
+          },
+          {
+            "count": 144,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 137
+          },
+          {
+            "count": 144,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 138
+          },
+          {
+            "count": 31,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 2,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ],
+        "count": 1748,
+        "uniques": 1093
+      },
+      "metadata": {
+        "created_at": "2026-09-25T04:57:03Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/Backspace-Text-Retention",
+        "name": "Backspace-Text-Retention",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-21T16:51:46Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-10-21T16:51:52Z",
+        "visibility": "public"
+      },
+      "popular_paths": [
+        {
+          "count": 1,
+          "path": "/tmccoy678/Backspace-Text-Retention",
+          "title": "Overview",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/Backspace-Text-Retention/graphs/traffic",
+          "title": "/graphs/traffic",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/Backspace-Text-Retention/pulse",
+          "title": "/pulse",
+          "uniques": 1
+        }
+      ],
+      "popular_referrers": [
+        {
+          "count": 1,
+          "referrer": "github.com",
+          "uniques": 1
+        }
+      ],
+      "views": {
+        "count": 4,
+        "uniques": 1,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 3,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ]
+      }
+    },
+    "DEGS": {
+      "clones": {
+        "clones": [
+          {
+            "count": 142,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 136
+          },
+          {
+            "count": 143,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 141
+          },
+          {
+            "count": 143,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 133
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 137
+          },
+          {
+            "count": 141,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 133
+          },
+          {
+            "count": 143,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 138
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 137
+          },
+          {
+            "count": 141,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 136
+          },
+          {
+            "count": 143,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 137
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 139
+          },
+          {
+            "count": 145,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 141
+          },
+          {
+            "count": 249,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 177
+          },
+          {
+            "count": 43,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 3,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 3
+          }
+        ],
+        "count": 1862,
+        "uniques": 1143
+      },
+      "metadata": {
+        "created_at": "2026-09-11T18:46:17Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/DEGS",
+        "name": "DEGS",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-23T01:17:44Z",
+        "stargazers_count": 1,
+        "updated_at": "2026-10-23T01:17:45Z",
+        "visibility": "public"
+      },
+      "popular_paths": [
+        {
+          "count": 3,
+          "path": "/tmccoy678/DEGS-v2.1",
+          "title": "Overview",
+          "uniques": 2
+        },
+        {
+          "count": 3,
+          "path": "/tmccoy678/DEGS/pulse",
+          "title": "/pulse",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/tmccoy678/DEGS-v2.1/pull/3",
+          "title": "/pull/3",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/tmccoy678/DEGS-v2.1/pull/4",
+          "title": "/pull/4",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/tmccoy678/DEGS-v2.1/pull/5",
+          "title": "/pull/5",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/tmccoy678/DEGS-v2.1/pull/5/changes/1b1b36d50f960ef0057d9776b483a7806e74e71c",
+          "title": "/pull/5/changes/1b1b36d50f960ef0057d9776b483a7806e74e71c",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/tmccoy678/DEGS-v2.1/pull/5/commits",
+          "title": "/pull/5/commits",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/tmccoy678/DEGS-v2.1/pull/9",
+          "title": "/pull/9",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/tmccoy678/DEGS-v2.1/pulls",
+          "title": "/pulls",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/tmccoy678/DEGS/graphs/traffic",
+          "title": "/graphs/traffic",
+          "uniques": 1
+        }
+      ],
+      "popular_referrers": [
+        {
+          "count": 2,
+          "referrer": "github.com",
+          "uniques": 1
+        }
+      ],
+      "views": {
+        "count": 34,
+        "uniques": 2,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 2,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 17,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 7,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 7,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ]
+      }
+    },
+    "DobeWorks": {
+      "clones": {
+        "clones": [
+          {
+            "count": 141,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 135
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 137
+          },
+          {
+            "count": 143,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 133
+          },
+          {
+            "count": 140,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 135
+          },
+          {
+            "count": 144,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 138
+          },
+          {
+            "count": 141,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 137
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 138
+          },
+          {
+            "count": 144,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 142
+          },
+          {
+            "count": 143,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 140
+          },
+          {
+            "count": 141,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 138
+          },
+          {
+            "count": 148,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 137
+          },
+          {
+            "count": 229,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 169
+          },
+          {
+            "count": 48,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 16,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 8
+          }
+        ],
+        "count": 1862,
+        "uniques": 1114
+      },
+      "metadata": {
+        "created_at": "2026-09-11T18:46:13Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/DobeWorks",
+        "name": "DobeWorks",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-23T01:15:26Z",
+        "stargazers_count": 1,
+        "updated_at": "2026-10-23T01:15:28Z",
+        "visibility": "public"
+      },
+      "popular_paths": [
+        {
+          "count": 7,
+          "path": "/tmccoy678/DobeWorks-v2.1",
+          "title": "Overview",
+          "uniques": 1
+        },
+        {
+          "count": 3,
+          "path": "/tmccoy678/DobeWorks-v2.1/graphs/traffic",
+          "title": "/graphs/traffic",
+          "uniques": 1
+        },
+        {
+          "count": 3,
+          "path": "/tmccoy678/DobeWorks-v2.1/pulse",
+          "title": "/pulse",
+          "uniques": 1
+        },
+        {
+          "count": 3,
+          "path": "/tmccoy678/DobeWorks-v3.0",
+          "title": "Overview",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/tmccoy678/DobeWorks-v3.0/blob/main/README.md",
+          "title": "/blob/main/README.md",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/tmccoy678/DobeWorks-v3.0/edit/main/README.md",
+          "title": "/edit/main/README.md",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/DobeWorks",
+          "title": "Overview",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/DobeWorks-v2.1/blob/main/docs/figures/dobeworks-degs-command-center.png",
+          "title": "/blob/main/docs/figures/dobeworks-degs-command-center.png",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/DobeWorks-v2.1/pull/6",
+          "title": "/pull/6",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/DobeWorks-v3.0/tree/main",
+          "title": "/tree/main",
+          "uniques": 1
+        }
+      ],
+      "popular_referrers": [
+        {
+          "count": 9,
+          "referrer": "github.com",
+          "uniques": 1
+        }
+      ],
+      "views": {
+        "count": 26,
+        "uniques": 1,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 11,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 12,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 3,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ]
+      }
+    },
+    "Hatch-Alarm-Clock-Debloat": {
+      "clones": {
+        "clones": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 23,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 15
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 2,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 2
+          }
+        ],
+        "count": 25,
+        "uniques": 17
+      },
+      "metadata": {
+        "created_at": "2026-10-20T15:52:15Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/Hatch-Alarm-Clock-Debloat",
+        "name": "Hatch-Alarm-Clock-Debloat",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-20T17:05:27Z",
+        "stargazers_count": 1,
+        "updated_at": "2026-10-23T05:23:13Z",
+        "visibility": "public"
+      },
+      "popular_paths": [],
+      "popular_referrers": [],
+      "views": {
+        "count": 0,
+        "uniques": 0,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 0
+          }
+        ]
+      }
+    },
+    "History-of-Onofrio-Dog-Show-Website": {
+      "clones": {
+        "clones": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 10,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 8
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ],
+        "count": 11,
+        "uniques": 9
+      },
+      "metadata": {
+        "created_at": "2026-10-06T21:43:32Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/History-of-Onofrio-Dog-Show-Website",
+        "name": "History-of-Onofrio-Dog-Show-Website",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-20T16:56:16Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-10-20T17:29:08Z",
+        "visibility": "public"
+      },
+      "popular_paths": [],
+      "popular_referrers": [],
+      "views": {
+        "count": 0,
+        "uniques": 0,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 0
+          }
+        ]
+      }
+    },
+    "Meta-Muse-with-Root-Access-to-Grok-Bot": {
+      "clones": {
+        "clones": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 2,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 2
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 2,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 2
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 2,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 2
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 2,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 2
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 0
+          }
+        ],
+        "count": 11,
+        "uniques": 11
+      },
+      "metadata": {
+        "created_at": "2026-10-06T04:55:14Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/Meta-Muse-with-Root-Access-to-Grok-Bot",
+        "name": "Meta-Muse-with-Root-Access-to-Grok-Bot",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-06T19:11:32Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-10-20T17:42:02Z",
+        "visibility": "public"
+      },
+      "popular_paths": [],
+      "popular_referrers": [],
+      "views": {
+        "count": 0,
+        "uniques": 0,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 0
+          }
+        ]
+      }
+    },
+    "Personal-Use-AI-Agent-Discussion-Site": {
+      "clones": {
+        "clones": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 42,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 26
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 73,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 30
+          }
+        ],
+        "count": 116,
+        "uniques": 53
+      },
+      "metadata": {
+        "created_at": "2026-10-06T17:52:48Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/Personal-Use-AI-Agent-Discussion-Site",
+        "name": "Personal-Use-AI-Agent-Discussion-Site",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-23T04:03:19Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-10-23T01:29:04Z",
+        "visibility": "public"
+      },
+      "popular_paths": [
+        {
+          "count": 1,
+          "path": "/tmccoy678/Personal-Use-AI-Agent-Discussion-Site",
+          "title": "Overview",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/Personal-Use-AI-Agent-Discussion-Site/graphs/traffic",
+          "title": "/graphs/traffic",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/Personal-Use-AI-Agent-Discussion-Site/pulse",
+          "title": "/pulse",
+          "uniques": 1
+        }
+      ],
+      "popular_referrers": [
+        {
+          "count": 1,
+          "referrer": "github.com",
+          "uniques": 1
+        }
+      ],
+      "views": {
+        "count": 3,
+        "uniques": 1,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 3,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ]
+      }
+    },
+    "Polygraph-Attempt-and-Case-Study": {
+      "clones": {
+        "clones": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 2,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ],
+        "count": 4,
+        "uniques": 3
+      },
+      "metadata": {
+        "created_at": "2026-10-12T16:52:01Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/Polygraph-Attempt-and-Case-Study",
+        "name": "Polygraph-Attempt-and-Case-Study",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-21T16:53:36Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-10-21T16:53:41Z",
+        "visibility": "public"
+      },
+      "popular_paths": [],
+      "popular_referrers": [],
+      "views": {
+        "count": 0,
+        "uniques": 0,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 0
+          }
+        ]
+      }
+    },
+    "Samsung-TV-Debloat": {
+      "clones": {
+        "clones": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 20,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 14
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 19,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 14
+          }
+        ],
+        "count": 39,
+        "uniques": 28
+      },
+      "metadata": {
+        "created_at": "2026-10-20T15:52:05Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/Samsung-TV-Debloat",
+        "name": "Samsung-TV-Debloat",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-20T17:34:53Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-10-20T17:34:57Z",
+        "visibility": "public"
+      },
+      "popular_paths": [
+        {
+          "count": 1,
+          "path": "/tmccoy678/Samsung-TV-Debloat",
+          "title": "Overview",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/Samsung-TV-Debloat/compare/feature/easy-installer",
+          "title": "/compare/feature/easy-installer",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/Samsung-TV-Debloat/compare/main...feature/easy-installer",
+          "title": "/compare/main...feature/easy-installer",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/Samsung-TV-Debloat/graphs/traffic",
+          "title": "/graphs/traffic",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/Samsung-TV-Debloat/pulls",
+          "title": "/pulls",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/Samsung-TV-Debloat/pulse",
+          "title": "/pulse",
+          "uniques": 1
+        }
+      ],
+      "popular_referrers": [
+        {
+          "count": 1,
+          "referrer": "github.com",
+          "uniques": 1
+        }
+      ],
+      "views": {
+        "count": 6,
+        "uniques": 1,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 3,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 3,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ]
+      }
+    },
+    "TrashTreasurePickup": {
+      "clones": {
+        "clones": [
+          {
+            "count": 142,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 134
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 137
+          },
+          {
+            "count": 235,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 174
+          },
+          {
+            "count": 169,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 155
+          },
+          {
+            "count": 141,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 130
+          },
+          {
+            "count": 141,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 137
+          },
+          {
+            "count": 146,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 143
+          },
+          {
+            "count": 142,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 135
+          },
+          {
+            "count": 145,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 140
+          },
+          {
+            "count": 143,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 138
+          },
+          {
+            "count": 145,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 136
+          },
+          {
+            "count": 186,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 144
+          },
+          {
+            "count": 30,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ],
+        "count": 1908,
+        "uniques": 1122
+      },
+      "metadata": {
+        "created_at": "2026-09-10T17:35:01Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/TrashTreasurePickup",
+        "name": "TrashTreasurePickup",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-20T17:34:03Z",
+        "stargazers_count": 1,
+        "updated_at": "2026-10-22T06:37:52Z",
+        "visibility": "public"
+      },
+      "popular_paths": [
+        {
+          "count": 2,
+          "path": "/tmccoy678/TrashTreasurePickup",
+          "title": "Overview",
+          "uniques": 2
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/TrashTreasurePickup/blob/main/references/first-use.md",
+          "title": "/blob/main/references/first-use.md",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/TrashTreasurePickup/graphs/traffic",
+          "title": "/graphs/traffic",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/TrashTreasurePickup/issues/templates/edit",
+          "title": "/issues/templates/edit",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/TrashTreasurePickup/pulse",
+          "title": "/pulse",
+          "uniques": 1
+        }
+      ],
+      "popular_referrers": [
+        {
+          "count": 1,
+          "referrer": "github.com",
+          "uniques": 1
+        }
+      ],
+      "views": {
+        "count": 6,
+        "uniques": 3,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 2,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 2
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 3,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ]
+      }
+    },
+    "WeatherTicker": {
+      "clones": {
+        "clones": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 2,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 2
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 0
+          }
+        ],
+        "count": 4,
+        "uniques": 4
+      },
+      "metadata": {
+        "created_at": "2026-09-22T22:41:28Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/WeatherTicker",
+        "name": "WeatherTicker",
+        "open_issues_count": 0,
+        "pushed_at": "2026-09-22T22:41:36Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-09-27T22:36:06Z",
+        "visibility": "public"
+      },
+      "popular_paths": [],
+      "popular_referrers": [],
+      "views": {
+        "count": 0,
+        "uniques": 0,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 0
+          }
+        ]
+      }
+    },
+    "Who-is-cloning-my-repos": {
+      "clones": {
+        "clones": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 8,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 7
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 1,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 1
+          }
+        ],
+        "count": 9,
+        "uniques": 8
+      },
+      "metadata": {
+        "created_at": "2026-10-19T16:36:10Z",
+        "default_branch": "main",
+        "forks_count": 0,
+        "html_url": "https://github.com/tmccoy678/Who-is-cloning-my-repos",
+        "name": "Who-is-cloning-my-repos",
+        "open_issues_count": 0,
+        "pushed_at": "2026-10-20T17:31:58Z",
+        "stargazers_count": 1,
+        "updated_at": "2026-10-22T06:37:52Z",
+        "visibility": "public"
+      },
+      "popular_paths": [
+        {
+          "count": 2,
+          "path": "/tmccoy678/Who-is-cloning-my-repos/pulse",
+          "title": "/pulse",
+          "uniques": 1
+        },
+        {
+          "count": 1,
+          "path": "/tmccoy678/Who-is-cloning-my-repos/graphs/traffic",
+          "title": "/graphs/traffic",
+          "uniques": 1
+        }
+      ],
+      "popular_referrers": [],
+      "views": {
+        "count": 4,
+        "uniques": 1,
+        "views": [
+          {
+            "count": 0,
+            "timestamp": "2026-10-09T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-10T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-11T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-12T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-13T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-14T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-15T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-16T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-17T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-18T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-19T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 4,
+            "timestamp": "2026-10-20T00:00:00Z",
+            "uniques": 1
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-21T00:00:00Z",
+            "uniques": 0
+          },
+          {
+            "count": 0,
+            "timestamp": "2026-10-22T00:00:00Z",
+            "uniques": 0
+          }
+        ]
+      }
+    }
+  },
+  "repository_count": 12,
+  "schema": "github-owner-traffic-capture.v1"
+}

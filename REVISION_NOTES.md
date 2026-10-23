@@ -1,5 +1,18 @@
 # Revision Record
 
+## October 23, 2026 post-publication addendum
+
+On October 23, Taylor added a follow-up prompted by the abrupt end of the previously stable four-repository clone plateau after this investigation repository became public. GitHub's public event is timestamped 2026-10-19 16:36:10 UTC.
+
+- A fresh authenticated, read-only capture preserves clone, view, referrer, and path responses for all 12 repositories then public on the account. The response covers daily traffic through October 22 and records no authentication material.
+- A dedicated standard-library analysis validates the raw response and derives the four focal repositories' daily table and a machine-readable summary. October 13–19 averaged 572 combined clone events per day; the total was 808 on October 20, 152 on October 21, and 22 on October 22. The final value is 96.15% below the baseline mean.
+- Two exact owner-supplied screenshots now appear together as manuscript Figure 3, where the timing is visually strongest. The former R rate-comparison Figure 3 is now Figure 4; later tables are renumbered accordingly.
+- The manuscript states the supported chronology directly: the October 19 aggregate remained in the plateau range, October 20 was the first complete UTC day after the public event and spiked to 808, and the series then collapsed to 152 and 22. GitHub exposes no clone-actor identities or within-day event times, so the actor and cause remain unknown.
+- The repository's public availability statement was corrected, and the evidence and figure guides now record the new inputs, hashes, derivation, and interpretation boundary.
+- Thirteen focused Python tests pass: the prior nine analysis tests plus four follow-up tests covering interval reconciliation, nonadditive unique-count labeling, generated-output identity, and missing-repository rejection.
+
+The table and figure numbering below describes the October 20 revision before this addendum.
+
 October 20, 2026<br>
 Manuscript: *Who Is Cloning My Repositories? An Exploration of 598 Daily Clone Events Across Six Public Repositories From Exactly 8,372 Recorded Clone Events ÷ 14 Days—With 0 Visitors, 0 Views, No Referrals, Stars, Forks, or External Public Discussion for DobeWorks and DEGS at the Original Snapshot*<br>
 Baseline: `25c4a40b8f5932acf7e054b66a5a586268f9da3a`<br>
